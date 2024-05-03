@@ -37,9 +37,6 @@
             this.txt_Numero_Documento = new System.Windows.Forms.TextBox();
             this.cmb_Tipo_Documento = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_Dia_Nacimieto = new System.Windows.Forms.TextBox();
-            this.txt_Mes_Nacimiento = new System.Windows.Forms.TextBox();
-            this.txt_Año_Nacimieto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cmb_Sexo = new System.Windows.Forms.ComboBox();
             this.txt_Contraseña = new System.Windows.Forms.TextBox();
@@ -128,30 +125,6 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Fecha de nacimieto";
             // 
-            // txt_Dia_Nacimieto
-            // 
-            this.txt_Dia_Nacimieto.Location = new System.Drawing.Point(69, 241);
-            this.txt_Dia_Nacimieto.Name = "txt_Dia_Nacimieto";
-            this.txt_Dia_Nacimieto.Size = new System.Drawing.Size(41, 20);
-            this.txt_Dia_Nacimieto.TabIndex = 10;
-            this.txt_Dia_Nacimieto.Text = "DD";
-            // 
-            // txt_Mes_Nacimiento
-            // 
-            this.txt_Mes_Nacimiento.Location = new System.Drawing.Point(131, 240);
-            this.txt_Mes_Nacimiento.Name = "txt_Mes_Nacimiento";
-            this.txt_Mes_Nacimiento.Size = new System.Drawing.Size(71, 20);
-            this.txt_Mes_Nacimiento.TabIndex = 11;
-            this.txt_Mes_Nacimiento.Text = "MM";
-            // 
-            // txt_Año_Nacimieto
-            // 
-            this.txt_Año_Nacimieto.Location = new System.Drawing.Point(232, 241);
-            this.txt_Año_Nacimieto.Name = "txt_Año_Nacimieto";
-            this.txt_Año_Nacimieto.Size = new System.Drawing.Size(70, 20);
-            this.txt_Año_Nacimieto.TabIndex = 12;
-            this.txt_Año_Nacimieto.Text = "AÑO";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -227,7 +200,7 @@
             // 
             // dtp_Fecha
             // 
-            this.dtp_Fecha.Location = new System.Drawing.Point(336, 239);
+            this.dtp_Fecha.Location = new System.Drawing.Point(69, 242);
             this.dtp_Fecha.Name = "dtp_Fecha";
             this.dtp_Fecha.Size = new System.Drawing.Size(200, 20);
             this.dtp_Fecha.TabIndex = 21;
@@ -246,9 +219,6 @@
             this.Controls.Add(this.txt_Contraseña);
             this.Controls.Add(this.cmb_Sexo);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txt_Año_Nacimieto);
-            this.Controls.Add(this.txt_Mes_Nacimiento);
-            this.Controls.Add(this.txt_Dia_Nacimieto);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmb_Tipo_Documento);
             this.Controls.Add(this.txt_Numero_Documento);
@@ -277,9 +247,6 @@
         private System.Windows.Forms.TextBox txt_Numero_Documento;
         private System.Windows.Forms.ComboBox cmb_Tipo_Documento;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_Dia_Nacimieto;
-        private System.Windows.Forms.TextBox txt_Mes_Nacimiento;
-        private System.Windows.Forms.TextBox txt_Año_Nacimieto;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmb_Sexo;
         private System.Windows.Forms.TextBox txt_Contraseña;
