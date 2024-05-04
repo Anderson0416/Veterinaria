@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\",
   "Documents": [
     {
@@ -37,6 +38,13 @@
     {
       "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\precentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|solutionrelative:precentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|c:\\users\\ryzen\\desktop\\c#\\veterinaria\\precentacion\\registrar_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|solutionrelative:precentacion\\registrar_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> eebcfe6d8c7f2905d24592a5e76a63b18d74c7bc
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 5,
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> eebcfe6d8c7f2905d24592a5e76a63b18d74c7bc
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,6 +70,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "Consultar_cita.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Consultar_cita.cs",
@@ -166,6 +179,16 @@
               "RelativeToolTip": "Precentacion\\Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T01:10:26.834Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "Registrar_Usuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria\\Precentacion\\Registrar_Usuario.cs",
+              "RelativeDocumentMoniker": "Precentacion\\Registrar_Usuario.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria\\Precentacion\\Registrar_Usuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Precentacion\\Registrar_Usuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T00:58:05.518Z",
+>>>>>>> eebcfe6d8c7f2905d24592a5e76a63b18d74c7bc
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

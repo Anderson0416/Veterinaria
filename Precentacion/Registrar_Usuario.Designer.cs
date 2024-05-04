@@ -200,7 +200,11 @@
             // 
             // dtp_Fecha
             // 
+<<<<<<< HEAD
             this.dtp_Fecha.Location = new System.Drawing.Point(415, 290);
+=======
+            this.dtp_Fecha.Location = new System.Drawing.Point(69, 242);
+>>>>>>> eebcfe6d8c7f2905d24592a5e76a63b18d74c7bc
             this.dtp_Fecha.Name = "dtp_Fecha";
             this.dtp_Fecha.Size = new System.Drawing.Size(200, 20);
             this.dtp_Fecha.TabIndex = 21;
