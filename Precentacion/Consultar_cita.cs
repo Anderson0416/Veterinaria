@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Precentacion
 {
-    public partial class Menu_Recepcio : Form
+    public partial class Consultar_cita : Form
     {
-        public Menu_Recepcio()
+        public Consultar_cita()
         {
             InitializeComponent();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

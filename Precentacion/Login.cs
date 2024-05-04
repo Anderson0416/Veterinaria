@@ -40,6 +40,25 @@ namespace Precentacion
             registro_Usuario.Visible = true;
             this.Visible = false;
         }
- 
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Usuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Contraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
