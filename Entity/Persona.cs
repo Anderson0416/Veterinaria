@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class Usuario
+    public class Persona
     {
         public int id { get; set; }
         public int id_tipo { get; set; }
@@ -17,9 +17,7 @@ namespace Entity
         public string Cedula { get; set; }
         public string tipo_documento { get; set; }
         public string sexo { get; set; }
-        public string dia_nacimiento { get; set; }
-        public string mes_nacimieto { get; set; }
-        public string año_nacimiento { get; set; }
         public string fecha_nacimiento { get; set; }
+        public string telefono { get; set; }
     }
 }

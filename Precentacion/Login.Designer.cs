@@ -60,7 +60,7 @@
             // 
             // txt_Usuario
             // 
-            this.txt_Usuario.Location = new System.Drawing.Point(148, 248);
+            this.txt_Usuario.Location = new System.Drawing.Point(148, 182);
             this.txt_Usuario.Name = "txt_Usuario";
             this.txt_Usuario.Size = new System.Drawing.Size(100, 20);
             this.txt_Usuario.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // txt_Contraseña
             // 
-            this.txt_Contraseña.Location = new System.Drawing.Point(148, 179);
+            this.txt_Contraseña.Location = new System.Drawing.Point(148, 248);
             this.txt_Contraseña.Name = "txt_Contraseña";
             this.txt_Contraseña.Size = new System.Drawing.Size(100, 20);
             this.txt_Contraseña.TabIndex = 3;

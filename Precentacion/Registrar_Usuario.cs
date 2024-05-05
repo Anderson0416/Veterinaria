@@ -21,7 +21,7 @@ namespace Precentacion
 
         private void btn_Registrar_Click(object sender, EventArgs e)
         {
-            Usuario usuario = new Usuario();
+            Persona usuario = new Persona();
 
             usuario.Cedula = txt_Numero_Documento.Text;
             usuario.tipo_documento = cmb_Tipo_Documento.Text.ToString();

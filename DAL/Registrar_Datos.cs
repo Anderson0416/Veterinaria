@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace DAL
     public class Registrar_Datos
     {
         Conexion conexion = new Conexion();
-        public int Registrar_datos(Usuario usuario)
+        public int Registrar_Usuario(Persona usuario)
         {
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
@@ -33,8 +34,50 @@ namespace DAL
 
             return resultado;
         }
-    
-         public bool existeciaCedula(string Cedula)
+        public int Registrar_Cliente(Cliente cliente)
+        {
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+
+            string sql = "INSERT INTO cliente ( Nombre, Apellido, Tipo_Documento, Documento, Sexo, Fecha_Nacimiento, Telefono )" +
+                         "VALUES ( @Nombre, @Apellido, @Tipo_Documento, @Documento, @Sexo, @Fecha_Nacimiento, @Telefono)";
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
+
+            comando.Parameters.AddWithValue("@Nombre", cliente.nombre);
+            comando.Parameters.AddWithValue("@Apellido", cliente.apellido);
+            comando.Parameters.AddWithValue("@Tipo_Documento", cliente.tipo_documento);
+            comando.Parameters.AddWithValue("@Documento", cliente.Cedula);
+            comando.Parameters.AddWithValue("@Sexo", cliente.sexo);
+            comando.Parameters.AddWithValue("@Fecha_Nacimiento", cliente.fecha_nacimiento);
+            comando.Parameters.AddWithValue("@Telefono", cliente.telefono);
+
+            int resultado = comando.ExecuteNonQuery();
+
+            return resultado;
+        }
+        public int Registrar_Mascota(Mascota mascota)
+        {
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+
+            string sql = "INSERT INTO mascota ( Codigo, Nombre, Especie, Raza, Peso, Sexo, Edad, Edad2 )" +
+                         "VALUES ( @Codigo, @Nombre, @Especie, @Raza, @Peso, @Sexo, @Edad, @Edad2)";
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
+
+            comando.Parameters.AddWithValue("@Codigo", mascota.Codigo);
+            comando.Parameters.AddWithValue("@Nombre", mascota.nombre_mascota);
+            comando.Parameters.AddWithValue("@Especie", mascota.especie);
+            comando.Parameters.AddWithValue("@Raza", mascota.raza);
+            comando.Parameters.AddWithValue("@Peso", mascota.Peso);
+            comando.Parameters.AddWithValue("@Sexo", mascota.sexo);
+            comando.Parameters.AddWithValue("@Edad", mascota.edad);
+            comando.Parameters.AddWithValue("@Edad2", mascota.edad2);
+
+            int resultado = comando.ExecuteNonQuery();
+
+            return resultado;
+        }
+        public bool existeciaCedula(string Cedula)
         {
             MySqlDataReader reader;
             MySqlConnection conectar = conexion.crearConexion();
@@ -56,7 +99,7 @@ namespace DAL
                 return false;
             }
         }
-        public Usuario ConsultaUsuario(string Nombre)
+        public Persona ConsultaUsuario(string Nombre)
         {
             MySqlDataReader reader;
             MySqlConnection conectar = conexion.crearConexion();
@@ -68,10 +111,10 @@ namespace DAL
             comando.Parameters.AddWithValue("@Nombre", Nombre);
             reader = comando.ExecuteReader();
 
-            Usuario usuarios = null;
+            Persona usuarios = null;
             while (reader.Read())
             {
-                usuarios = new Usuario();
+                usuarios = new Persona();
                 usuarios.id = int.Parse(reader["id"].ToString());
                 usuarios.password = reader["Password"].ToString();
                 usuarios.nombre = reader["Nombre"].ToString();

@@ -26,5 +26,26 @@ namespace Precentacion
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Agendar_cita agendar_Cita = new Agendar_cita();
+            agendar_Cita.Visible = true;
+            this.Visible = false;
+        }
+
+        private void btn_Registrar_Cliente_Click(object sender, EventArgs e)
+        {
+            Registro_Cliente registro_cliente = new Registro_Cliente();
+            registro_cliente.Visible = true;
+            this.Visible = false;
+        }
+
+        private void btn_Registrar_Mascota_Click(object sender, EventArgs e)
+        {
+            Registro_Mascota registro_mascota = new Registro_Mascota();
+            registro_mascota.Visible = true;
+            this.Visible = false;
+        }
     }
 }

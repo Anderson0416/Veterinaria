@@ -42,6 +42,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_Registrar_Cliente = new System.Windows.Forms.Button();
+            this.btn_Registrar_Mascota = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +78,7 @@
             this.button2.Size = new System.Drawing.Size(103, 23);
             this.button2.TabIndex = 10;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button5
             // 
@@ -158,11 +161,33 @@
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_Registrar_Cliente
+            // 
+            this.btn_Registrar_Cliente.Location = new System.Drawing.Point(12, 160);
+            this.btn_Registrar_Cliente.Name = "btn_Registrar_Cliente";
+            this.btn_Registrar_Cliente.Size = new System.Drawing.Size(140, 23);
+            this.btn_Registrar_Cliente.TabIndex = 21;
+            this.btn_Registrar_Cliente.Text = "Registrar Cliente";
+            this.btn_Registrar_Cliente.UseVisualStyleBackColor = true;
+            this.btn_Registrar_Cliente.Click += new System.EventHandler(this.btn_Registrar_Cliente_Click);
+            // 
+            // btn_Registrar_Mascota
+            // 
+            this.btn_Registrar_Mascota.Location = new System.Drawing.Point(13, 190);
+            this.btn_Registrar_Mascota.Name = "btn_Registrar_Mascota";
+            this.btn_Registrar_Mascota.Size = new System.Drawing.Size(139, 23);
+            this.btn_Registrar_Mascota.TabIndex = 22;
+            this.btn_Registrar_Mascota.Text = "Registrar mascota";
+            this.btn_Registrar_Mascota.UseVisualStyleBackColor = true;
+            this.btn_Registrar_Mascota.Click += new System.EventHandler(this.btn_Registrar_Mascota_Click);
+            // 
             // Menu_Recepcio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 367);
+            this.Controls.Add(this.btn_Registrar_Mascota);
+            this.Controls.Add(this.btn_Registrar_Cliente);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -198,5 +223,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_Registrar_Cliente;
+        private System.Windows.Forms.Button btn_Registrar_Mascota;
     }
 }

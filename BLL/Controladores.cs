@@ -12,7 +12,7 @@ namespace BLL
     public class Controladores
     {
         Registrar_Datos registro = new Registrar_Datos();
-        public string control_Registro(Usuario usuario)
+        public string control_Registro(Persona usuario)
         {
 
             string respuesta = "";
@@ -34,7 +34,7 @@ namespace BLL
                     else
                     {
                         usuario.password = generarSHA1(usuario.password);
-                        registro.Registrar_datos(usuario);
+                        registro.Registrar_Usuario(usuario);
                     }
                 }
                 else
@@ -44,11 +44,61 @@ namespace BLL
             }
             return respuesta;
         }
+        public string control_Registro_Cliente(Cliente cliente)
+        {
+
+            string respuesta = "";
+
+            if (string.IsNullOrEmpty(cliente.Cedula) || string.IsNullOrEmpty(cliente.apellido) ||
+                string.IsNullOrEmpty(cliente.tipo_documento) || string.IsNullOrEmpty(cliente.Cedula) ||
+                string.IsNullOrEmpty(cliente.nombre) || string.IsNullOrEmpty(cliente.telefono) || string.IsNullOrEmpty(cliente.fecha_nacimiento))
+            {
+                respuesta = "DEBE LLENAR TODOS LOS DATOS";
+            }
+            else
+            {
+
+                if (registro.existeciaCedula(cliente.Cedula))
+                {
+                    respuesta = "EL USUARIO YA EXISTE";
+                }
+                else
+                {
+                     registro.Registrar_Cliente(cliente);
+                }
+            }
+            return respuesta;
+        }
+        public string control_Registro_Mascota(Mascota mascota)
+        {
+
+            string respuesta = "";
+
+            if (string.IsNullOrEmpty(mascota.Codigo) || string.IsNullOrEmpty(mascota.nombre_mascota) ||
+                string.IsNullOrEmpty(mascota.sexo) || string.IsNullOrEmpty(mascota.especie) ||
+                string.IsNullOrEmpty(mascota.raza))
+            {
+                respuesta = "DEBE LLENAR TODOS LOS DATOS";
+            }
+            else
+            {
+
+                if (registro.existeciaCedula(mascota.Codigo))
+                {
+                    respuesta = "EL USUARIO YA EXISTE";
+                }
+                else
+                {
+                    registro.Registrar_Mascota(mascota);
+                }
+            }
+            return respuesta;
+        }
         public string control_Login(string usuario, string password)
         {
             Registrar_Datos registro_datos = new Registrar_Datos();
             string respuesta = "";
-            Usuario Datousuario = null;
+            Persona Datousuario = null;
 
             if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(password))
             {

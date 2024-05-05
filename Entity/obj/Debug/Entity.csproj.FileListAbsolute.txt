@@ -10,3 +10,9 @@ C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Entity\obj\Debug\Enti
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Entity\obj\Debug\Entity.dll
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Entity\obj\Debug\Entity.pdb
+C:\Users\RYZEN\Desktop\c#\Veterinaria\Veterinaria\Entity\bin\Debug\Entity.dll
+C:\Users\RYZEN\Desktop\c#\Veterinaria\Veterinaria\Entity\bin\Debug\Entity.pdb
+C:\Users\RYZEN\Desktop\c#\Veterinaria\Veterinaria\Entity\obj\Debug\Entity.csproj.AssemblyReference.cache
+C:\Users\RYZEN\Desktop\c#\Veterinaria\Veterinaria\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Users\RYZEN\Desktop\c#\Veterinaria\Veterinaria\Entity\obj\Debug\Entity.dll
+C:\Users\RYZEN\Desktop\c#\Veterinaria\Veterinaria\Entity\obj\Debug\Entity.pdb

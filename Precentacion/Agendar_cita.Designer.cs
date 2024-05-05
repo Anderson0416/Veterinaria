@@ -30,40 +30,37 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_Nombre = new System.Windows.Forms.TextBox();
+            this.txt_Telefono = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_Raza = new System.Windows.Forms.TextBox();
+            this.txt_Nombre_Mascota = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.btn_Registrar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btn_Agregar = new System.Windows.Forms.Button();
+            this.cmb_Veterinario = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
+            this.cmb_Sexo = new System.Windows.Forms.ComboBox();
+            this.txt_Peso = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cmb_Especie = new System.Windows.Forms.ComboBox();
+            this.dtp_Fecha_Cita = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gb_Descripcion = new System.Windows.Forms.GroupBox();
+            this.txt_Edad = new System.Windows.Forms.TextBox();
+            this.cmb_Edad2 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.groupBox4.SuspendLayout();
+            this.gb_Descripcion.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -86,19 +83,19 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Numero de telefono ";
             // 
-            // textBox1
+            // txt_Nombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txt_Nombre.Location = new System.Drawing.Point(144, 31);
+            this.txt_Nombre.Name = "txt_Nombre";
+            this.txt_Nombre.Size = new System.Drawing.Size(100, 20);
+            this.txt_Nombre.TabIndex = 3;
             // 
-            // textBox2
+            // txt_Telefono
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 54);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(112, 20);
-            this.textBox2.TabIndex = 4;
+            this.txt_Telefono.Location = new System.Drawing.Point(144, 56);
+            this.txt_Telefono.Name = "txt_Telefono";
+            this.txt_Telefono.Size = new System.Drawing.Size(112, 20);
+            this.txt_Telefono.TabIndex = 4;
             // 
             // label5
             // 
@@ -130,19 +127,19 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Raza";
             // 
-            // textBox3
+            // txt_Raza
             // 
-            this.textBox3.Location = new System.Drawing.Point(191, 48);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(128, 20);
-            this.textBox3.TabIndex = 10;
+            this.txt_Raza.Location = new System.Drawing.Point(191, 48);
+            this.txt_Raza.Name = "txt_Raza";
+            this.txt_Raza.Size = new System.Drawing.Size(128, 20);
+            this.txt_Raza.TabIndex = 10;
             // 
-            // textBox5
+            // txt_Nombre_Mascota
             // 
-            this.textBox5.Location = new System.Drawing.Point(158, 22);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(161, 20);
-            this.textBox5.TabIndex = 12;
+            this.txt_Nombre_Mascota.Location = new System.Drawing.Point(158, 22);
+            this.txt_Nombre_Mascota.Name = "txt_Nombre_Mascota";
+            this.txt_Nombre_Mascota.Size = new System.Drawing.Size(161, 20);
+            this.txt_Nombre_Mascota.TabIndex = 12;
             // 
             // label9
             // 
@@ -164,22 +161,22 @@
             this.label11.TabIndex = 15;
             this.label11.Text = "Fecha y hora de la cita";
             // 
-            // btn_Registrar
+            // btn_Agregar
             // 
-            this.btn_Registrar.Location = new System.Drawing.Point(622, 33);
-            this.btn_Registrar.Name = "btn_Registrar";
-            this.btn_Registrar.Size = new System.Drawing.Size(151, 40);
-            this.btn_Registrar.TabIndex = 20;
-            this.btn_Registrar.Text = "Agendar Cita";
-            this.btn_Registrar.UseVisualStyleBackColor = true;
+            this.btn_Agregar.Location = new System.Drawing.Point(622, 33);
+            this.btn_Agregar.Name = "btn_Agregar";
+            this.btn_Agregar.Size = new System.Drawing.Size(151, 40);
+            this.btn_Agregar.TabIndex = 20;
+            this.btn_Agregar.Text = "Agendar Cita";
+            this.btn_Agregar.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cmb_Veterinario
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(195, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(141, 21);
-            this.comboBox1.TabIndex = 21;
+            this.cmb_Veterinario.FormattingEnabled = true;
+            this.cmb_Veterinario.Location = new System.Drawing.Point(195, 53);
+            this.cmb_Veterinario.Name = "cmb_Veterinario";
+            this.cmb_Veterinario.Size = new System.Drawing.Size(141, 21);
+            this.cmb_Veterinario.TabIndex = 21;
             // 
             // label12
             // 
@@ -201,80 +198,52 @@
             this.label13.TabIndex = 23;
             this.label13.Text = "Peso";
             // 
-            // comboBox2
+            // cmb_Sexo
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(366, 47);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(82, 21);
-            this.comboBox2.TabIndex = 24;
+            this.cmb_Sexo.FormattingEnabled = true;
+            this.cmb_Sexo.Location = new System.Drawing.Point(366, 47);
+            this.cmb_Sexo.Name = "cmb_Sexo";
+            this.cmb_Sexo.Size = new System.Drawing.Size(82, 21);
+            this.cmb_Sexo.TabIndex = 24;
             // 
-            // textBox6
+            // txt_Peso
             // 
-            this.textBox6.Location = new System.Drawing.Point(366, 21);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(59, 20);
-            this.textBox6.TabIndex = 25;
-            // 
-            // domainUpDown1
-            // 
-            this.domainUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.domainUpDown1.Location = new System.Drawing.Point(101, 79);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(119, 20);
-            this.domainUpDown1.TabIndex = 26;
-            this.domainUpDown1.Text = "domainUpDown1";
+            this.txt_Peso.Location = new System.Drawing.Point(366, 21);
+            this.txt_Peso.Name = "txt_Peso";
+            this.txt_Peso.Size = new System.Drawing.Size(59, 20);
+            this.txt_Peso.TabIndex = 25;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(226, 79);
+            this.button1.Location = new System.Drawing.Point(117, 94);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 22);
             this.button1.TabIndex = 27;
             this.button1.Text = "confirmar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // comboBox3
+            // cmb_Especie
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(118, 53);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(31, 21);
-            this.comboBox3.TabIndex = 28;
+            this.cmb_Especie.FormattingEnabled = true;
+            this.cmb_Especie.Location = new System.Drawing.Point(64, 47);
+            this.cmb_Especie.Name = "cmb_Especie";
+            this.cmb_Especie.Size = new System.Drawing.Size(82, 21);
+            this.cmb_Especie.TabIndex = 29;
             // 
-            // comboBox4
+            // dtp_Fecha_Cita
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(64, 47);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(82, 21);
-            this.comboBox4.TabIndex = 29;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(9, 81);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 13);
-            this.label10.TabIndex = 30;
-            this.label10.Text = "Tipo de consulta";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(128, 27);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(208, 20);
-            this.dateTimePicker1.TabIndex = 31;
+            this.dtp_Fecha_Cita.Location = new System.Drawing.Point(128, 27);
+            this.dtp_Fecha_Cita.Name = "dtp_Fecha_Cita";
+            this.dtp_Fecha_Cita.Size = new System.Drawing.Size(208, 20);
+            this.dtp_Fecha_Cita.TabIndex = 31;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_Telefono);
+            this.groupBox1.Controls.Add(this.txt_Nombre);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(38, 33);
             this.groupBox1.Name = "groupBox1";
@@ -285,17 +254,18 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.numericUpDown1);
+            this.groupBox2.Controls.Add(this.cmb_Edad2);
+            this.groupBox2.Controls.Add(this.txt_Edad);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.comboBox4);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.cmb_Especie);
+            this.groupBox2.Controls.Add(this.txt_Nombre_Mascota);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.txt_Raza);
+            this.groupBox2.Controls.Add(this.txt_Peso);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.cmb_Sexo);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(39, 157);
@@ -305,23 +275,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informacion de la mascota";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.dateTimePicker1);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.domainUpDown1);
-            this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(39, 298);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(357, 141);
-            this.groupBox3.TabIndex = 35;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Detalles de la cita";
             // 
             // label1
             // 
@@ -333,12 +286,20 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "Edad  ";
             // 
-            // numericUpDown1
+            // groupBox3
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(53, 78);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 31;
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.dtp_Fecha_Cita);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.cmb_Veterinario);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(39, 298);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(357, 141);
+            this.groupBox3.TabIndex = 35;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Detalles de la cita";
             // 
             // progressBar1
             // 
@@ -355,29 +316,45 @@
             this.richTextBox1.TabIndex = 37;
             this.richTextBox1.Text = "";
             // 
-            // groupBox4
+            // gb_Descripcion
             // 
-            this.groupBox4.Controls.Add(this.richTextBox1);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(436, 298);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(343, 141);
-            this.groupBox4.TabIndex = 38;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Observaciones de la mascota ";
+            this.gb_Descripcion.Controls.Add(this.richTextBox1);
+            this.gb_Descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gb_Descripcion.Location = new System.Drawing.Point(436, 298);
+            this.gb_Descripcion.Name = "gb_Descripcion";
+            this.gb_Descripcion.Size = new System.Drawing.Size(343, 141);
+            this.gb_Descripcion.TabIndex = 38;
+            this.gb_Descripcion.TabStop = false;
+            this.gb_Descripcion.Text = "Descripcion de la mascota ";
+            // 
+            // txt_Edad
+            // 
+            this.txt_Edad.Location = new System.Drawing.Point(64, 80);
+            this.txt_Edad.Name = "txt_Edad";
+            this.txt_Edad.Size = new System.Drawing.Size(48, 20);
+            this.txt_Edad.TabIndex = 32;
+            // 
+            // cmb_Edad2
+            // 
+            this.cmb_Edad2.FormattingEnabled = true;
+            this.cmb_Edad2.Location = new System.Drawing.Point(128, 80);
+            this.cmb_Edad2.Name = "cmb_Edad2";
+            this.cmb_Edad2.Size = new System.Drawing.Size(74, 21);
+            this.cmb_Edad2.TabIndex = 33;
             // 
             // Agendar_cita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(811, 459);
-            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.gb_Descripcion);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btn_Registrar);
+            this.Controls.Add(this.btn_Agregar);
             this.Name = "Agendar_cita";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Agendar_cita_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -385,8 +362,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.groupBox4.ResumeLayout(false);
+            this.gb_Descripcion.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -394,34 +370,32 @@
         #endregion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_Nombre;
+        private System.Windows.Forms.TextBox txt_Telefono;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_Raza;
+        private System.Windows.Forms.TextBox txt_Nombre_Mascota;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button btn_Registrar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btn_Agregar;
+        private System.Windows.Forms.ComboBox cmb_Veterinario;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
+        private System.Windows.Forms.ComboBox cmb_Sexo;
+        private System.Windows.Forms.TextBox txt_Peso;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox cmb_Especie;
+        private System.Windows.Forms.DateTimePicker dtp_Fecha_Cita;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox gb_Descripcion;
+        private System.Windows.Forms.ComboBox cmb_Edad2;
+        private System.Windows.Forms.TextBox txt_Edad;
     }
 }
