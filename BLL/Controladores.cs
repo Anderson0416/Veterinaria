@@ -110,7 +110,7 @@ namespace BLL
 
                 if (Datousuario == null)
                 {
-                    respuesta = "EL SUARIO NO EXISTE";
+                    respuesta = "EL USUARIO NO EXISTE";
                 }
                 else
                 {

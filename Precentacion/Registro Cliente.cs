@@ -53,5 +53,10 @@ namespace Precentacion
                 MessageBox.Show(ex.Message + " holaaaa");
             }
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

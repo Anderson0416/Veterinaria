@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro_Mascota));
             this.label1 = new System.Windows.Forms.Label();
             this.txt_Codigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,11 +41,10 @@
             this.txt_Peso = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_Edad = new System.Windows.Forms.TextBox();
-            this.txt_Edad2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cmb_Sexo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_cedulacliente = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btn_Consultar = new System.Windows.Forms.Button();
@@ -52,12 +52,15 @@
             this.btn_Registrar_Mascota = new System.Windows.Forms.Button();
             this.txt_Nombre_Cliente = new System.Windows.Forms.TextBox();
             this.txt_Apellido_Cliente = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 192);
+            this.label1.Location = new System.Drawing.Point(45, 228);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 0;
@@ -65,7 +68,7 @@
             // 
             // txt_Codigo
             // 
-            this.txt_Codigo.Location = new System.Drawing.Point(83, 192);
+            this.txt_Codigo.Location = new System.Drawing.Point(91, 221);
             this.txt_Codigo.Name = "txt_Codigo";
             this.txt_Codigo.Size = new System.Drawing.Size(100, 20);
             this.txt_Codigo.TabIndex = 1;
@@ -73,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 254);
+            this.label2.Location = new System.Drawing.Point(44, 277);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 2;
@@ -81,7 +84,7 @@
             // 
             // txt_Nombre_Mascota
             // 
-            this.txt_Nombre_Mascota.Location = new System.Drawing.Point(83, 254);
+            this.txt_Nombre_Mascota.Location = new System.Drawing.Point(94, 274);
             this.txt_Nombre_Mascota.Name = "txt_Nombre_Mascota";
             this.txt_Nombre_Mascota.Size = new System.Drawing.Size(100, 20);
             this.txt_Nombre_Mascota.TabIndex = 3;
@@ -89,7 +92,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(289, 192);
+            this.label3.Location = new System.Drawing.Point(227, 224);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 4;
@@ -97,7 +100,7 @@
             // 
             // txt_Especie
             // 
-            this.txt_Especie.Location = new System.Drawing.Point(341, 184);
+            this.txt_Especie.Location = new System.Drawing.Point(286, 221);
             this.txt_Especie.Name = "txt_Especie";
             this.txt_Especie.Size = new System.Drawing.Size(100, 20);
             this.txt_Especie.TabIndex = 5;
@@ -105,7 +108,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(292, 247);
+            this.label4.Location = new System.Drawing.Point(227, 247);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 6;
@@ -113,15 +116,15 @@
             // 
             // txt_Raza
             // 
-            this.txt_Raza.Location = new System.Drawing.Point(341, 239);
+            this.txt_Raza.Location = new System.Drawing.Point(268, 244);
             this.txt_Raza.Name = "txt_Raza";
-            this.txt_Raza.Size = new System.Drawing.Size(100, 20);
+            this.txt_Raza.Size = new System.Drawing.Size(118, 20);
             this.txt_Raza.TabIndex = 7;
             // 
             // peso
             // 
             this.peso.AutoSize = true;
-            this.peso.Location = new System.Drawing.Point(42, 316);
+            this.peso.Location = new System.Drawing.Point(45, 319);
             this.peso.Name = "peso";
             this.peso.Size = new System.Drawing.Size(31, 13);
             this.peso.TabIndex = 8;
@@ -131,13 +134,13 @@
             // 
             this.txt_Peso.Location = new System.Drawing.Point(83, 316);
             this.txt_Peso.Name = "txt_Peso";
-            this.txt_Peso.Size = new System.Drawing.Size(100, 20);
+            this.txt_Peso.Size = new System.Drawing.Size(111, 20);
             this.txt_Peso.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(45, 373);
+            this.label5.Location = new System.Drawing.Point(44, 376);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 10;
@@ -147,20 +150,13 @@
             // 
             this.txt_Edad.Location = new System.Drawing.Point(84, 373);
             this.txt_Edad.Name = "txt_Edad";
-            this.txt_Edad.Size = new System.Drawing.Size(42, 20);
+            this.txt_Edad.Size = new System.Drawing.Size(32, 20);
             this.txt_Edad.TabIndex = 11;
-            // 
-            // txt_Edad2
-            // 
-            this.txt_Edad2.Location = new System.Drawing.Point(133, 372);
-            this.txt_Edad2.Name = "txt_Edad2";
-            this.txt_Edad2.Size = new System.Drawing.Size(50, 20);
-            this.txt_Edad2.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(48, 448);
+            this.label6.Location = new System.Drawing.Point(45, 430);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 13;
@@ -172,7 +168,7 @@
             this.cmb_Sexo.Items.AddRange(new object[] {
             "Macho",
             "Hembra"});
-            this.cmb_Sexo.Location = new System.Drawing.Point(86, 448);
+            this.cmb_Sexo.Location = new System.Drawing.Point(82, 427);
             this.cmb_Sexo.Name = "cmb_Sexo";
             this.cmb_Sexo.Size = new System.Drawing.Size(121, 21);
             this.cmb_Sexo.TabIndex = 14;
@@ -180,23 +176,23 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(27, 43);
+            this.label7.Location = new System.Drawing.Point(44, 53);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 13);
             this.label7.TabIndex = 15;
             this.label7.Text = "Cedula de cliente";
             // 
-            // textBox1
+            // txt_cedulacliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(135, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(105, 20);
-            this.textBox1.TabIndex = 16;
+            this.txt_cedulacliente.Location = new System.Drawing.Point(139, 50);
+            this.txt_cedulacliente.Name = "txt_cedulacliente";
+            this.txt_cedulacliente.Size = new System.Drawing.Size(100, 20);
+            this.txt_cedulacliente.TabIndex = 16;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(30, 83);
+            this.label8.Location = new System.Drawing.Point(45, 93);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 17;
@@ -205,7 +201,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(33, 116);
+            this.label9.Location = new System.Drawing.Point(45, 123);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 13);
             this.label9.TabIndex = 18;
@@ -213,7 +209,7 @@
             // 
             // btn_Consultar
             // 
-            this.btn_Consultar.Location = new System.Drawing.Point(341, 43);
+            this.btn_Consultar.Location = new System.Drawing.Point(311, 48);
             this.btn_Consultar.Name = "btn_Consultar";
             this.btn_Consultar.Size = new System.Drawing.Size(75, 23);
             this.btn_Consultar.TabIndex = 19;
@@ -223,16 +219,17 @@
             // 
             // btn_Registrar_Cliente
             // 
-            this.btn_Registrar_Cliente.Location = new System.Drawing.Point(341, 83);
+            this.btn_Registrar_Cliente.Location = new System.Drawing.Point(311, 77);
             this.btn_Registrar_Cliente.Name = "btn_Registrar_Cliente";
             this.btn_Registrar_Cliente.Size = new System.Drawing.Size(75, 23);
             this.btn_Registrar_Cliente.TabIndex = 20;
             this.btn_Registrar_Cliente.Text = "Registrar";
             this.btn_Registrar_Cliente.UseVisualStyleBackColor = true;
+            this.btn_Registrar_Cliente.Click += new System.EventHandler(this.btn_Registrar_Cliente_Click);
             // 
             // btn_Registrar_Mascota
             // 
-            this.btn_Registrar_Mascota.Location = new System.Drawing.Point(166, 489);
+            this.btn_Registrar_Mascota.Location = new System.Drawing.Point(268, 397);
             this.btn_Registrar_Mascota.Name = "btn_Registrar_Mascota";
             this.btn_Registrar_Mascota.Size = new System.Drawing.Size(118, 51);
             this.btn_Registrar_Mascota.TabIndex = 21;
@@ -242,23 +239,45 @@
             // 
             // txt_Nombre_Cliente
             // 
-            this.txt_Nombre_Cliente.Location = new System.Drawing.Point(135, 83);
+            this.txt_Nombre_Cliente.Location = new System.Drawing.Point(103, 90);
             this.txt_Nombre_Cliente.Name = "txt_Nombre_Cliente";
-            this.txt_Nombre_Cliente.Size = new System.Drawing.Size(100, 20);
+            this.txt_Nombre_Cliente.Size = new System.Drawing.Size(136, 20);
             this.txt_Nombre_Cliente.TabIndex = 22;
             // 
             // txt_Apellido_Cliente
             // 
-            this.txt_Apellido_Cliente.Location = new System.Drawing.Point(135, 116);
+            this.txt_Apellido_Cliente.Location = new System.Drawing.Point(103, 120);
             this.txt_Apellido_Cliente.Name = "txt_Apellido_Cliente";
-            this.txt_Apellido_Cliente.Size = new System.Drawing.Size(100, 20);
+            this.txt_Apellido_Cliente.Size = new System.Drawing.Size(136, 20);
             this.txt_Apellido_Cliente.TabIndex = 23;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(418, 510);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Macho",
+            "Hembra"});
+            this.comboBox1.Location = new System.Drawing.Point(122, 372);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(72, 21);
+            this.comboBox1.TabIndex = 25;
             // 
             // Registro_Mascota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 573);
+            this.ClientSize = new System.Drawing.Size(413, 510);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txt_Apellido_Cliente);
             this.Controls.Add(this.txt_Nombre_Cliente);
             this.Controls.Add(this.btn_Registrar_Mascota);
@@ -266,11 +285,10 @@
             this.Controls.Add(this.btn_Consultar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_cedulacliente);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cmb_Sexo);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txt_Edad2);
             this.Controls.Add(this.txt_Edad);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_Peso);
@@ -283,8 +301,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_Codigo);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Registro_Mascota";
             this.Text = "Registro_Mascota";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,11 +324,10 @@
         private System.Windows.Forms.TextBox txt_Peso;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_Edad;
-        private System.Windows.Forms.TextBox txt_Edad2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmb_Sexo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_cedulacliente;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_Consultar;
@@ -316,5 +335,7 @@
         private System.Windows.Forms.Button btn_Registrar_Mascota;
         private System.Windows.Forms.TextBox txt_Nombre_Cliente;
         private System.Windows.Forms.TextBox txt_Apellido_Cliente;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

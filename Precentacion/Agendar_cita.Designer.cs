@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agendar_cita));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_Nombre = new System.Windows.Forms.TextBox();
@@ -50,17 +51,19 @@
             this.dtp_Fecha_Cita = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cmb_Edad2 = new System.Windows.Forms.ComboBox();
+            this.txt_Edad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.gb_Descripcion = new System.Windows.Forms.GroupBox();
-            this.txt_Edad = new System.Windows.Forms.TextBox();
-            this.cmb_Edad2 = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.gb_Descripcion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -163,12 +166,13 @@
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.Location = new System.Drawing.Point(622, 33);
+            this.btn_Agregar.Location = new System.Drawing.Point(432, 58);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(151, 40);
             this.btn_Agregar.TabIndex = 20;
             this.btn_Agregar.Text = "Agendar Cita";
             this.btn_Agregar.UseVisualStyleBackColor = true;
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // cmb_Veterinario
             // 
@@ -245,9 +249,9 @@
             this.groupBox1.Controls.Add(this.txt_Telefono);
             this.groupBox1.Controls.Add(this.txt_Nombre);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(38, 33);
+            this.groupBox1.Location = new System.Drawing.Point(16, 58);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(318, 97);
+            this.groupBox1.Size = new System.Drawing.Size(305, 97);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion del paciente ";
@@ -268,13 +272,28 @@
             this.groupBox2.Controls.Add(this.cmb_Sexo);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(39, 157);
+            this.groupBox2.Location = new System.Drawing.Point(16, 198);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(480, 110);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informacion de la mascota";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // cmb_Edad2
+            // 
+            this.cmb_Edad2.FormattingEnabled = true;
+            this.cmb_Edad2.Location = new System.Drawing.Point(128, 80);
+            this.cmb_Edad2.Name = "cmb_Edad2";
+            this.cmb_Edad2.Size = new System.Drawing.Size(74, 21);
+            this.cmb_Edad2.TabIndex = 33;
+            // 
+            // txt_Edad
+            // 
+            this.txt_Edad.Location = new System.Drawing.Point(64, 80);
+            this.txt_Edad.Name = "txt_Edad";
+            this.txt_Edad.Size = new System.Drawing.Size(48, 20);
+            this.txt_Edad.TabIndex = 32;
             // 
             // label1
             // 
@@ -294,7 +313,7 @@
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.cmb_Veterinario);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(39, 298);
+            this.groupBox3.Location = new System.Drawing.Point(16, 339);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(357, 141);
             this.groupBox3.TabIndex = 35;
@@ -303,7 +322,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(625, 79);
+            this.progressBar1.Location = new System.Drawing.Point(432, 104);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(148, 10);
             this.progressBar1.TabIndex = 36;
@@ -312,7 +331,7 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(6, 19);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(331, 116);
+            this.richTextBox1.Size = new System.Drawing.Size(245, 116);
             this.richTextBox1.TabIndex = 37;
             this.richTextBox1.Text = "";
             // 
@@ -320,39 +339,35 @@
             // 
             this.gb_Descripcion.Controls.Add(this.richTextBox1);
             this.gb_Descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_Descripcion.Location = new System.Drawing.Point(436, 298);
+            this.gb_Descripcion.Location = new System.Drawing.Point(379, 339);
             this.gb_Descripcion.Name = "gb_Descripcion";
-            this.gb_Descripcion.Size = new System.Drawing.Size(343, 141);
+            this.gb_Descripcion.Size = new System.Drawing.Size(261, 141);
             this.gb_Descripcion.TabIndex = 38;
             this.gb_Descripcion.TabStop = false;
             this.gb_Descripcion.Text = "Descripcion de la mascota ";
             // 
-            // txt_Edad
+            // pictureBox1
             // 
-            this.txt_Edad.Location = new System.Drawing.Point(64, 80);
-            this.txt_Edad.Name = "txt_Edad";
-            this.txt_Edad.Size = new System.Drawing.Size(48, 20);
-            this.txt_Edad.TabIndex = 32;
-            // 
-            // cmb_Edad2
-            // 
-            this.cmb_Edad2.FormattingEnabled = true;
-            this.cmb_Edad2.Location = new System.Drawing.Point(128, 80);
-            this.cmb_Edad2.Name = "cmb_Edad2";
-            this.cmb_Edad2.Size = new System.Drawing.Size(74, 21);
-            this.cmb_Edad2.TabIndex = 33;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(652, 532);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
             // 
             // Agendar_cita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 459);
+            this.ClientSize = new System.Drawing.Size(649, 527);
             this.Controls.Add(this.gb_Descripcion);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_Agregar);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Agendar_cita";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Agendar_cita_Load);
@@ -363,6 +378,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.gb_Descripcion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -397,5 +413,6 @@
         private System.Windows.Forms.GroupBox gb_Descripcion;
         private System.Windows.Forms.ComboBox cmb_Edad2;
         private System.Windows.Forms.TextBox txt_Edad;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

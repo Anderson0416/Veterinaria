@@ -99,6 +99,31 @@ namespace DAL
                 return false;
             }
         }
+        public bool existeciacliente(string Cedula)
+        {
+            MySqlDataReader reader;
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+
+            string sql = "SELECT ID FROM cliente where Cedula like @Cedula";
+
+            MySqlCommand comando = new MySqlCommand(sql, conectar); ;
+            comando.Parameters.AddWithValue("@Cedula", Cedula);
+
+            reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
+
+        }
         public Persona ConsultaUsuario(string Nombre)
         {
             MySqlDataReader reader;
@@ -122,5 +147,6 @@ namespace DAL
             }
             return usuarios;
         }
+
     }
 }

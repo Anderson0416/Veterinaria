@@ -141,3 +141,5 @@ C:\Users\RYZEN\Desktop\c#\Veterinaria\Veterinaria\Precentacion\bin\Debug\System.
 C:\Users\RYZEN\Desktop\c#\Veterinaria\Veterinaria\Precentacion\obj\Debug\Precenta.52C0AE40.Up2Date
 C:\Users\RYZEN\Desktop\c#\Veterinaria\Veterinaria\Precentacion\obj\Debug\Precentacion.Registro_Cliente.resources
 C:\Users\RYZEN\Desktop\c#\Veterinaria\Veterinaria\Precentacion\obj\Debug\Precentacion.Registro_Mascota.resources
+C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Registro_Cliente.resources
+C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Registro_Mascota.resources

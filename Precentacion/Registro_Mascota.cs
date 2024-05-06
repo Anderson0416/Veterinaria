@@ -1,4 +1,5 @@
 ﻿using BLL;
+using DAL;
 using Entity;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,14 @@ namespace Precentacion
 
         private void btn_Consultar_Click(object sender, EventArgs e)
         {
+            String Cedula = txt_cedulacliente.Text;
+            Registrar_Datos registrar_datos = new Registrar_Datos();
 
+            if (Cedula.Equals(registrar_datos.existeciaCedula(Cedula)))
+                { 
+                MessageBox.Show("cualquier vaina");
+                }
+            
         }
 
         private void btn_Registrar_Mascota_Click(object sender, EventArgs e)
@@ -58,6 +66,11 @@ namespace Precentacion
             {
                 MessageBox.Show(ex.Message + " holaaaa");
             }
+        }
+
+        private void btn_Registrar_Cliente_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

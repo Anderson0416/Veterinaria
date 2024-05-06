@@ -23,7 +23,7 @@ namespace DAL
             this.Servidor = "localhost";
             this.Puerto = "3306";
             this.Usuario = "root";
-            this.Clave = "123456";
+            this.Clave = "sanlas92sql";
         }
         public MySqlConnection crearConexion()
         {

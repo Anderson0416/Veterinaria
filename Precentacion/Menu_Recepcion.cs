@@ -47,5 +47,10 @@ namespace Precentacion
             registro_mascota.Visible = true;
             this.Visible = false;
         }
+
+        private void Menu_Recepcio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
