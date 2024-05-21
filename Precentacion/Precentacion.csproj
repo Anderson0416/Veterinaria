@@ -81,6 +81,12 @@
     <Compile Include="Registrar_Usuario.Designer.cs">
       <DependentUpon>Registrar_Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registrar_Veterinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar_Veterinario.Designer.cs">
+      <DependentUpon>Registrar_Veterinario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registro Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registrar_Usuario.resx">
       <DependentUpon>Registrar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar_Veterinario.resx">
+      <DependentUpon>Registrar_Veterinario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registro Cliente.resx">
       <DependentUpon>Registro Cliente.cs</DependentUpon>

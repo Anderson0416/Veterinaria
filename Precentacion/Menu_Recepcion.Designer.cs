@@ -48,6 +48,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Registrar Medico";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button6
             // 
@@ -129,6 +130,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Menu_Recepcio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_Recepcio";
             this.Load += new System.EventHandler(this.Menu_Recepcio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -17,7 +17,7 @@ namespace Veterinaria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Registro_Mascota());
+            Application.Run(new Login());
         }
     }
 }

@@ -84,6 +84,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Consultar_cita";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar_cita";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

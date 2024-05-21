@@ -52,5 +52,12 @@ namespace Precentacion
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Registrar_Veterinario registro_veterinario = new Registrar_Veterinario();
+            registro_veterinario.Visible = true;
+            this.Visible = false;
+        }
     }
 }

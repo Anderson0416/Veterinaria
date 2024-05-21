@@ -22,14 +22,21 @@ namespace Precentacion
 
         private void btn_Consultar_Click(object sender, EventArgs e)
         {
-            String Cedula = txt_cedulacliente.Text;
-            Registrar_Datos registrar_datos = new Registrar_Datos();
-
-            if (Cedula.Equals(registrar_datos.existeciaCedula(Cedula)))
-                { 
-                MessageBox.Show("cualquier vaina");
-                }
+            Registrar_Datos registrar_Datos = new Registrar_Datos();
+            Cliente cliente = new Cliente();
             
+            string cedula = txt_cedulacliente.Text;
+            cliente = registrar_Datos.existeciaCliente(cedula);
+            if(cliente != null)
+            {
+                txt_Nombre_Cliente.Text = cliente.nombre;
+                txt_Apellido_Cliente.Text = cliente.apellido;
+            }
+            else
+            {
+                MessageBox.Show("el usuario no a sido registrado, en el boton resgistrar lo puede hacer");
+            }
+
         }
 
         private void btn_Registrar_Mascota_Click(object sender, EventArgs e)
@@ -43,7 +50,7 @@ namespace Precentacion
             mascota.raza = txt_Raza.Text;
             mascota.Peso = txt_Peso.Text;
             mascota.edad = txt_Edad.Text;
-            mascota.edad2 = txt_Edad2.Text;
+            mascota.edad2 = cmb_Edad2.Text.ToString();
             mascota.sexo = cmb_Sexo.SelectedIndex.ToString();
               
             try
@@ -70,7 +77,9 @@ namespace Precentacion
 
         private void btn_Registrar_Cliente_Click(object sender, EventArgs e)
         {
-
+            Registro_Cliente registro_cliente = new Registro_Cliente();
+            registro_cliente.Visible = true;
+            this.Visible = false ;
         }
     }
 }

@@ -53,7 +53,7 @@
             this.txt_Nombre_Cliente = new System.Windows.Forms.TextBox();
             this.txt_Apellido_Cliente = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmb_Edad2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -261,23 +261,23 @@
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
-            // comboBox1
+            // cmb_Edad2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmb_Edad2.FormattingEnabled = true;
+            this.cmb_Edad2.Items.AddRange(new object[] {
             "Macho",
             "Hembra"});
-            this.comboBox1.Location = new System.Drawing.Point(122, 372);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(72, 21);
-            this.comboBox1.TabIndex = 25;
+            this.cmb_Edad2.Location = new System.Drawing.Point(122, 372);
+            this.cmb_Edad2.Name = "cmb_Edad2";
+            this.cmb_Edad2.Size = new System.Drawing.Size(72, 21);
+            this.cmb_Edad2.TabIndex = 25;
             // 
             // Registro_Mascota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(413, 510);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmb_Edad2);
             this.Controls.Add(this.txt_Apellido_Cliente);
             this.Controls.Add(this.txt_Nombre_Cliente);
             this.Controls.Add(this.btn_Registrar_Mascota);
@@ -303,6 +303,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Registro_Mascota";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro_Mascota";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -336,6 +337,6 @@
         private System.Windows.Forms.TextBox txt_Nombre_Cliente;
         private System.Windows.Forms.TextBox txt_Apellido_Cliente;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmb_Edad2;
     }
 }

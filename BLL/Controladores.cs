@@ -69,6 +69,32 @@ namespace BLL
             }
             return respuesta;
         }
+        public string control_Registro_Veterinario(Veterinario veterinario)
+        {
+
+            string respuesta = "";
+
+            if (string.IsNullOrEmpty(veterinario.Cedula) || string.IsNullOrEmpty(veterinario.apellido) ||
+                string.IsNullOrEmpty(veterinario.tipo_documento) || string.IsNullOrEmpty(veterinario.Cedula) ||
+                string.IsNullOrEmpty(veterinario.nombre) || string.IsNullOrEmpty(veterinario.telefono) || string.IsNullOrEmpty(veterinario.fecha_nacimiento) ||
+                string.IsNullOrEmpty(veterinario.fecha_contrato))
+            {
+                respuesta = "DEBE LLENAR TODOS LOS DATOS";
+            }
+            else
+            {
+
+                if (registro.existeciaCedula(veterinario.Cedula))
+                {
+                    respuesta = "EL USUARIO YA EXISTE";
+                }
+                else
+                {
+                    registro.Registrar_Veterinario(veterinario);
+                }
+            }
+            return respuesta;
+        }
         public string control_Registro_Mascota(Mascota mascota)
         {
 
@@ -143,5 +169,6 @@ namespace BLL
             }
             return sb.ToString();
         }
+        
     }
 }
