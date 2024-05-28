@@ -21,16 +21,12 @@ namespace Precentacion
 
         private void btn_Registrar_Click(object sender, EventArgs e)
         {
-            Persona usuario = new Persona();
+            Usuarios usuario = new Usuarios();
 
-            usuario.Cedula = txt_Numero_Documento.Text;
-            usuario.tipo_documento = cmb_Tipo_Documento.Text.ToString();
-            usuario.nombre = txt_Nombre.Text;
-            usuario.apellido = txt_Apellido.Text;
-            usuario.sexo = cmb_Sexo.SelectedIndex.ToString();
-            usuario.fecha_nacimiento = dtp_Fecha.Text;
-            usuario.password = txt_Contraseña.Text;
-            usuario.conpassword = txt_Confirmar_Contraseña.Text;
+           
+            usuario.Nombre = txt_Nombre.Text;
+            usuario.Contraseña = txt_Contraseña.Text;
+            usuario.Confirmar_Contraseña = txt_Confirmar_Contraseña.Text;
 
             try
             {

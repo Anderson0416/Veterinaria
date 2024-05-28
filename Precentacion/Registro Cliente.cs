@@ -23,7 +23,7 @@ namespace Precentacion
         {
             Cliente cliente = new Cliente();
 
-            cliente.Cedula = txt_Numero_Documento.Text;
+            cliente.documento = txt_Numero_Documento.Text;
             cliente.tipo_documento = cmb_Tipo_Documento.Text.ToString();
             cliente.nombre = txt_Nombre.Text;
             cliente.apellido = txt_Apellido.Text;

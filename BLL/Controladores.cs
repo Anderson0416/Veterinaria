@@ -12,28 +12,27 @@ namespace BLL
     public class Controladores
     {
         Registrar_Datos registro = new Registrar_Datos();
-        public string control_Registro(Persona usuario)
+        public string control_Registro(Usuarios usuario)
         {
 
             string respuesta = "";
 
-            if (string.IsNullOrEmpty(usuario.Cedula) || string.IsNullOrEmpty(usuario.password) ||
-                string.IsNullOrEmpty(usuario.conpassword) || string.IsNullOrEmpty(usuario.nombre) ||
-                string.IsNullOrEmpty(usuario.sexo))
+            if (string.IsNullOrEmpty(usuario.Contraseña) ||
+                string.IsNullOrEmpty(usuario.Confirmar_Contraseña) || string.IsNullOrEmpty(usuario.Nombre))
             {
                 respuesta = "DEBE LLENAR TODOS LOS DATOS";
             }
             else
             {
-                if (usuario.password == usuario.conpassword)
+                if (usuario.Contraseña == usuario.Confirmar_Contraseña)
                 {
-                    if (registro.existeciaCedula(usuario.Cedula))
+                    if (registro.existeciaUsuario(usuario.Nombre))
                     {
                         respuesta = "EL USUARIO YA EXISTE";
                     }
                     else
                     {
-                        usuario.password = generarSHA1(usuario.password);
+                        usuario.Contraseña = generarSHA1(usuario.Contraseña);
                         registro.Registrar_Usuario(usuario);
                     }
                 }
@@ -49,8 +48,8 @@ namespace BLL
 
             string respuesta = "";
 
-            if (string.IsNullOrEmpty(cliente.Cedula) || string.IsNullOrEmpty(cliente.apellido) ||
-                string.IsNullOrEmpty(cliente.tipo_documento) || string.IsNullOrEmpty(cliente.Cedula) ||
+            if (string.IsNullOrEmpty(cliente.documento) || string.IsNullOrEmpty(cliente.apellido) ||
+                string.IsNullOrEmpty(cliente.tipo_documento) || string.IsNullOrEmpty(cliente.documento) ||
                 string.IsNullOrEmpty(cliente.nombre) || string.IsNullOrEmpty(cliente.telefono) || string.IsNullOrEmpty(cliente.fecha_nacimiento))
             {
                 respuesta = "DEBE LLENAR TODOS LOS DATOS";
@@ -58,7 +57,7 @@ namespace BLL
             else
             {
 
-                if (registro.existeciaCedula(cliente.Cedula))
+                if (registro.control_CLiente(cliente.documento))
                 {
                     respuesta = "EL USUARIO YA EXISTE";
                 }
@@ -74,8 +73,8 @@ namespace BLL
 
             string respuesta = "";
 
-            if (string.IsNullOrEmpty(veterinario.Cedula) || string.IsNullOrEmpty(veterinario.apellido) ||
-                string.IsNullOrEmpty(veterinario.tipo_documento) || string.IsNullOrEmpty(veterinario.Cedula) ||
+            if (string.IsNullOrEmpty(veterinario.documento) || string.IsNullOrEmpty(veterinario.apellido) ||
+                string.IsNullOrEmpty(veterinario.tipo_documento) || string.IsNullOrEmpty(veterinario.sexo) ||
                 string.IsNullOrEmpty(veterinario.nombre) || string.IsNullOrEmpty(veterinario.telefono) || string.IsNullOrEmpty(veterinario.fecha_nacimiento) ||
                 string.IsNullOrEmpty(veterinario.fecha_contrato))
             {
@@ -84,7 +83,7 @@ namespace BLL
             else
             {
 
-                if (registro.existeciaCedula(veterinario.Cedula))
+                if (registro.control_Veterinario(veterinario.documento))
                 {
                     respuesta = "EL USUARIO YA EXISTE";
                 }
@@ -100,23 +99,22 @@ namespace BLL
 
             string respuesta = "";
 
-            if (string.IsNullOrEmpty(mascota.Codigo) || string.IsNullOrEmpty(mascota.nombre_mascota) ||
-                string.IsNullOrEmpty(mascota.sexo) || string.IsNullOrEmpty(mascota.especie) ||
-                string.IsNullOrEmpty(mascota.raza))
+            if (string.IsNullOrEmpty(mascota.nombre_mascota) || string.IsNullOrEmpty(mascota.sexo) ||
+                string.IsNullOrEmpty(mascota.especie) || string.IsNullOrEmpty(mascota.raza))
             {
                 respuesta = "DEBE LLENAR TODOS LOS DATOS";
             }
             else
             {
-
-                if (registro.existeciaCedula(mascota.Codigo))
+                if (!registro.control_CLiente(mascota.cliente_documento))
                 {
-                    respuesta = "EL USUARIO YA EXISTE";
+                    respuesta = "EL USUARIO NO EXISTE";
                 }
                 else
                 {
                     registro.Registrar_Mascota(mascota);
                 }
+                
             }
             return respuesta;
         }
@@ -124,7 +122,7 @@ namespace BLL
         {
             Registrar_Datos registro_datos = new Registrar_Datos();
             string respuesta = "";
-            Persona Datousuario = null;
+            Usuarios Datousuario = null;
 
             if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(password))
             {
@@ -140,7 +138,7 @@ namespace BLL
                 }
                 else
                 {
-                    if (Datousuario.password != generarSHA1(password))
+                    if (Datousuario.Contraseña != generarSHA1(password))
                     {
                         respuesta = "EL USUARIO O LA CONTRASEÑA NO COINCIDEN";
                     }

@@ -12,23 +12,18 @@ namespace DAL
     public class Registrar_Datos
     {
         Conexion conexion = new Conexion();
-        public int Registrar_Usuario(Persona usuario)
+        public int Registrar_Usuario(Usuarios usuario)
         {
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "INSERT INTO usuarios ( Cedula, Nombre, Apellido, Sexo, Fecha_Nacimiento, Password, id_tipo,Tipo_Documento)" +
-                         "VALUES ( @Cedula, @Nombre, @Apellido, @Sexo, @Fecha_Nacimiento, @Password, @id_tipo, @Tipo_Documento)";
+            string sql = "INSERT INTO usuarios ( Nombre, Contraseña)" +
+                         "VALUES ( @Nombre, @Contraseña)";
             MySqlCommand comando = new MySqlCommand(sql, conectar);
 
-            comando.Parameters.AddWithValue("@Cedula", usuario.Cedula);
-            comando.Parameters.AddWithValue("@Tipo_Documento", usuario.tipo_documento);
-            comando.Parameters.AddWithValue("@Nombre", usuario.nombre);
-            comando.Parameters.AddWithValue("@Apellido", usuario.apellido);
-            comando.Parameters.AddWithValue("@Sexo", usuario.sexo);
-            comando.Parameters.AddWithValue("@Fecha_Nacimiento", usuario.fecha_nacimiento);
-            comando.Parameters.AddWithValue("@Password", usuario.password);
-            comando.Parameters.AddWithValue("@id_tipo", 1);
+            comando.Parameters.AddWithValue("@Nombre", usuario.Nombre);
+            comando.Parameters.AddWithValue("@Contraseña", usuario.Contraseña);
+            
             
             int resultado = comando.ExecuteNonQuery();
 
@@ -39,14 +34,14 @@ namespace DAL
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "INSERT INTO cliente ( Nombre, Apellido, Tipo_Documento, Documento, Sexo, Fecha_Nacimiento, Telefono )" +
+            string sql = "INSERT INTO Clientes ( Nombre, Apellido, Tipo_Documento, Documento, Sexo, Fecha_Nacimiento, Telefono )" +
                          "VALUES ( @Nombre, @Apellido, @Tipo_Documento, @Documento, @Sexo, @Fecha_Nacimiento, @Telefono)";
             MySqlCommand comando = new MySqlCommand(sql, conectar);
 
             comando.Parameters.AddWithValue("@Nombre", cliente.nombre);
             comando.Parameters.AddWithValue("@Apellido", cliente.apellido);
             comando.Parameters.AddWithValue("@Tipo_Documento", cliente.tipo_documento);
-            comando.Parameters.AddWithValue("@Documento", cliente.Cedula);
+            comando.Parameters.AddWithValue("@Documento", cliente.documento);
             comando.Parameters.AddWithValue("@Sexo", cliente.sexo);
             comando.Parameters.AddWithValue("@Fecha_Nacimiento", cliente.fecha_nacimiento);
             comando.Parameters.AddWithValue("@Telefono", cliente.telefono);
@@ -57,40 +52,41 @@ namespace DAL
         }
         public int Registrar_Mascota(Mascota mascota)
         {
-            MySqlConnection conectar = conexion.crearConexion();
-            conectar.Open();
+            
+            using (var conectar = conexion.crearConexion())
+            {
+                conectar.Open();
 
-            string sql = "INSERT INTO mascota ( Codigo, Nombre, Especie, Raza, Peso, Sexo, Edad, Edad2,Codigo_Cliente )" +
-                         "VALUES ( @Codigo, @Nombre, @Especie, @Raza, @Peso, @Sexo, @Edad, @Edad2, @cliente_id)";
-            MySqlCommand comando = new MySqlCommand(sql, conectar);
+                string sql = "INSERT INTO Mascotas (Nombre, Especie, Raza, Sexo, Edad, Edad2, Cliente_Documento) " +
+                             "VALUES (@Nombre, @Especie, @Raza, @Sexo, @Edad, @Edad2, @Cliente_Documento)";
+                MySqlCommand comando = new MySqlCommand(sql, conectar);
 
-            comando.Parameters.AddWithValue("@Codigo", mascota.Codigo);
-            comando.Parameters.AddWithValue("@Nombre", mascota.nombre_mascota);
-            comando.Parameters.AddWithValue("@Especie", mascota.especie);
-            comando.Parameters.AddWithValue("@Raza", mascota.raza);
-            comando.Parameters.AddWithValue("@Peso", mascota.Peso);
-            comando.Parameters.AddWithValue("@Sexo", mascota.sexo);
-            comando.Parameters.AddWithValue("@Edad", mascota.edad);
-            comando.Parameters.AddWithValue("@Edad2", mascota.edad2);
-            comando.Parameters.AddWithValue("@cliente_id", mascota.codigo_cliente);
+                comando.Parameters.AddWithValue("@Nombre", mascota.nombre_mascota);
+                comando.Parameters.AddWithValue("@Especie", mascota.especie);
+                comando.Parameters.AddWithValue("@Raza", mascota.raza);
+                comando.Parameters.AddWithValue("@Sexo", mascota.sexo);
+                comando.Parameters.AddWithValue("@Edad", mascota.edad);
+                comando.Parameters.AddWithValue("@Edad2", mascota.edad2);
+                comando.Parameters.AddWithValue("@Cliente_Documento",mascota.cliente_documento);
 
-            int resultado = comando.ExecuteNonQuery();
+                int resultado = comando.ExecuteNonQuery();
 
-            return resultado;
+                return resultado;
+            }
         }
         public int Registrar_Veterinario(Veterinario veterinario)
         {
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "INSERT INTO cliente ( Nombre, Apellido, Tipo_Documento, Documento, Sexo, Fecha_Nacimiento, Telefono, Fecha_Contrato )" +
+            string sql = "INSERT INTO Veterinarios ( Nombre, Apellido, Tipo_Documento, Documento, Sexo, Fecha_Nacimiento, Telefono, Fecha_Contrato )" +
                          "VALUES ( @Nombre, @Apellido, @Tipo_Documento, @Documento, @Sexo, @Fecha_Nacimiento, @Telefono, Fecha_Contrato )";
             MySqlCommand comando = new MySqlCommand(sql, conectar);
 
             comando.Parameters.AddWithValue("@Nombre", veterinario.nombre);
             comando.Parameters.AddWithValue("@Apellido", veterinario.apellido);
             comando.Parameters.AddWithValue("@Tipo_Documento", veterinario.tipo_documento);
-            comando.Parameters.AddWithValue("@Documento", veterinario.Cedula);
+            comando.Parameters.AddWithValue("@Documento", veterinario.documento);
             comando.Parameters.AddWithValue("@Sexo", veterinario.sexo);
             comando.Parameters.AddWithValue("@Fecha_Nacimiento", veterinario.fecha_nacimiento);
             comando.Parameters.AddWithValue("@Telefono", veterinario.telefono);
@@ -100,16 +96,17 @@ namespace DAL
 
             return resultado;
         }
-        public bool existeciaCedula(string Cedula)
+        /********************************************************************************/
+        public bool existeciaUsuario(string nombre)
         {
             MySqlDataReader reader;
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "SELECT ID FROM usuarios where Cedula like @Cedula";
+            string sql = "SELECT ID FROM Usuarios where Nombre like @Nombre";
 
             MySqlCommand comando = new MySqlCommand(sql, conectar); ;
-            comando.Parameters.AddWithValue("@Cedula", Cedula);
+            comando.Parameters.AddWithValue("@Nombre", nombre);
 
             reader = comando.ExecuteReader();
 
@@ -122,6 +119,51 @@ namespace DAL
                 return false;
             }
         }
+        public bool control_Veterinario(string documento)
+        {
+            MySqlDataReader reader;
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+
+            string sql = "SELECT ID FROM Veterinarios where Documento like @Documento";
+
+            MySqlCommand comando = new MySqlCommand(sql, conectar); ;
+            comando.Parameters.AddWithValue("@Documento", documento);
+
+            reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool control_CLiente(string documento)
+        {
+            MySqlDataReader reader;
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+
+            string sql = "SELECT ID FROM Clientes where Documento like @Documento";
+
+            MySqlCommand comando = new MySqlCommand(sql, conectar); ;
+            comando.Parameters.AddWithValue("@Documento", documento);
+
+            reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public Cliente existeciaCliente(string Cedula)
         {
             Cliente cliente = new Cliente();
@@ -129,9 +171,9 @@ namespace DAL
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "SELECT Nombre, Apellido FROM cliente where Documento like @Documento";
+            string sql = "SELECT Nombre, Apellido FROM Clientes where Documento like @Documento";
 
-            MySqlCommand comando = new MySqlCommand(sql, conectar); ;
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
             comando.Parameters.AddWithValue("@Documento", Cedula);
 
             reader = comando.ExecuteReader();
@@ -147,33 +189,85 @@ namespace DAL
             }
             else
             {
-                return null;
+                return cliente;
             }
         }
 
-        public Persona ConsultaUsuario(string Nombre)
+        public Usuarios ConsultaUsuario(string Nombre)
         {
             MySqlDataReader reader;
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "SELECT ID, Password, Nombre, id_tipo FROM usuarios where Nombre like @Nombre";
+            string sql = "SELECT ID, Contraseña, Nombre FROM Usuarios where Nombre like @Nombre";
 
             MySqlCommand comando = new MySqlCommand(sql, conectar); ;
             comando.Parameters.AddWithValue("@Nombre", Nombre);
             reader = comando.ExecuteReader();
 
-            Persona usuarios = null;
+            Usuarios usuarios = null;
             while (reader.Read())
             {
-                usuarios = new Persona();
-                usuarios.id = int.Parse(reader["id"].ToString());
-                usuarios.password = reader["Password"].ToString();
-                usuarios.nombre = reader["Nombre"].ToString();
-                usuarios.id_tipo = int.Parse(reader["id_tipo"].ToString());
+                usuarios = new Usuarios();
+
+                usuarios.Nombre = reader["Nombre"].ToString();
+                usuarios.Contraseña = reader["Contraseña"].ToString();
             }
             return usuarios;
         }
 
+
+        public List<Cliente> Obtener_Clientes_Mascotas()
+        {
+            var clientes = new List<Cliente>();
+
+            using (var conectar = conexion.crearConexion())
+            {
+                conectar.Open();
+                var command = new MySqlCommand("SELECT c.Nombre, c.Apellido, c.Tipo_Documento, c.Documento, c.Sexo, c.Fecha_Nacimiento, c.Telefono" +
+                    " m.Nombre AS MascotaNombre, m.Especie, m.Raza, m.Sexo, m.Edad, m.Edad2" +
+                    " FROM Clientes c LEFT JOIN Mascotas m ON c.Documento = m.Cliente_Documento", conectar);
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var Documento = reader.GetString("Documento");
+                        var cliente = clientes.FirstOrDefault(c => c.documento == Documento);
+
+                        if (cliente == null)
+                        {
+                            cliente = new Cliente
+                            {
+                                nombre = reader.GetString("Nombre"),
+                                apellido = reader.GetString("Apellido"),
+                                tipo_documento = reader.GetString("Tipo_Documento"),
+                                documento = reader.GetString("Documento"),
+                                sexo = reader.GetString("Sexo"),
+                                fecha_nacimiento = reader.GetString("Fecha_Nacimiento"),
+                                telefono = reader.GetString("Telefono"),
+                            };
+                            clientes.Add(cliente);
+                        }
+
+                        if (!reader.IsDBNull(reader.GetOrdinal("MascotaID")))
+                        {
+                            cliente.lista_mascotas.Add(new Mascota
+                            {
+
+                                nombre_mascota = reader.GetString("MascotaNombre"),
+                                especie = reader.GetString("Especie"),
+                                raza = reader.GetString("Raza"),
+                                sexo = reader.GetString("Sexo"),
+                                edad = reader.GetString("Edad"),
+                                edad2 = reader.GetString("Edad2"),
+                                cliente_documento = Documento
+                            });
+                        }
+                    }
+                }
+            }
+
+            return clientes;
+        }
     }
 }

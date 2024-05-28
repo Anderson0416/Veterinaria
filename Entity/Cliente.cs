@@ -8,12 +8,8 @@ namespace Entity
 {
     public class Cliente : Persona
     {
-      public List<Mascota> lista_mascotas {get; set;}
+      public List<Mascota> lista_mascotas {get; set;} = new List<Mascota>();
        
-        public Cliente()
-        {
-            lista_mascotas = new List<Mascota>();
-        }
 
         public void Agragar_Mascota (Mascota mascota)
         {

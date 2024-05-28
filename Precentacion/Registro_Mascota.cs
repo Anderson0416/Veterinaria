@@ -44,18 +44,19 @@ namespace Precentacion
             Mascota mascota = new Mascota();
             Cliente cliente = new Cliente();
             
-            mascota.Codigo = txt_Codigo.Text;
+           
             mascota.nombre_mascota = txt_Nombre_Mascota.Text;
             mascota.especie = txt_Especie.Text;
             mascota.raza = txt_Raza.Text;
-            mascota.Peso = txt_Peso.Text;
             mascota.edad = txt_Edad.Text;
             mascota.edad2 = cmb_Edad2.Text.ToString();
             mascota.sexo = cmb_Sexo.SelectedIndex.ToString();
+            mascota.cliente_documento = txt_cedulacliente.Text;
               
             try
             {
                 Controladores control = new Controladores();
+                Registrar_Datos registrar_Datos = new Registrar_Datos();
                 string respuesta = control.control_Registro_Mascota(mascota);
                 if (respuesta.Length > 0)
                 {

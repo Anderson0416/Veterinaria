@@ -29,16 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro_Mascota));
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_Codigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_Nombre_Mascota = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_Especie = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_Raza = new System.Windows.Forms.TextBox();
-            this.peso = new System.Windows.Forms.Label();
-            this.txt_Peso = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_Edad = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -57,26 +53,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 228);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Codigo";
-            // 
-            // txt_Codigo
-            // 
-            this.txt_Codigo.Location = new System.Drawing.Point(91, 221);
-            this.txt_Codigo.Name = "txt_Codigo";
-            this.txt_Codigo.Size = new System.Drawing.Size(100, 20);
-            this.txt_Codigo.TabIndex = 1;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 277);
+            this.label2.Location = new System.Drawing.Point(44, 221);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 2;
@@ -84,15 +64,15 @@
             // 
             // txt_Nombre_Mascota
             // 
-            this.txt_Nombre_Mascota.Location = new System.Drawing.Point(94, 274);
+            this.txt_Nombre_Mascota.Location = new System.Drawing.Point(103, 218);
             this.txt_Nombre_Mascota.Name = "txt_Nombre_Mascota";
-            this.txt_Nombre_Mascota.Size = new System.Drawing.Size(100, 20);
+            this.txt_Nombre_Mascota.Size = new System.Drawing.Size(118, 20);
             this.txt_Nombre_Mascota.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(227, 224);
+            this.label3.Location = new System.Drawing.Point(44, 266);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 4;
@@ -100,7 +80,7 @@
             // 
             // txt_Especie
             // 
-            this.txt_Especie.Location = new System.Drawing.Point(286, 221);
+            this.txt_Especie.Location = new System.Drawing.Point(103, 263);
             this.txt_Especie.Name = "txt_Especie";
             this.txt_Especie.Size = new System.Drawing.Size(100, 20);
             this.txt_Especie.TabIndex = 5;
@@ -108,7 +88,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(227, 247);
+            this.label4.Location = new System.Drawing.Point(45, 304);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 6;
@@ -116,26 +96,10 @@
             // 
             // txt_Raza
             // 
-            this.txt_Raza.Location = new System.Drawing.Point(268, 244);
+            this.txt_Raza.Location = new System.Drawing.Point(103, 301);
             this.txt_Raza.Name = "txt_Raza";
             this.txt_Raza.Size = new System.Drawing.Size(118, 20);
             this.txt_Raza.TabIndex = 7;
-            // 
-            // peso
-            // 
-            this.peso.AutoSize = true;
-            this.peso.Location = new System.Drawing.Point(45, 319);
-            this.peso.Name = "peso";
-            this.peso.Size = new System.Drawing.Size(31, 13);
-            this.peso.TabIndex = 8;
-            this.peso.Text = "Peso";
-            // 
-            // txt_Peso
-            // 
-            this.txt_Peso.Location = new System.Drawing.Point(83, 316);
-            this.txt_Peso.Name = "txt_Peso";
-            this.txt_Peso.Size = new System.Drawing.Size(111, 20);
-            this.txt_Peso.TabIndex = 9;
             // 
             // label5
             // 
@@ -291,16 +255,12 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_Edad);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txt_Peso);
-            this.Controls.Add(this.peso);
             this.Controls.Add(this.txt_Raza);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_Especie);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_Nombre_Mascota);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_Codigo);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Registro_Mascota";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -312,17 +272,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_Codigo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_Nombre_Mascota;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_Especie;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_Raza;
-        private System.Windows.Forms.Label peso;
-        private System.Windows.Forms.TextBox txt_Peso;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_Edad;
         private System.Windows.Forms.Label label6;

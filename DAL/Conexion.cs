@@ -19,7 +19,7 @@ namespace DAL
 
         public Conexion()
         {
-            this.Base = "agenda_peluda";
+            this.Base = "Veterinaria";
             this.Servidor = "localhost";
             this.Puerto = "3306";
             this.Usuario = "root";
