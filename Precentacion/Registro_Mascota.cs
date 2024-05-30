@@ -22,11 +22,11 @@ namespace Precentacion
 
         private void btn_Consultar_Click(object sender, EventArgs e)
         {
-            Registrar_Datos registrar_Datos = new Registrar_Datos();
+            Cliente_Repositorio cliente_repositorio = new Cliente_Repositorio();
             Cliente cliente = new Cliente();
             
             string cedula = txt_cedulacliente.Text;
-            cliente = registrar_Datos.existeciaCliente(cedula);
+            cliente = cliente_repositorio.Consulta_Documento_Cliente(cedula);
             if(cliente != null)
             {
                 txt_Nombre_Cliente.Text = cliente.nombre;
@@ -42,7 +42,6 @@ namespace Precentacion
         private void btn_Registrar_Mascota_Click(object sender, EventArgs e)
         {
             Mascota mascota = new Mascota();
-            Cliente cliente = new Cliente();
             
            
             mascota.nombre_mascota = txt_Nombre_Mascota.Text;
@@ -56,8 +55,7 @@ namespace Precentacion
             try
             {
                 Controladores control = new Controladores();
-                Registrar_Datos registrar_Datos = new Registrar_Datos();
-                string respuesta = control.control_Registro_Mascota(mascota);
+                string respuesta = control.Validacion_Mascota(mascota);
                 if (respuesta.Length > 0)
                 {
                     MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);

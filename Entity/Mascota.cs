@@ -9,6 +9,7 @@ namespace Entity
 {
     public class Mascota
     {
+        public int id { get; set; }
         public string nombre_mascota { get; set; }
         public string especie { get; set; }
         public string raza { get; set; }

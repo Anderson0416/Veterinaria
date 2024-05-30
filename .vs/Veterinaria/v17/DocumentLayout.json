@@ -3,38 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|c:\\users\\ryzen\\desktop\\c#\\veterinaria_2\\veterinaria\\dal\\registrar_datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|solutionrelative:dal\\registrar_datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|c:\\users\\ryzen\\desktop\\c#\\veterinaria_2\\veterinaria\\precentacion\\agendar_cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|solutionrelative:precentacion\\agendar_cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|c:\\users\\ryzen\\desktop\\c#\\veterinaria_2\\veterinaria\\precentacion\\registro_mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|solutionrelative:precentacion\\registro_mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\precentacion\\agendar_cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|solutionrelative:precentacion\\agendar_cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0943FFB9-4C1C-4894-B43A-93CD0C4330B2}|BLL\\BLL.csproj|c:\\users\\ryzen\\desktop\\c#\\veterinaria_2\\veterinaria\\bll\\controladores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0943FFB9-4C1C-4894-B43A-93CD0C4330B2}|BLL\\BLL.csproj|solutionrelative:bll\\controladores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\dal\\veterinario_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|solutionrelative:dal\\veterinario_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BA2229-AFFE-424D-A660-E1352CAF422F}|Veterinaria\\Veterinaria.csproj|c:\\users\\ryzen\\desktop\\c#\\veterinaria_2\\veterinaria\\veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BA2229-AFFE-424D-A660-E1352CAF422F}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\dal\\cliente_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|solutionrelative:dal\\cliente_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{072F8769-CD8A-4DC3-A5C1-E1A04A1ADAFD}|Entity\\Entity.csproj|c:\\users\\ryzen\\desktop\\c#\\veterinaria_2\\veterinaria\\entity\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{072F8769-CD8A-4DC3-A5C1-E1A04A1ADAFD}|Entity\\Entity.csproj|solutionrelative:entity\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\dal\\mascota_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|solutionrelative:dal\\mascota_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{072F8769-CD8A-4DC3-A5C1-E1A04A1ADAFD}|Entity\\Entity.csproj|c:\\users\\ryzen\\desktop\\c#\\veterinaria_2\\veterinaria\\entity\\mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{072F8769-CD8A-4DC3-A5C1-E1A04A1ADAFD}|Entity\\Entity.csproj|C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\entity\\mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{072F8769-CD8A-4DC3-A5C1-E1A04A1ADAFD}|Entity\\Entity.csproj|solutionrelative:entity\\mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{072F8769-CD8A-4DC3-A5C1-E1A04A1ADAFD}|Entity\\Entity.csproj|C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\entity\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{072F8769-CD8A-4DC3-A5C1-E1A04A1ADAFD}|Entity\\Entity.csproj|solutionrelative:entity\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 147,
+      "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,81 +50,87 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Veterinaria\\Program.cs",
-              "RelativeDocumentMoniker": "Veterinaria\\Program.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Veterinaria\\Program.cs",
-              "RelativeToolTip": "Veterinaria\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T17:25:21.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Controladores.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\BLL\\Controladores.cs",
-              "RelativeDocumentMoniker": "BLL\\Controladores.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\BLL\\Controladores.cs",
-              "RelativeToolTip": "BLL\\Controladores.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAowHEAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T16:40:02.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Registrar_Datos.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\DAL\\Registrar_Datos.cs",
-              "RelativeDocumentMoniker": "DAL\\Registrar_Datos.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\DAL\\Registrar_Datos.cs",
-              "RelativeToolTip": "DAL\\Registrar_Datos.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAUwI8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:26:07.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Registro_Mascota.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Precentacion\\Registro_Mascota.cs",
-              "RelativeDocumentMoniker": "Precentacion\\Registro_Mascota.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Precentacion\\Registro_Mascota.cs",
-              "RelativeToolTip": "Precentacion\\Registro_Mascota.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAuwDQAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T15:29:19.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Entity\\Cliente.cs",
-              "RelativeDocumentMoniker": "Entity\\Cliente.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Entity\\Cliente.cs",
-              "RelativeToolTip": "Entity\\Cliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:25:04.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Mascota.cs",
               "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Entity\\Mascota.cs",
               "RelativeDocumentMoniker": "Entity\\Mascota.cs",
               "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Entity\\Mascota.cs",
               "RelativeToolTip": "Entity\\Mascota.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:24:22.926Z",
+              "WhenOpened": "2024-05-29T21:57:48.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Entity\\Cliente.cs",
+              "RelativeDocumentMoniker": "Entity\\Cliente.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Entity\\Cliente.cs",
+              "RelativeToolTip": "Entity\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T21:57:44.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Veterinario_Repositorio.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\DAL\\Veterinario_Repositorio.cs",
+              "RelativeDocumentMoniker": "DAL\\Veterinario_Repositorio.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\DAL\\Veterinario_Repositorio.cs",
+              "RelativeToolTip": "DAL\\Veterinario_Repositorio.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAwwFIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T21:27:45.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Mascota_Repositorio.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\DAL\\Mascota_Repositorio.cs",
+              "RelativeDocumentMoniker": "DAL\\Mascota_Repositorio.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\DAL\\Mascota_Repositorio.cs",
+              "RelativeToolTip": "DAL\\Mascota_Repositorio.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wDkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T21:26:32.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cliente_Repositorio.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\DAL\\Cliente_Repositorio.cs",
+              "RelativeDocumentMoniker": "DAL\\Cliente_Repositorio.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\DAL\\Cliente_Repositorio.cs",
+              "RelativeToolTip": "DAL\\Cliente_Repositorio.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAAAHoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T21:05:36.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Agendar_cita.cs",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Precentacion\\Agendar_cita.cs",
+              "RelativeDocumentMoniker": "Precentacion\\Agendar_cita.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Precentacion\\Agendar_cita.cs",
+              "RelativeToolTip": "Precentacion\\Agendar_cita.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA1wBYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T21:02:10.519Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Agendar_cita.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Precentacion\\Agendar_cita.cs",
+              "RelativeDocumentMoniker": "Precentacion\\Agendar_cita.cs",
+              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Precentacion\\Agendar_cita.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Precentacion\\Agendar_cita.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T20:57:29.875Z"
             }
           ]
         }

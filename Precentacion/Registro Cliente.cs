@@ -35,7 +35,7 @@ namespace Precentacion
             try
             {
                 Controladores control = new Controladores();
-                string respuesta = control.control_Registro_Cliente(cliente);
+                string respuesta = control.Validacion_Cliente(cliente);
                 if (respuesta.Length > 0)
                 {
                     MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);

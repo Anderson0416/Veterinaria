@@ -12,9 +12,9 @@ namespace BLL
     public class Controladores
     {
         Registrar_Datos registro = new Registrar_Datos();
-        public string control_Registro(Usuarios usuario)
+        public string Validacion_Usuario (Usuarios usuario)
         {
-
+            Usuario_Repositorio usuario_repositorio = new Usuario_Repositorio();
             string respuesta = "";
 
             if (string.IsNullOrEmpty(usuario.Contraseña) ||
@@ -26,14 +26,14 @@ namespace BLL
             {
                 if (usuario.Contraseña == usuario.Confirmar_Contraseña)
                 {
-                    if (registro.existeciaUsuario(usuario.Nombre))
+                    if (usuario_repositorio.Existecia_Usuario(usuario.Nombre))
                     {
                         respuesta = "EL USUARIO YA EXISTE";
                     }
                     else
                     {
                         usuario.Contraseña = generarSHA1(usuario.Contraseña);
-                        registro.Registrar_Usuario(usuario);
+                        usuario_repositorio.Registrar_Usuario(usuario);
                     }
                 }
                 else
@@ -43,9 +43,9 @@ namespace BLL
             }
             return respuesta;
         }
-        public string control_Registro_Cliente(Cliente cliente)
+        public string Validacion_Cliente(Cliente cliente)
         {
-
+            Cliente_Repositorio cliente_repositorio = new Cliente_Repositorio();
             string respuesta = "";
 
             if (string.IsNullOrEmpty(cliente.documento) || string.IsNullOrEmpty(cliente.apellido) ||
@@ -57,20 +57,20 @@ namespace BLL
             else
             {
 
-                if (registro.control_CLiente(cliente.documento))
+                if (cliente_repositorio.Existencia_CLiente(cliente.documento))
                 {
                     respuesta = "EL USUARIO YA EXISTE";
                 }
                 else
                 {
-                     registro.Registrar_Cliente(cliente);
+                    cliente_repositorio.Registrar_Cliente(cliente);
                 }
             }
             return respuesta;
         }
-        public string control_Registro_Veterinario(Veterinario veterinario)
+        public string Validacion_Veterinario(Veterinario veterinario)
         {
-
+            Veterinario_Repositorio veterinario_repositorio = new Veterinario_Repositorio();
             string respuesta = "";
 
             if (string.IsNullOrEmpty(veterinario.documento) || string.IsNullOrEmpty(veterinario.apellido) ||
@@ -83,19 +83,21 @@ namespace BLL
             else
             {
 
-                if (registro.control_Veterinario(veterinario.documento))
+                if (veterinario_repositorio.Existencia_Veterinario(veterinario.documento))
                 {
-                    respuesta = "EL USUARIO YA EXISTE";
+                    respuesta = "EL VETERINARIO YA EXISTE";
                 }
                 else
                 {
-                    registro.Registrar_Veterinario(veterinario);
+                    veterinario_repositorio.Registrar_Veterinario(veterinario);
                 }
             }
             return respuesta;
         }
-        public string control_Registro_Mascota(Mascota mascota)
+        public string Validacion_Mascota (Mascota mascota)
         {
+            Mascota_Repositorio mascota_repositorio = new Mascota_Repositorio();
+            Cliente_Repositorio cliente_repositorio = new Cliente_Repositorio();
 
             string respuesta = "";
 
@@ -106,13 +108,13 @@ namespace BLL
             }
             else
             {
-                if (!registro.control_CLiente(mascota.cliente_documento))
+                if (!cliente_repositorio.Existencia_CLiente(mascota.cliente_documento))
                 {
-                    respuesta = "EL USUARIO NO EXISTE";
+                    respuesta = "EL CLIENTE NO EXISTE";
                 }
                 else
                 {
-                    registro.Registrar_Mascota(mascota);
+                    mascota_repositorio.Registrar_Mascota(mascota);
                 }
                 
             }
@@ -120,7 +122,8 @@ namespace BLL
         }
         public string control_Login(string usuario, string password)
         {
-            Registrar_Datos registro_datos = new Registrar_Datos();
+            Usuario_Repositorio usuario_repositorio = new Usuario_Repositorio();
+
             string respuesta = "";
             Usuarios Datousuario = null;
 
@@ -130,7 +133,7 @@ namespace BLL
             }
             else
             {
-                Datousuario = registro_datos.ConsultaUsuario(usuario);
+                Datousuario = usuario_repositorio.ConsultaUsuario(usuario);
 
                 if (Datousuario == null)
                 {

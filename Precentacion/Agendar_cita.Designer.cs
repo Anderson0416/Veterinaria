@@ -30,28 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agendar_cita));
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_Nombre = new System.Windows.Forms.TextBox();
-            this.txt_Telefono = new System.Windows.Forms.TextBox();
+            this.txt_Nombre_Cliente = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_Raza = new System.Windows.Forms.TextBox();
-            this.txt_Nombre_Mascota = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_Agregar = new System.Windows.Forms.Button();
             this.cmb_Veterinario = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.cmb_Sexo = new System.Windows.Forms.ComboBox();
-            this.txt_Peso = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.cmb_Especie = new System.Windows.Forms.ComboBox();
             this.dtp_Fecha_Cita = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Registrar = new System.Windows.Forms.Button();
+            this.btn_Consultar = new System.Windows.Forms.Button();
+            this.txt_Documento = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cmb_Edad2 = new System.Windows.Forms.ComboBox();
+            this.txt_Especie = new System.Windows.Forms.TextBox();
+            this.txt_Sexo_Mascota = new System.Windows.Forms.TextBox();
             this.txt_Edad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -59,6 +57,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.gb_Descripcion = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmb_Nombre_Mascota = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -70,35 +69,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 34);
+            this.label2.Location = new System.Drawing.Point(9, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 13);
+            this.label2.Size = new System.Drawing.Size(85, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre completo (Dueño)";
+            this.label2.Text = "Nombre (Cliente)";
             // 
-            // label3
+            // txt_Nombre_Cliente
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 56);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Numero de telefono ";
-            // 
-            // txt_Nombre
-            // 
-            this.txt_Nombre.Location = new System.Drawing.Point(144, 31);
-            this.txt_Nombre.Name = "txt_Nombre";
-            this.txt_Nombre.Size = new System.Drawing.Size(100, 20);
-            this.txt_Nombre.TabIndex = 3;
-            // 
-            // txt_Telefono
-            // 
-            this.txt_Telefono.Location = new System.Drawing.Point(144, 56);
-            this.txt_Telefono.Name = "txt_Telefono";
-            this.txt_Telefono.Size = new System.Drawing.Size(112, 20);
-            this.txt_Telefono.TabIndex = 4;
+            this.txt_Nombre_Cliente.Location = new System.Drawing.Point(100, 62);
+            this.txt_Nombre_Cliente.Name = "txt_Nombre_Cliente";
+            this.txt_Nombre_Cliente.Size = new System.Drawing.Size(100, 20);
+            this.txt_Nombre_Cliente.TabIndex = 3;
             // 
             // label5
             // 
@@ -106,9 +88,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 13);
+            this.label5.Size = new System.Drawing.Size(94, 13);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Nombre completo (Mascota)";
+            this.label5.Text = "Nombre (Mascota)";
             // 
             // label6
             // 
@@ -136,13 +118,6 @@
             this.txt_Raza.Name = "txt_Raza";
             this.txt_Raza.Size = new System.Drawing.Size(128, 20);
             this.txt_Raza.TabIndex = 10;
-            // 
-            // txt_Nombre_Mascota
-            // 
-            this.txt_Nombre_Mascota.Location = new System.Drawing.Point(158, 22);
-            this.txt_Nombre_Mascota.Name = "txt_Nombre_Mascota";
-            this.txt_Nombre_Mascota.Size = new System.Drawing.Size(161, 20);
-            this.txt_Nombre_Mascota.TabIndex = 12;
             // 
             // label9
             // 
@@ -172,7 +147,6 @@
             this.btn_Agregar.TabIndex = 20;
             this.btn_Agregar.Text = "Agendar Cita";
             this.btn_Agregar.UseVisualStyleBackColor = true;
-            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // cmb_Veterinario
             // 
@@ -192,31 +166,6 @@
             this.label12.TabIndex = 22;
             this.label12.Text = "Sexo";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(325, 25);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(31, 13);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Peso";
-            // 
-            // cmb_Sexo
-            // 
-            this.cmb_Sexo.FormattingEnabled = true;
-            this.cmb_Sexo.Location = new System.Drawing.Point(366, 47);
-            this.cmb_Sexo.Name = "cmb_Sexo";
-            this.cmb_Sexo.Size = new System.Drawing.Size(82, 21);
-            this.cmb_Sexo.TabIndex = 24;
-            // 
-            // txt_Peso
-            // 
-            this.txt_Peso.Location = new System.Drawing.Point(366, 21);
-            this.txt_Peso.Name = "txt_Peso";
-            this.txt_Peso.Size = new System.Drawing.Size(59, 20);
-            this.txt_Peso.TabIndex = 25;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -227,14 +176,6 @@
             this.button1.Text = "confirmar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // cmb_Especie
-            // 
-            this.cmb_Especie.FormattingEnabled = true;
-            this.cmb_Especie.Location = new System.Drawing.Point(64, 47);
-            this.cmb_Especie.Name = "cmb_Especie";
-            this.cmb_Especie.Size = new System.Drawing.Size(82, 21);
-            this.cmb_Especie.TabIndex = 29;
-            // 
             // dtp_Fecha_Cita
             // 
             this.dtp_Fecha_Cita.Location = new System.Drawing.Point(128, 27);
@@ -244,32 +185,66 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.btn_Registrar);
+            this.groupBox1.Controls.Add(this.btn_Consultar);
+            this.groupBox1.Controls.Add(this.txt_Documento);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txt_Telefono);
-            this.groupBox1.Controls.Add(this.txt_Nombre);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txt_Nombre_Cliente);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(16, 58);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(305, 97);
+            this.groupBox1.Size = new System.Drawing.Size(394, 97);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion del paciente ";
             // 
+            // btn_Registrar
+            // 
+            this.btn_Registrar.Location = new System.Drawing.Point(256, 54);
+            this.btn_Registrar.Name = "btn_Registrar";
+            this.btn_Registrar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Registrar.TabIndex = 7;
+            this.btn_Registrar.Text = "Registrar";
+            this.btn_Registrar.UseVisualStyleBackColor = true;
+            // 
+            // btn_Consultar
+            // 
+            this.btn_Consultar.Location = new System.Drawing.Point(256, 20);
+            this.btn_Consultar.Name = "btn_Consultar";
+            this.btn_Consultar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Consultar.TabIndex = 6;
+            this.btn_Consultar.Text = "Consultar";
+            this.btn_Consultar.UseVisualStyleBackColor = true;
+            this.btn_Consultar.Click += new System.EventHandler(this.btn_Consultar_Click);
+            // 
+            // txt_Documento
+            // 
+            this.txt_Documento.Location = new System.Drawing.Point(100, 20);
+            this.txt_Documento.Name = "txt_Documento";
+            this.txt_Documento.Size = new System.Drawing.Size(102, 20);
+            this.txt_Documento.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Documento";
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.cmb_Edad2);
+            this.groupBox2.Controls.Add(this.cmb_Nombre_Mascota);
+            this.groupBox2.Controls.Add(this.txt_Especie);
+            this.groupBox2.Controls.Add(this.txt_Sexo_Mascota);
             this.groupBox2.Controls.Add(this.txt_Edad);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.cmb_Especie);
-            this.groupBox2.Controls.Add(this.txt_Nombre_Mascota);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txt_Raza);
-            this.groupBox2.Controls.Add(this.txt_Peso);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.cmb_Sexo);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(16, 198);
@@ -278,21 +253,26 @@
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informacion de la mascota";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // cmb_Edad2
+            // txt_Especie
             // 
-            this.cmb_Edad2.FormattingEnabled = true;
-            this.cmb_Edad2.Location = new System.Drawing.Point(128, 80);
-            this.cmb_Edad2.Name = "cmb_Edad2";
-            this.cmb_Edad2.Size = new System.Drawing.Size(74, 21);
-            this.cmb_Edad2.TabIndex = 33;
+            this.txt_Especie.Location = new System.Drawing.Point(64, 50);
+            this.txt_Especie.Name = "txt_Especie";
+            this.txt_Especie.Size = new System.Drawing.Size(85, 20);
+            this.txt_Especie.TabIndex = 35;
+            // 
+            // txt_Sexo_Mascota
+            // 
+            this.txt_Sexo_Mascota.Location = new System.Drawing.Point(366, 55);
+            this.txt_Sexo_Mascota.Name = "txt_Sexo_Mascota";
+            this.txt_Sexo_Mascota.Size = new System.Drawing.Size(59, 20);
+            this.txt_Sexo_Mascota.TabIndex = 34;
             // 
             // txt_Edad
             // 
             this.txt_Edad.Location = new System.Drawing.Point(64, 80);
             this.txt_Edad.Name = "txt_Edad";
-            this.txt_Edad.Size = new System.Drawing.Size(48, 20);
+            this.txt_Edad.Size = new System.Drawing.Size(102, 20);
             this.txt_Edad.TabIndex = 32;
             // 
             // label1
@@ -356,6 +336,15 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
+            // cmb_Nombre_Mascota
+            // 
+            this.cmb_Nombre_Mascota.FormattingEnabled = true;
+            this.cmb_Nombre_Mascota.Location = new System.Drawing.Point(113, 25);
+            this.cmb_Nombre_Mascota.Name = "cmb_Nombre_Mascota";
+            this.cmb_Nombre_Mascota.Size = new System.Drawing.Size(129, 21);
+            this.cmb_Nombre_Mascota.TabIndex = 36;
+            this.cmb_Nombre_Mascota.SelectedIndexChanged += new System.EventHandler(this.cmb_Nombre_Mascota_SelectedIndexChanged);
+            // 
             // Agendar_cita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,24 +374,17 @@
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_Nombre;
-        private System.Windows.Forms.TextBox txt_Telefono;
+        private System.Windows.Forms.TextBox txt_Nombre_Cliente;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_Raza;
-        private System.Windows.Forms.TextBox txt_Nombre_Mascota;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btn_Agregar;
         private System.Windows.Forms.ComboBox cmb_Veterinario;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox cmb_Sexo;
-        private System.Windows.Forms.TextBox txt_Peso;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox cmb_Especie;
         private System.Windows.Forms.DateTimePicker dtp_Fecha_Cita;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -411,8 +393,14 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.GroupBox gb_Descripcion;
-        private System.Windows.Forms.ComboBox cmb_Edad2;
         private System.Windows.Forms.TextBox txt_Edad;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txt_Documento;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_Registrar;
+        private System.Windows.Forms.Button btn_Consultar;
+        private System.Windows.Forms.TextBox txt_Especie;
+        private System.Windows.Forms.TextBox txt_Sexo_Mascota;
+        private System.Windows.Forms.ComboBox cmb_Nombre_Mascota;
     }
 }
