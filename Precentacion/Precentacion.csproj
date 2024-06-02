@@ -57,6 +57,42 @@
     <Compile Include="Consultar_cita.Designer.cs">
       <DependentUpon>Consultar_cita.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultar_Mascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar_Mascota.Designer.cs">
+      <DependentUpon>Consultar_Mascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar_Veterinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar_Veterinario.Designer.cs">
+      <DependentUpon>Consultar_Veterinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_Cliente.Designer.cs">
+      <DependentUpon>Consulta_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_Cliente.Designer.cs">
+      <DependentUpon>Eliminar_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_Mascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_Mascota.Designer.cs">
+      <DependentUpon>Eliminar_Mascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_Veterinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_Veterinario.Designer.cs">
+      <DependentUpon>Eliminar_Veterinario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +156,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultar_cita.resx">
       <DependentUpon>Consultar_cita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar_Mascota.resx">
+      <DependentUpon>Consultar_Mascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar_Veterinario.resx">
+      <DependentUpon>Consultar_Veterinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta_Cliente.resx">
+      <DependentUpon>Consulta_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_Cliente.resx">
+      <DependentUpon>Eliminar_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_Mascota.resx">
+      <DependentUpon>Eliminar_Mascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_Veterinario.resx">
+      <DependentUpon>Eliminar_Veterinario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

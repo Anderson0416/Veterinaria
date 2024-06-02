@@ -117,12 +117,12 @@
             // 
             this.cmb_Tipo_Documento.FormattingEnabled = true;
             this.cmb_Tipo_Documento.Items.AddRange(new object[] {
-            "Tarjeta de identidad",
             "Cédula de Ciudadanía"});
             this.cmb_Tipo_Documento.Location = new System.Drawing.Point(415, 129);
             this.cmb_Tipo_Documento.Name = "cmb_Tipo_Documento";
             this.cmb_Tipo_Documento.Size = new System.Drawing.Size(131, 21);
             this.cmb_Tipo_Documento.TabIndex = 45;
+            this.cmb_Tipo_Documento.SelectedIndexChanged += new System.EventHandler(this.cmb_Tipo_Documento_SelectedIndexChanged);
             // 
             // txt_Numero_Documento
             // 

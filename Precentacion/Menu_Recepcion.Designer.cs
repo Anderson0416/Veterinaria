@@ -29,48 +29,49 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Recepcio));
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_Registrar_Medico = new System.Windows.Forms.Button();
+            this.btn_Actualizar = new System.Windows.Forms.Button();
+            this.btn_Consultar = new System.Windows.Forms.Button();
             this.btn_Registrar_Cliente = new System.Windows.Forms.Button();
             this.btn_Registrar_Mascota = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Historial = new System.Windows.Forms.Button();
+            this.btn_Agendar = new System.Windows.Forms.Button();
+            this.btn_Eliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button3
+            // btn_Registrar_Medico
             // 
-            this.button3.Location = new System.Drawing.Point(97, 304);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 24);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Registrar Medico";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_Registrar_Medico.Location = new System.Drawing.Point(109, 299);
+            this.btn_Registrar_Medico.Name = "btn_Registrar_Medico";
+            this.btn_Registrar_Medico.Size = new System.Drawing.Size(104, 24);
+            this.btn_Registrar_Medico.TabIndex = 4;
+            this.btn_Registrar_Medico.Text = "Registrar Medico";
+            this.btn_Registrar_Medico.UseVisualStyleBackColor = true;
+            this.btn_Registrar_Medico.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button6
+            // btn_Actualizar
             // 
-            this.button6.Location = new System.Drawing.Point(395, 120);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(68, 23);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Actualizar";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_Actualizar.Location = new System.Drawing.Point(404, 120);
+            this.btn_Actualizar.Name = "btn_Actualizar";
+            this.btn_Actualizar.Size = new System.Drawing.Size(68, 23);
+            this.btn_Actualizar.TabIndex = 7;
+            this.btn_Actualizar.Text = "Actualizar";
+            this.btn_Actualizar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_Consultar
             // 
-            this.button4.Location = new System.Drawing.Point(623, 120);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(61, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Consultar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_Consultar.Location = new System.Drawing.Point(631, 120);
+            this.btn_Consultar.Name = "btn_Consultar";
+            this.btn_Consultar.Size = new System.Drawing.Size(61, 23);
+            this.btn_Consultar.TabIndex = 8;
+            this.btn_Consultar.Text = "Consultar";
+            this.btn_Consultar.UseVisualStyleBackColor = true;
             // 
             // btn_Registrar_Cliente
             // 
-            this.btn_Registrar_Cliente.Location = new System.Drawing.Point(97, 171);
+            this.btn_Registrar_Cliente.Location = new System.Drawing.Point(109, 168);
             this.btn_Registrar_Cliente.Name = "btn_Registrar_Cliente";
             this.btn_Registrar_Cliente.Size = new System.Drawing.Size(104, 21);
             this.btn_Registrar_Cliente.TabIndex = 21;
@@ -80,7 +81,7 @@
             // 
             // btn_Registrar_Mascota
             // 
-            this.btn_Registrar_Mascota.Location = new System.Drawing.Point(97, 234);
+            this.btn_Registrar_Mascota.Location = new System.Drawing.Point(109, 231);
             this.btn_Registrar_Mascota.Name = "btn_Registrar_Mascota";
             this.btn_Registrar_Mascota.Size = new System.Drawing.Size(104, 23);
             this.btn_Registrar_Mascota.TabIndex = 22;
@@ -91,43 +92,55 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(886, 474);
+            this.pictureBox1.Size = new System.Drawing.Size(876, 477);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btn_Historial
             // 
-            this.button1.Location = new System.Drawing.Point(512, 120);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(62, 23);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Historial";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Historial.Location = new System.Drawing.Point(522, 120);
+            this.btn_Historial.Name = "btn_Historial";
+            this.btn_Historial.Size = new System.Drawing.Size(62, 23);
+            this.btn_Historial.TabIndex = 24;
+            this.btn_Historial.Text = "Historial";
+            this.btn_Historial.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_Agendar
             // 
-            this.button2.Location = new System.Drawing.Point(271, 120);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 23);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Agendar cita";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Agendar.Location = new System.Drawing.Point(282, 120);
+            this.btn_Agendar.Name = "btn_Agendar";
+            this.btn_Agendar.Size = new System.Drawing.Size(82, 23);
+            this.btn_Agendar.TabIndex = 25;
+            this.btn_Agendar.Text = "Agendar cita";
+            this.btn_Agendar.UseVisualStyleBackColor = true;
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.Location = new System.Drawing.Point(739, 120);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(61, 23);
+            this.btn_Eliminar.TabIndex = 26;
+            this.btn_Eliminar.Text = "Eliminar";
+            this.btn_Eliminar.UseVisualStyleBackColor = true;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // Menu_Recepcio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 472);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(874, 472);
+            this.Controls.Add(this.btn_Eliminar);
+            this.Controls.Add(this.btn_Agendar);
+            this.Controls.Add(this.btn_Historial);
             this.Controls.Add(this.btn_Registrar_Mascota);
             this.Controls.Add(this.btn_Registrar_Cliente);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btn_Consultar);
+            this.Controls.Add(this.btn_Actualizar);
+            this.Controls.Add(this.btn_Registrar_Medico);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Menu_Recepcio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -139,13 +152,14 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_Registrar_Medico;
+        private System.Windows.Forms.Button btn_Actualizar;
+        private System.Windows.Forms.Button btn_Consultar;
         private System.Windows.Forms.Button btn_Registrar_Cliente;
         private System.Windows.Forms.Button btn_Registrar_Mascota;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Historial;
+        private System.Windows.Forms.Button btn_Agendar;
+        private System.Windows.Forms.Button btn_Eliminar;
     }
 }

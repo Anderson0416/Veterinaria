@@ -59,7 +59,7 @@ namespace BLL
 
                 if (cliente_repositorio.Existencia_CLiente(cliente.documento))
                 {
-                    respuesta = "EL USUARIO YA EXISTE";
+                    respuesta = "EL CLIENTE YA EXISTE";
                 }
                 else
                 {
@@ -101,7 +101,7 @@ namespace BLL
 
             string respuesta = "";
 
-            if (string.IsNullOrEmpty(mascota.nombre_mascota) || string.IsNullOrEmpty(mascota.sexo) ||
+            if (string.IsNullOrEmpty(mascota.nombre) || string.IsNullOrEmpty(mascota.sexo) ||
                 string.IsNullOrEmpty(mascota.especie) || string.IsNullOrEmpty(mascota.raza))
             {
                 respuesta = "DEBE LLENAR TODOS LOS DATOS";
@@ -110,7 +110,7 @@ namespace BLL
             {
                 if (!cliente_repositorio.Existencia_CLiente(mascota.cliente_documento))
                 {
-                    respuesta = "EL CLIENTE NO EXISTE";
+                    respuesta = "LA MASCOTA NO EXISTE";
                 }
                 else
                 {

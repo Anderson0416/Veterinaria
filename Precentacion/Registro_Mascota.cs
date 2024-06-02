@@ -34,7 +34,7 @@ namespace Precentacion
             }
             else
             {
-                MessageBox.Show("el usuario no a sido registrado, en el boton resgistrar lo puede hacer");
+                MessageBox.Show("CLIENTE NO ENCONTRADO, POR FAVOR REALIZAR EL REGISTRO");
             }
 
         }
@@ -42,27 +42,28 @@ namespace Precentacion
         private void btn_Registrar_Mascota_Click(object sender, EventArgs e)
         {
             Mascota mascota = new Mascota();
-            
-           
-            mascota.nombre_mascota = txt_Nombre_Mascota.Text;
+
+         
+            mascota.nombre = txt_Nombre.Text;
             mascota.especie = txt_Especie.Text;
             mascota.raza = txt_Raza.Text;
             mascota.edad = txt_Edad.Text;
             mascota.edad2 = cmb_Edad2.Text.ToString();
             mascota.sexo = cmb_Sexo.SelectedIndex.ToString();
             mascota.cliente_documento = txt_cedulacliente.Text;
-              
+
             try
             {
                 Controladores control = new Controladores();
                 string respuesta = control.Validacion_Mascota(mascota);
+
                 if (respuesta.Length > 0)
                 {
                     MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Usuario registrado");
+                    MessageBox.Show("Mascota registrada");
                     Menu_Recepcio recepcio = new Menu_Recepcio();
                     recepcio.Visible = true;
                     this.Visible = false;
@@ -74,11 +75,12 @@ namespace Precentacion
             }
         }
 
-        private void btn_Registrar_Cliente_Click(object sender, EventArgs e)
+        private void btn_Registro_Cliente_Click(object sender, EventArgs e)
         {
-            Registro_Cliente registro_cliente = new Registro_Cliente();
-            registro_cliente.Visible = true;
-            this.Visible = false ;
+           Registro_Cliente registro_Cliente = new Registro_Cliente();
+            registro_Cliente.Visible = true;
+            this.Visible=false;
+
         }
     }
 }

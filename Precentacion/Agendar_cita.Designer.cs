@@ -48,6 +48,7 @@
             this.txt_Documento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cmb_Nombre_Mascota = new System.Windows.Forms.ComboBox();
             this.txt_Especie = new System.Windows.Forms.TextBox();
             this.txt_Sexo_Mascota = new System.Windows.Forms.TextBox();
             this.txt_Edad = new System.Windows.Forms.TextBox();
@@ -57,7 +58,6 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.gb_Descripcion = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cmb_Nombre_Mascota = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -147,6 +147,7 @@
             this.btn_Agregar.TabIndex = 20;
             this.btn_Agregar.Text = "Agendar Cita";
             this.btn_Agregar.UseVisualStyleBackColor = true;
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // cmb_Veterinario
             // 
@@ -155,6 +156,7 @@
             this.cmb_Veterinario.Name = "cmb_Veterinario";
             this.cmb_Veterinario.Size = new System.Drawing.Size(141, 21);
             this.cmb_Veterinario.TabIndex = 21;
+            this.cmb_Veterinario.SelectedIndexChanged += new System.EventHandler(this.cmb_Veterinario_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -254,6 +256,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informacion de la mascota";
             // 
+            // cmb_Nombre_Mascota
+            // 
+            this.cmb_Nombre_Mascota.FormattingEnabled = true;
+            this.cmb_Nombre_Mascota.Location = new System.Drawing.Point(113, 25);
+            this.cmb_Nombre_Mascota.Name = "cmb_Nombre_Mascota";
+            this.cmb_Nombre_Mascota.Size = new System.Drawing.Size(129, 21);
+            this.cmb_Nombre_Mascota.TabIndex = 36;
+            this.cmb_Nombre_Mascota.SelectedIndexChanged += new System.EventHandler(this.cmb_Nombre_Mascota_SelectedIndexChanged);
+            // 
             // txt_Especie
             // 
             this.txt_Especie.Location = new System.Drawing.Point(64, 50);
@@ -263,7 +274,7 @@
             // 
             // txt_Sexo_Mascota
             // 
-            this.txt_Sexo_Mascota.Location = new System.Drawing.Point(366, 55);
+            this.txt_Sexo_Mascota.Location = new System.Drawing.Point(362, 49);
             this.txt_Sexo_Mascota.Name = "txt_Sexo_Mascota";
             this.txt_Sexo_Mascota.Size = new System.Drawing.Size(59, 20);
             this.txt_Sexo_Mascota.TabIndex = 34;
@@ -336,20 +347,11 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
-            // cmb_Nombre_Mascota
-            // 
-            this.cmb_Nombre_Mascota.FormattingEnabled = true;
-            this.cmb_Nombre_Mascota.Location = new System.Drawing.Point(113, 25);
-            this.cmb_Nombre_Mascota.Name = "cmb_Nombre_Mascota";
-            this.cmb_Nombre_Mascota.Size = new System.Drawing.Size(129, 21);
-            this.cmb_Nombre_Mascota.TabIndex = 36;
-            this.cmb_Nombre_Mascota.SelectedIndexChanged += new System.EventHandler(this.cmb_Nombre_Mascota_SelectedIndexChanged);
-            // 
             // Agendar_cita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 527);
+            this.ClientSize = new System.Drawing.Size(651, 527);
             this.Controls.Add(this.gb_Descripcion);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox3);
@@ -359,6 +361,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Agendar_cita";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "|";
             this.Load += new System.EventHandler(this.Agendar_cita_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -19,7 +19,7 @@ namespace Precentacion
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Registro_Cliente_Click(object sender, EventArgs e)
         {
             Cliente cliente = new Cliente();
 
@@ -30,7 +30,7 @@ namespace Precentacion
             cliente.sexo = cmb_Sexo.SelectedIndex.ToString();
             cliente.fecha_nacimiento = dtp_Fecha.Text;
             cliente.telefono = txt_Telefono.Text;
-            
+
 
             try
             {
@@ -42,7 +42,7 @@ namespace Precentacion
                 }
                 else
                 {
-                    MessageBox.Show("Usuario registrado");
+                    MessageBox.Show("Cliente registrado");
                     Menu_Recepcio recepcio = new Menu_Recepcio();
                     recepcio.Visible = true;
                     this.Visible = false;
@@ -53,8 +53,21 @@ namespace Precentacion
                 MessageBox.Show(ex.Message + " holaaaa");
             }
         }
-
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmb_Tipo_Documento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmb_Sexo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -72,6 +72,7 @@ namespace DAL
                         while (reader.Read())
                         {
                         Veterinario veterinario = new Veterinario();
+                        veterinario.id = reader.GetInt32("Id");
                         veterinario.nombre = reader.GetString("Nombre");
                         veterinario.apellido = reader.GetString("Apellido");
                         veterinario.tipo_documento = reader.GetString("Tipo_Documento");
@@ -87,9 +88,52 @@ namespace DAL
             conectar.Close();
             return veterinarios;
         }
+        public void Eliminar_Veterinario(string documento)
+        {
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+
+            string sql = "DELETE FROM veterinarios WHERE (Documento) = @Documento";
+
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
 
 
+            comando.Parameters.AddWithValue("@Documento", documento);
 
+            int resultado = comando.ExecuteNonQuery();
 
+        }
+        public void Actualizar_Veterinario(Veterinario veterinario)
+        {
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+
+            string sql = "UPDATE Veterinarios SET Nombre = @Nombre, Apellido = @Apellido, Tipo_Documento = @Tipo_Documento" +
+                ", Documento = @Documento, Sexo = @Sexo, Fecha_Nacimiento = @Fecha_Nacimiento, Telefono = @Telefono," +
+                " Fecha_Contrato = @Fecha_Contrato  WHERE Id = @Id";
+
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
+
+            comando.Parameters.AddWithValue("@Id", veterinario.id);
+            comando.Parameters.AddWithValue("@Nombre", veterinario.nombre);
+            comando.Parameters.AddWithValue("@Apellido", veterinario.apellido);
+            comando.Parameters.AddWithValue("@Tipo_Documento", veterinario.tipo_documento);
+            comando.Parameters.AddWithValue("@Documento", veterinario.documento);
+            comando.Parameters.AddWithValue("@Sexo", veterinario.sexo);
+            comando.Parameters.AddWithValue("@Fecha_Nacimiento", veterinario.fecha_nacimiento);
+            comando.Parameters.AddWithValue("@Telefono", veterinario.telefono);
+            comando.Parameters.AddWithValue("@Fecha_Contrato", veterinario.fecha_contrato);
+
+            int resultado = comando.ExecuteNonQuery();
+
+            if (resultado > 0)
+            {
+                Console.WriteLine("Veterinario actualizado correctamente.");
+            }
+            else
+            {
+                Console.WriteLine("No se encontró el Veterinario con el ID especificado.");
+            }
+        }
     }
 }

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro_Mascota));
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_Nombre_Mascota = new System.Windows.Forms.TextBox();
+            this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_Especie = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btn_Consultar = new System.Windows.Forms.Button();
-            this.btn_Registrar_Cliente = new System.Windows.Forms.Button();
+            this.btn_Registro_Cliente = new System.Windows.Forms.Button();
             this.btn_Registrar_Mascota = new System.Windows.Forms.Button();
             this.txt_Nombre_Cliente = new System.Windows.Forms.TextBox();
             this.txt_Apellido_Cliente = new System.Windows.Forms.TextBox();
@@ -62,12 +62,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre";
             // 
-            // txt_Nombre_Mascota
+            // txt_Nombre
             // 
-            this.txt_Nombre_Mascota.Location = new System.Drawing.Point(103, 218);
-            this.txt_Nombre_Mascota.Name = "txt_Nombre_Mascota";
-            this.txt_Nombre_Mascota.Size = new System.Drawing.Size(118, 20);
-            this.txt_Nombre_Mascota.TabIndex = 3;
+            this.txt_Nombre.Location = new System.Drawing.Point(103, 218);
+            this.txt_Nombre.Name = "txt_Nombre";
+            this.txt_Nombre.Size = new System.Drawing.Size(118, 20);
+            this.txt_Nombre.TabIndex = 3;
             // 
             // label3
             // 
@@ -181,15 +181,14 @@
             this.btn_Consultar.UseVisualStyleBackColor = true;
             this.btn_Consultar.Click += new System.EventHandler(this.btn_Consultar_Click);
             // 
-            // btn_Registrar_Cliente
+            // btn_Registro_Cliente
             // 
-            this.btn_Registrar_Cliente.Location = new System.Drawing.Point(311, 77);
-            this.btn_Registrar_Cliente.Name = "btn_Registrar_Cliente";
-            this.btn_Registrar_Cliente.Size = new System.Drawing.Size(75, 23);
-            this.btn_Registrar_Cliente.TabIndex = 20;
-            this.btn_Registrar_Cliente.Text = "Registrar";
-            this.btn_Registrar_Cliente.UseVisualStyleBackColor = true;
-            this.btn_Registrar_Cliente.Click += new System.EventHandler(this.btn_Registrar_Cliente_Click);
+            this.btn_Registro_Cliente.Location = new System.Drawing.Point(311, 87);
+            this.btn_Registro_Cliente.Name = "btn_Registro_Cliente";
+            this.btn_Registro_Cliente.Size = new System.Drawing.Size(75, 23);
+            this.btn_Registro_Cliente.TabIndex = 26;
+            this.btn_Registro_Cliente.Text = "Registrar";
+            this.btn_Registro_Cliente.Click += new System.EventHandler(this.btn_Registro_Cliente_Click);
             // 
             // btn_Registrar_Mascota
             // 
@@ -245,7 +244,7 @@
             this.Controls.Add(this.txt_Apellido_Cliente);
             this.Controls.Add(this.txt_Nombre_Cliente);
             this.Controls.Add(this.btn_Registrar_Mascota);
-            this.Controls.Add(this.btn_Registrar_Cliente);
+            this.Controls.Add(this.btn_Registro_Cliente);
             this.Controls.Add(this.btn_Consultar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -259,7 +258,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_Especie);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txt_Nombre_Mascota);
+            this.Controls.Add(this.txt_Nombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Registro_Mascota";
@@ -273,7 +272,7 @@
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_Nombre_Mascota;
+        private System.Windows.Forms.TextBox txt_Nombre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_Especie;
         private System.Windows.Forms.Label label4;
@@ -287,7 +286,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_Consultar;
-        private System.Windows.Forms.Button btn_Registrar_Cliente;
+        private System.Windows.Forms.Button btn_Registro_Cliente;
         private System.Windows.Forms.Button btn_Registrar_Mascota;
         private System.Windows.Forms.TextBox txt_Nombre_Cliente;
         private System.Windows.Forms.TextBox txt_Apellido_Cliente;

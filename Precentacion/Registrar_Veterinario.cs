@@ -43,7 +43,7 @@ namespace Precentacion
                 }
                 else
                 {
-                    MessageBox.Show("Usuario registrado");
+                    MessageBox.Show("Veterinario registrado");
                     Menu_Recepcio recepcio = new Menu_Recepcio();
                     recepcio.Visible = true;
                     this.Visible = false;
@@ -53,6 +53,11 @@ namespace Precentacion
             {
                 MessageBox.Show(ex.Message + " holaaaa");
             }
+        }
+
+        private void cmb_Tipo_Documento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

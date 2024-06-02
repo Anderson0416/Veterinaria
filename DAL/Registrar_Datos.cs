@@ -50,14 +50,16 @@ namespace DAL
                             cliente.lista_mascotas.Add(new Mascota
                             {
 
-                                nombre_mascota = reader.GetString("MascotaNombre"),
+                                nombre = reader.GetString("Nombre"),
                                 especie = reader.GetString("Especie"),
                                 raza = reader.GetString("Raza"),
                                 sexo = reader.GetString("Sexo"),
                                 edad = reader.GetString("Edad"),
                                 edad2 = reader.GetString("Edad2"),
                                 cliente_documento = Documento
+
                             });
+                        
                         }
                     }
                 }

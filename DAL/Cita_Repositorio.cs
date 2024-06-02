@@ -16,14 +16,16 @@ namespace DAL
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "INSERT INTO Clientes ( Fecha_Consulta, Descripcion, Documento_Veterinario, Id_Mascota )" +
-                         "VALUES ( @Fecha_Consulta, @Descripcion, @Documento_Veterinario, @Id_Mascota)";
+            string sql = "INSERT INTO Clientes ( Documento_Veterinario )" +
+                         "VALUES (@Documento_Veterinario)";
+            //string sql = "INSERT INTO Clientes ( Fecha_Consulta, Descripcion, Documento_Veterinario, Id_Mascota )" +
+            //             "VALUES ( @Fecha_Consulta, @Descripcion, @Documento_Veterinario, @Id_Mascota)";
             MySqlCommand comando = new MySqlCommand(sql, conectar);
 
-            comando.Parameters.AddWithValue("@Fecha_Consulta", cita.fecha_cita);
-            comando.Parameters.AddWithValue("@Descripcion", cita.descripcion);
+            //comando.Parameters.AddWithValue("@Fecha_Consulta", cita.fecha_cita);
+            //comando.Parameters.AddWithValue("@Descripcion", cita.descripcion);
             comando.Parameters.AddWithValue("@Documento_Veterinario", cita.documento_veterinario);
-            comando.Parameters.AddWithValue("@Id_Mascota", cita.id_mascota);
+            //comando.Parameters.AddWithValue("@Id_Mascota", cita.id_mascota);
            
             int resultado = comando.ExecuteNonQuery();
 
