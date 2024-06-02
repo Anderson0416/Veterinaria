@@ -101,6 +101,7 @@ namespace DAL
 
             string sql = "SELECT Id, Nombre, Apellido, Tipo_Documento, Documento, Sexo, Fecha_Nacimiento," +
                 " Telefono FROM clientes";
+
             using (var comando = new MySqlCommand(sql, conectar))
             {
                 using (reader = comando.ExecuteReader())

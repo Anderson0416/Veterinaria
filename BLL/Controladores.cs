@@ -94,6 +94,31 @@ namespace BLL
             }
             return respuesta;
         }
+        public string Validacion_Producto (Producto producto) {
+
+            Producto_Repositorio producto_repositorio = new Producto_Repositorio();
+            string respuesta = "";
+
+            if (string.IsNullOrEmpty(producto.Descripcion) || string.IsNullOrEmpty(producto.Nombre))
+            
+               
+            {
+                respuesta = "DEBE LLENAR TODOS LOS DATOS";
+            }
+            else
+            {
+
+                if (producto_repositorio.Existencia_Producto(producto.Id))
+                {
+                    respuesta = "EL PRODUCTO YA EXISTE";
+                }
+                else
+                {
+                    producto_repositorio.Registrar_Producto(producto);
+                }
+            }
+            return respuesta;
+        }
         public string Validacion_Mascota (Mascota mascota)
         {
             Mascota_Repositorio mascota_repositorio = new Mascota_Repositorio();

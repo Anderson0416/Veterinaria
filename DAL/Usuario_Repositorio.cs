@@ -71,9 +71,5 @@ namespace DAL
             }
             return usuarios;
         }
-
-
-
-
     }
 }

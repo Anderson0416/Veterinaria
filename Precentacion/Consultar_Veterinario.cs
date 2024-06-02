@@ -51,7 +51,7 @@ namespace Precentacion
             txt_Nombre.Text = dgv_Veterinario.SelectedCells[2].Value.ToString();
             txt_Apellido.Text = dgv_Veterinario.SelectedCells[3].Value.ToString();
             txt_Documento.Text = dgv_Veterinario.SelectedCells[4].Value.ToString();
-            txt_Tipo_Documento.Text = dgv_Veterinario.SelectedCells[5].Value.ToString();
+            cbx_Tipo_Documento.Text = dgv_Veterinario.SelectedCells[5].Value.ToString();
             cbx_Sexo.Text = dgv_Veterinario.SelectedCells[6].Value.ToString();
             txt_Telefono.Text = dgv_Veterinario.SelectedCells[7].Value.ToString();
 
@@ -60,7 +60,7 @@ namespace Precentacion
         private void btn_E_Veterinario_Click(object sender, EventArgs e)
         {
             Veterinario_Repositorio veterinario_Repositorio = new Veterinario_Repositorio();
-            veterinario_Repositorio.Eliminar_Veterinario(txt_Tipo_Documento.Text);
+            veterinario_Repositorio.Eliminar_Veterinario(cbx_Tipo_Documento.Text);
 
         }
         private void btn_Eliminar_Veterinario_Click(object sender, EventArgs e)
@@ -78,7 +78,7 @@ namespace Precentacion
              veterinario.id = int.Parse(txt_ID.Text);
              veterinario.nombre = txt_Nombre.Text;  
              veterinario.apellido = txt_Apellido.Text;   
-             veterinario.tipo_documento = txt_Tipo_Documento.Text;   
+             veterinario.tipo_documento = cbx_Tipo_Documento.Text;   
              veterinario.documento = txt_Documento.Text;
              veterinario.sexo = cbx_Sexo.Text;
             //veterinario.fecha_nacimiento = dtp_Fecha_Nacimiento.???;
@@ -87,7 +87,11 @@ namespace Precentacion
 
             Veterinario_Repositorio veterinario_Repositorio = new Veterinario_Repositorio();
             veterinario_Repositorio.Actualizar_Veterinario(veterinario);
+            LlenarDataGribView_Veterinario() ;
 
         }
+
+
     }
+
 }

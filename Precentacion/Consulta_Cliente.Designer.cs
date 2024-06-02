@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtv_Cliente = new System.Windows.Forms.DataGridView();
+            this.dgv_Cliente = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.txt_Apellido = new System.Windows.Forms.TextBox();
             this.txt_Documento = new System.Windows.Forms.TextBox();
-            this.txt_Tipo_Documento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,20 +46,21 @@
             this.btn_Eliminar_Cliente = new System.Windows.Forms.Button();
             this.btn_Actualizar_Cliente = new System.Windows.Forms.Button();
             this.cbx_Sexo = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_Cliente)).BeginInit();
+            this.cbx_Tipo_Documento = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Cliente)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtv_Cliente
+            // dgv_Cliente
             // 
-            this.dtv_Cliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtv_Cliente.Location = new System.Drawing.Point(23, 330);
-            this.dtv_Cliente.Name = "dtv_Cliente";
-            this.dtv_Cliente.ReadOnly = true;
-            this.dtv_Cliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtv_Cliente.Size = new System.Drawing.Size(765, 150);
-            this.dtv_Cliente.TabIndex = 0;
-            this.dtv_Cliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dtv_Cliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgv_Cliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Cliente.Location = new System.Drawing.Point(23, 330);
+            this.dgv_Cliente.Name = "dgv_Cliente";
+            this.dgv_Cliente.ReadOnly = true;
+            this.dgv_Cliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Cliente.Size = new System.Drawing.Size(765, 150);
+            this.dgv_Cliente.TabIndex = 0;
+            this.dgv_Cliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dgv_Cliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_Cliente_CellContentClick);
             // 
             // label1
             // 
@@ -92,13 +92,6 @@
             this.txt_Documento.ReadOnly = true;
             this.txt_Documento.Size = new System.Drawing.Size(100, 20);
             this.txt_Documento.TabIndex = 4;
-            // 
-            // txt_Tipo_Documento
-            // 
-            this.txt_Tipo_Documento.Location = new System.Drawing.Point(148, 182);
-            this.txt_Tipo_Documento.Name = "txt_Tipo_Documento";
-            this.txt_Tipo_Documento.Size = new System.Drawing.Size(121, 20);
-            this.txt_Tipo_Documento.TabIndex = 5;
             // 
             // label2
             // 
@@ -217,11 +210,23 @@
             this.cbx_Sexo.Size = new System.Drawing.Size(121, 21);
             this.cbx_Sexo.TabIndex = 19;
             // 
+            // cbx_Tipo_Documento
+            // 
+            this.cbx_Tipo_Documento.FormattingEnabled = true;
+            this.cbx_Tipo_Documento.Items.AddRange(new object[] {
+            "Tarjeta de Identidad",
+            "Cedula de Ciudadania"});
+            this.cbx_Tipo_Documento.Location = new System.Drawing.Point(148, 182);
+            this.cbx_Tipo_Documento.Name = "cbx_Tipo_Documento";
+            this.cbx_Tipo_Documento.Size = new System.Drawing.Size(121, 21);
+            this.cbx_Tipo_Documento.TabIndex = 20;
+            // 
             // Consulta_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 501);
+            this.Controls.Add(this.cbx_Tipo_Documento);
             this.Controls.Add(this.cbx_Sexo);
             this.Controls.Add(this.btn_Actualizar_Cliente);
             this.Controls.Add(this.btn_Eliminar_Cliente);
@@ -235,16 +240,15 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_Tipo_Documento);
             this.Controls.Add(this.txt_Documento);
             this.Controls.Add(this.txt_Apellido);
             this.Controls.Add(this.txt_Nombre);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtv_Cliente);
+            this.Controls.Add(this.dgv_Cliente);
             this.Name = "Consulta_Cliente";
             this.Text = "Consulta_Cliente";
             this.Load += new System.EventHandler(this.Consulta_Cliente_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_Cliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Cliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,12 +256,11 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtv_Cliente;
+        private System.Windows.Forms.DataGridView dgv_Cliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_Nombre;
         private System.Windows.Forms.TextBox txt_Apellido;
         private System.Windows.Forms.TextBox txt_Documento;
-        private System.Windows.Forms.TextBox txt_Tipo_Documento;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -271,5 +274,6 @@
         private System.Windows.Forms.Button btn_Eliminar_Cliente;
         private System.Windows.Forms.Button btn_Actualizar_Cliente;
         private System.Windows.Forms.ComboBox cbx_Sexo;
+        private System.Windows.Forms.ComboBox cbx_Tipo_Documento;
     }
 }

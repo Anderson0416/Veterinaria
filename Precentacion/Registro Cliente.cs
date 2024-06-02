@@ -61,7 +61,6 @@ namespace Precentacion
         {
 
         }
-
         private void cmb_Tipo_Documento_SelectedIndexChanged(object sender, EventArgs e)
         {
 

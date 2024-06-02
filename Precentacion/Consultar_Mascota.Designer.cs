@@ -41,11 +41,11 @@
             this.txt_Especie = new System.Windows.Forms.TextBox();
             this.txt_Raza = new System.Windows.Forms.TextBox();
             this.txt_Edad = new System.Windows.Forms.TextBox();
-            this.txt_Edad2 = new System.Windows.Forms.TextBox();
             this.txt_Cliente_Documento = new System.Windows.Forms.TextBox();
             this.btn_Eliminar_Mascota = new System.Windows.Forms.Button();
             this.cbx_Sexo = new System.Windows.Forms.ComboBox();
             this.btn_Actualizar_Mascota = new System.Windows.Forms.Button();
+            this.cbx_Edad2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Mascota)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +59,7 @@
             this.dgv_Mascota.Size = new System.Drawing.Size(776, 150);
             this.dgv_Mascota.TabIndex = 0;
             this.dgv_Mascota.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Mascota_CellClick);
+
             // 
             // label1
             // 
@@ -108,11 +109,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(293, 124);
+            this.label8.Location = new System.Drawing.Point(279, 128);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 13);
+            this.label8.Size = new System.Drawing.Size(114, 13);
             this.label8.TabIndex = 8;
-            this.label8.Text = "Cliente Documento";
+            this.label8.Text = "Documiento de Cliente";
             // 
             // label6
             // 
@@ -159,13 +160,6 @@
             this.txt_Edad.Size = new System.Drawing.Size(43, 20);
             this.txt_Edad.TabIndex = 14;
             // 
-            // txt_Edad2
-            // 
-            this.txt_Edad2.Location = new System.Drawing.Point(380, 32);
-            this.txt_Edad2.Name = "txt_Edad2";
-            this.txt_Edad2.Size = new System.Drawing.Size(100, 20);
-            this.txt_Edad2.TabIndex = 15;
-            // 
             // txt_Cliente_Documento
             // 
             this.txt_Cliente_Documento.Location = new System.Drawing.Point(399, 121);
@@ -175,7 +169,7 @@
             // 
             // btn_Eliminar_Mascota
             // 
-            this.btn_Eliminar_Mascota.Location = new System.Drawing.Point(405, 199);
+            this.btn_Eliminar_Mascota.Location = new System.Drawing.Point(296, 199);
             this.btn_Eliminar_Mascota.Name = "btn_Eliminar_Mascota";
             this.btn_Eliminar_Mascota.Size = new System.Drawing.Size(75, 23);
             this.btn_Eliminar_Mascota.TabIndex = 17;
@@ -197,7 +191,7 @@
             // 
             // btn_Actualizar_Mascota
             // 
-            this.btn_Actualizar_Mascota.Location = new System.Drawing.Point(582, 199);
+            this.btn_Actualizar_Mascota.Location = new System.Drawing.Point(424, 199);
             this.btn_Actualizar_Mascota.Name = "btn_Actualizar_Mascota";
             this.btn_Actualizar_Mascota.Size = new System.Drawing.Size(75, 23);
             this.btn_Actualizar_Mascota.TabIndex = 19;
@@ -205,16 +199,28 @@
             this.btn_Actualizar_Mascota.UseVisualStyleBackColor = true;
             this.btn_Actualizar_Mascota.Click += new System.EventHandler(this.btn_Actualizar_Mascota_Click);
             // 
+            // cbx_Edad2
+            // 
+            this.cbx_Edad2.FormattingEnabled = true;
+            this.cbx_Edad2.Items.AddRange(new object[] {
+            "Años",
+            "Meses",
+            "Dias"});
+            this.cbx_Edad2.Location = new System.Drawing.Point(380, 31);
+            this.cbx_Edad2.Name = "cbx_Edad2";
+            this.cbx_Edad2.Size = new System.Drawing.Size(65, 21);
+            this.cbx_Edad2.TabIndex = 21;
+            // 
             // Consultar_Mascota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbx_Edad2);
             this.Controls.Add(this.btn_Actualizar_Mascota);
             this.Controls.Add(this.cbx_Sexo);
             this.Controls.Add(this.btn_Eliminar_Mascota);
             this.Controls.Add(this.txt_Cliente_Documento);
-            this.Controls.Add(this.txt_Edad2);
             this.Controls.Add(this.txt_Edad);
             this.Controls.Add(this.txt_Raza);
             this.Controls.Add(this.txt_Especie);
@@ -252,10 +258,10 @@
         private System.Windows.Forms.TextBox txt_Especie;
         private System.Windows.Forms.TextBox txt_Raza;
         private System.Windows.Forms.TextBox txt_Edad;
-        private System.Windows.Forms.TextBox txt_Edad2;
         private System.Windows.Forms.TextBox txt_Cliente_Documento;
         private System.Windows.Forms.Button btn_Eliminar_Mascota;
         private System.Windows.Forms.ComboBox cbx_Sexo;
         private System.Windows.Forms.Button btn_Actualizar_Mascota;
+        private System.Windows.Forms.ComboBox cbx_Edad2;
     }
 }

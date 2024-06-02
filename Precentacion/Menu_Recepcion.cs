@@ -49,10 +49,6 @@ namespace Precentacion
             registro_veterinario.Visible = true;
             this.Visible = false;
         }
-        
-
-
-
         private void btn_Eliminar_Click(object sender, EventArgs e)
         {
 

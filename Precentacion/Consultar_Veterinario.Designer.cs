@@ -36,7 +36,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txt_Tipo_Documento = new System.Windows.Forms.TextBox();
             this.txt_Documento = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.btn_Eliminar_Veterinario = new System.Windows.Forms.Button();
             this.cbx_Sexo = new System.Windows.Forms.ComboBox();
             this.btn_Actualizar_Veterinario = new System.Windows.Forms.Button();
+            this.cbx_Tipo_Documento = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Veterinario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,13 +125,6 @@
             this.label7.Size = new System.Drawing.Size(83, 13);
             this.label7.TabIndex = 7;
             this.label7.Text = "Fecha_Contraro";
-            // 
-            // txt_Tipo_Documento
-            // 
-            this.txt_Tipo_Documento.Location = new System.Drawing.Point(349, 30);
-            this.txt_Tipo_Documento.Name = "txt_Tipo_Documento";
-            this.txt_Tipo_Documento.Size = new System.Drawing.Size(100, 20);
-            this.txt_Tipo_Documento.TabIndex = 10;
             // 
             // txt_Documento
             // 
@@ -233,11 +226,23 @@
             this.btn_Actualizar_Veterinario.UseVisualStyleBackColor = true;
             this.btn_Actualizar_Veterinario.Click += new System.EventHandler(this.btn_Actualizar_Veterinario_Click);
             // 
+            // cbx_Tipo_Documento
+            // 
+            this.cbx_Tipo_Documento.FormattingEnabled = true;
+            this.cbx_Tipo_Documento.Items.AddRange(new object[] {
+            "Tarjeta de Identidad",
+            "Cedula de Ciudadania"});
+            this.cbx_Tipo_Documento.Location = new System.Drawing.Point(349, 29);
+            this.cbx_Tipo_Documento.Name = "cbx_Tipo_Documento";
+            this.cbx_Tipo_Documento.Size = new System.Drawing.Size(121, 21);
+            this.cbx_Tipo_Documento.TabIndex = 24;
+            // 
             // Consultar_Veterinario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(898, 394);
+            this.Controls.Add(this.cbx_Tipo_Documento);
             this.Controls.Add(this.btn_Actualizar_Veterinario);
             this.Controls.Add(this.cbx_Sexo);
             this.Controls.Add(this.btn_Eliminar_Veterinario);
@@ -248,7 +253,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_Documento);
-            this.Controls.Add(this.txt_Tipo_Documento);
             this.Controls.Add(this.txt_Apellido);
             this.Controls.Add(this.txt_Nombre);
             this.Controls.Add(this.label7);
@@ -278,7 +282,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txt_Tipo_Documento;
         private System.Windows.Forms.TextBox txt_Documento;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -291,5 +294,6 @@
         private System.Windows.Forms.Button btn_Eliminar_Veterinario;
         private System.Windows.Forms.ComboBox cbx_Sexo;
         private System.Windows.Forms.Button btn_Actualizar_Veterinario;
+        private System.Windows.Forms.ComboBox cbx_Tipo_Documento;
     }
 }

@@ -19,7 +19,7 @@ namespace Precentacion
             InitializeComponent();
             LlenarDataGribView_Mascota();
         }
-
+     
         private void Consultar_Mascota_Load(object sender, EventArgs e)
         {
 
@@ -31,7 +31,6 @@ namespace Precentacion
             List<Mascota> mascotas = mascota_Repositorio.Consultar_Todos_Mascota();
 
             dgv_Mascota.DataSource = mascotas;
-
             dgv_Mascota.Columns["ID"].HeaderText = "ID";
             dgv_Mascota.Columns["nombre"].HeaderText = "Nombre";
             dgv_Mascota.Columns["especie"].HeaderText = "Especie";
@@ -52,11 +51,11 @@ namespace Precentacion
             txt_Raza.Text = dgv_Mascota.SelectedCells[3].Value.ToString();
             cbx_Sexo.Text = dgv_Mascota.SelectedCells[4].Value.ToString();
             txt_Edad.Text = dgv_Mascota.SelectedCells[5].Value.ToString();
-            txt_Edad2.Text = dgv_Mascota.SelectedCells[6].Value.ToString();
+            cbx_Edad2.Text = dgv_Mascota.SelectedCells[6].Value.ToString();
             txt_Cliente_Documento.Text = dgv_Mascota.SelectedCells[7].Value.ToString();
 
         }
-       private void btn_E_Mascota_Click(object sender, EventArgs e)
+        private void btn_E_Mascota_Click(object sender, EventArgs e)
         {
             Mascota_Repositorio mascota_Repositorio = new Mascota_Repositorio();
             mascota_Repositorio.Eliminar_Mascota(txt_Cliente_Documento.Text);
@@ -85,12 +84,15 @@ namespace Precentacion
                 mascota.raza = txt_Raza.Text;
                 mascota.sexo = cbx_Sexo.Text;
                 mascota.edad = txt_Edad.Text;
-                mascota.edad2 = txt_Edad2.Text;
+                mascota.edad2 = cbx_Edad2.Text;
                 mascota.cliente_documento = txt_Cliente_Documento.Text;
 
             Mascota_Repositorio mascota_Repositorio = new Mascota_Repositorio();
             mascota_Repositorio.Actualizar_Mascota(mascota);
-          
-            }
+            LlenarDataGribView_Mascota();
+
+        }
+
+   
     }
 }
