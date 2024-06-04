@@ -19,7 +19,7 @@ namespace Veterinaria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Producto_Mascota());
+            Application.Run(new Menu_Veterinario());
         }
     }
 }

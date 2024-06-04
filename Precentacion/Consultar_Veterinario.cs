@@ -32,7 +32,7 @@ namespace Precentacion
 {
          Veterinario_Repositorio veterinario_Repositorio = new Veterinario_Repositorio(); 
 
-    List<Veterinario> veterinarios = veterinario_Repositorio.ObtenerVeterinarios();
+            List<Veterinario> veterinarios = veterinario_Repositorio.ObtenerVeterinarios();
 
             dgv_Veterinario.DataSource = veterinarios;
 

@@ -24,10 +24,10 @@ namespace Precentacion
             Veterinario veterinario = new Veterinario();
 
             veterinario.documento = txt_Numero_Documento.Text;
-            veterinario.tipo_documento = cmb_Tipo_Documento.Text.ToString();
+            veterinario.tipo_documento = cmb_Tipo_Documento.Text;
             veterinario.nombre = txt_Nombre.Text;
             veterinario.apellido = txt_Apellido.Text;
-            veterinario.sexo = cmb_Sexo.SelectedIndex.ToString();
+            veterinario.sexo = cmb_Sexo.Text;
             veterinario.fecha_nacimiento = dtp_Fecha_Nacimiento.Text;
             veterinario.fecha_contrato = dtp_Fecha_Contrato.Text;
             veterinario.telefono = txt_Telefono.Text;

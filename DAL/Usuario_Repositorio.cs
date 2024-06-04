@@ -16,12 +16,13 @@ namespace DAL
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "INSERT INTO usuarios ( Nombre, Contraseña)" +
-                         "VALUES ( @Nombre, @Contraseña)";
+            string sql = "INSERT INTO usuarios ( Nombre, Contraseña, Id_Tipo)" +
+                         "VALUES ( @Nombre, @Contraseña, @Id_Tipo)";
             MySqlCommand comando = new MySqlCommand(sql, conectar);
 
             comando.Parameters.AddWithValue("@Nombre", usuario.Nombre);
             comando.Parameters.AddWithValue("@Contraseña", usuario.Contraseña);
+            comando.Parameters.AddWithValue("@Id_Tipo", usuario.Tipo_usuario);
 
             int resultado = comando.ExecuteNonQuery();
 
@@ -55,20 +56,49 @@ namespace DAL
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "SELECT ID, Contraseña, Nombre FROM Usuarios where Nombre like @Nombre";
+            string sql = "SELECT Id, Contraseña, Nombre, Id_Tipo FROM Usuarios where Nombre like @Nombre";
 
-            MySqlCommand comando = new MySqlCommand(sql, conectar); ;
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
+
             comando.Parameters.AddWithValue("@Nombre", Nombre);
+
             reader = comando.ExecuteReader();
 
             Usuarios usuarios = null;
             while (reader.Read())
             {
                 usuarios = new Usuarios();
-
+                usuarios.id = int.Parse(reader["Id"].ToString());
                 usuarios.Nombre = reader["Nombre"].ToString();
                 usuarios.Contraseña = reader["Contraseña"].ToString();
+                usuarios.Tipo_usuario = int.Parse(reader["Id_Tipo"].ToString());
             }
+            return usuarios;
+        }
+        public List<Tipo_Usuario> Obtener_Tipo_Usuarios()
+        {
+            List<Tipo_Usuario> usuarios = new List<Tipo_Usuario>();
+
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+            MySqlDataReader reader;
+
+            string sql = "SELECT Id, Nombre" +
+                " FROM Tipo_Usuarios";
+            using (var comando = new MySqlCommand(sql, conectar))
+            {
+                using (reader = comando.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Tipo_Usuario tipo_usuario = new Tipo_Usuario();
+                        tipo_usuario.id = reader.GetInt32("Id");
+                        tipo_usuario.nombre = reader.GetString("Nombre");
+                        usuarios.Add(tipo_usuario);
+                    }
+                }
+            }
+            conectar.Close();
             return usuarios;
         }
     }

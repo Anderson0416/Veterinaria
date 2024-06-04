@@ -75,6 +75,12 @@
     <Compile Include="Consulta_Cliente.Designer.cs">
       <DependentUpon>Consulta_Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultorio.Designer.cs">
+      <DependentUpon>Consultorio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Eliminar_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     </Compile>
     <Compile Include="Consultar_Producto_Mascota.Designer.cs">
       <DependentUpon>Consultar_Producto_Mascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Veterinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Veterinario.Designer.cs">
+      <DependentUpon>Menu_Veterinario.cs</DependentUpon>
     </Compile>
     <Compile Include="Producto_Mascota.cs">
       <SubType>Form</SubType>
@@ -184,6 +196,9 @@
     <EmbeddedResource Include="Consulta_Cliente.resx">
       <DependentUpon>Consulta_Cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consultorio.resx">
+      <DependentUpon>Consultorio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Eliminar_Cliente.resx">
       <DependentUpon>Eliminar_Cliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultar_Producto_Mascota.resx">
       <DependentUpon>Consultar_Producto_Mascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Veterinario.resx">
+      <DependentUpon>Menu_Veterinario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Producto_Mascota.resx">
       <DependentUpon>Producto_Mascota.cs</DependentUpon>

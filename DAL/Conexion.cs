@@ -19,11 +19,11 @@ namespace DAL
 
         public Conexion()
         {
-            this.Base = "Vet";
+            this.Base = "veterinaria";
             this.Servidor = "localhost";
             this.Puerto = "3306";
             this.Usuario = "root";
-            this.Clave = "sanlas92sql";
+            this.Clave = "123456";
         }
         public MySqlConnection crearConexion()
         {

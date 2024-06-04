@@ -55,9 +55,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtb_Descripcion = new System.Windows.Forms.RichTextBox();
             this.gb_Descripcion = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmb_Edad = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -156,7 +157,6 @@
             this.cmb_Veterinario.Name = "cmb_Veterinario";
             this.cmb_Veterinario.Size = new System.Drawing.Size(141, 21);
             this.cmb_Veterinario.TabIndex = 21;
-            this.cmb_Veterinario.SelectedIndexChanged += new System.EventHandler(this.cmb_Veterinario_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -238,6 +238,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cmb_Edad);
             this.groupBox2.Controls.Add(this.cmb_Nombre_Mascota);
             this.groupBox2.Controls.Add(this.txt_Especie);
             this.groupBox2.Controls.Add(this.txt_Sexo_Mascota);
@@ -283,7 +284,7 @@
             // 
             this.txt_Edad.Location = new System.Drawing.Point(64, 80);
             this.txt_Edad.Name = "txt_Edad";
-            this.txt_Edad.Size = new System.Drawing.Size(102, 20);
+            this.txt_Edad.Size = new System.Drawing.Size(58, 20);
             this.txt_Edad.TabIndex = 32;
             // 
             // label1
@@ -318,17 +319,17 @@
             this.progressBar1.Size = new System.Drawing.Size(148, 10);
             this.progressBar1.TabIndex = 36;
             // 
-            // richTextBox1
+            // rtb_Descripcion
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(6, 19);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(245, 116);
-            this.richTextBox1.TabIndex = 37;
-            this.richTextBox1.Text = "";
+            this.rtb_Descripcion.Location = new System.Drawing.Point(6, 19);
+            this.rtb_Descripcion.Name = "rtb_Descripcion";
+            this.rtb_Descripcion.Size = new System.Drawing.Size(245, 116);
+            this.rtb_Descripcion.TabIndex = 37;
+            this.rtb_Descripcion.Text = "";
             // 
             // gb_Descripcion
             // 
-            this.gb_Descripcion.Controls.Add(this.richTextBox1);
+            this.gb_Descripcion.Controls.Add(this.rtb_Descripcion);
             this.gb_Descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_Descripcion.Location = new System.Drawing.Point(379, 339);
             this.gb_Descripcion.Name = "gb_Descripcion";
@@ -346,6 +347,18 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
+            // 
+            // cmb_Edad
+            // 
+            this.cmb_Edad.FormattingEnabled = true;
+            this.cmb_Edad.Items.AddRange(new object[] {
+            "Dia",
+            "Mes",
+            "Año"});
+            this.cmb_Edad.Location = new System.Drawing.Point(128, 80);
+            this.cmb_Edad.Name = "cmb_Edad";
+            this.cmb_Edad.Size = new System.Drawing.Size(74, 21);
+            this.cmb_Edad.TabIndex = 37;
             // 
             // Agendar_cita
             // 
@@ -394,7 +407,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtb_Descripcion;
         private System.Windows.Forms.GroupBox gb_Descripcion;
         private System.Windows.Forms.TextBox txt_Edad;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -405,5 +418,6 @@
         private System.Windows.Forms.TextBox txt_Especie;
         private System.Windows.Forms.TextBox txt_Sexo_Mascota;
         private System.Windows.Forms.ComboBox cmb_Nombre_Mascota;
+        private System.Windows.Forms.ComboBox cmb_Edad;
     }
 }

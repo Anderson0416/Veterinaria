@@ -228,8 +228,9 @@
             // 
             this.cmb_Edad2.FormattingEnabled = true;
             this.cmb_Edad2.Items.AddRange(new object[] {
-            "Macho",
-            "Hembra"});
+            "Dia",
+            "Mes",
+            "Año"});
             this.cmb_Edad2.Location = new System.Drawing.Point(122, 372);
             this.cmb_Edad2.Name = "cmb_Edad2";
             this.cmb_Edad2.Size = new System.Drawing.Size(72, 21);

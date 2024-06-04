@@ -47,7 +47,7 @@
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // label2
             // 
@@ -64,7 +64,7 @@
             this.txt_Usuario.Name = "txt_Usuario";
             this.txt_Usuario.Size = new System.Drawing.Size(100, 20);
             this.txt_Usuario.TabIndex = 2;
-            this.txt_Usuario.TextChanged += new System.EventHandler(this.txt_Usuario_TextChanged);
+
             // 
             // txt_Contraseña
             // 
@@ -72,7 +72,7 @@
             this.txt_Contraseña.Name = "txt_Contraseña";
             this.txt_Contraseña.Size = new System.Drawing.Size(100, 20);
             this.txt_Contraseña.TabIndex = 3;
-            this.txt_Contraseña.TextChanged += new System.EventHandler(this.txt_Contraseña_TextChanged);
+ 
             // 
             // btn_Registrar
             // 

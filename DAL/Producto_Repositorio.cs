@@ -39,11 +39,10 @@ namespace DAL
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "INSERT INTO Productos ( Id, Nombre, Descripcion, Precio )" +
-                         "VALUES (@Id, @Nombre, @Descripcion, @Precio)";
+            string sql = "INSERT INTO Productos ( Nombre, Descripcion, Precio )" +
+                         "VALUES ( @Nombre, @Descripcion, @Precio)";
             MySqlCommand comando = new MySqlCommand(sql, conectar);
 
-            comando.Parameters.AddWithValue("@Id", producto.Id);
             comando.Parameters.AddWithValue("@Nombre", producto.Nombre);
             comando.Parameters.AddWithValue("@Descripcion", producto.Descripcion);
             comando.Parameters.AddWithValue("@Precio", producto.Precio);
@@ -57,7 +56,7 @@ namespace DAL
         {
 
             List<Producto> productos = new List<Producto>();
-            {
+            
 
                 MySqlConnection conectar = conexion.crearConexion();
                 conectar.Open();
@@ -86,7 +85,7 @@ namespace DAL
                 }
                 conectar.Close();
                 return productos;
-            }
+            
 
         }
 
@@ -95,7 +94,7 @@ namespace DAL
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "DELETE FROM productos WHERE (Id) = @Id";
+            string sql = "DELETE FROM productos WHERE Id = @Id";
 
             MySqlCommand comando = new MySqlCommand(sql, conectar);
 

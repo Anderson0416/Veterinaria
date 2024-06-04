@@ -1,4 +1,5 @@
-﻿using DAL;
+﻿using BLL;
+using DAL;
 using Entity;
 using System;
 using System.Collections.Generic;
@@ -14,48 +15,49 @@ namespace Precentacion
 {
     public partial class Agendar_cita : Form
     {
+        Veterinario_Repositorio veterinario_repositorio = new Veterinario_Repositorio();
+        Veterinario veterinario = new Veterinario();
+        List<Veterinario> veterinarios;
         public Agendar_cita()
         {
             InitializeComponent();
 
         }
-        Veterinario_Repositorio veterinario_repositorio = new Veterinario_Repositorio();
-        Veterinario veterinario = new Veterinario();
-        List<Veterinario> veterinarios;
+        
         private void Agendar_cita_Load(object sender, EventArgs e)
         {
-            veterinarios = veterinario_repositorio.ObtenerVeterinarios();
-
-            foreach (var item in veterinarios)
-            {
-                cmb_Veterinario.Items.Add(item.nombre);
-            }
-            //cmb_Veterinario.DataSource = veterinarios;
-            //cmb_Veterinario.DisplayMember = "Nombre";
-            //cmb_Veterinario.ValueMember = "Documento";
+            Mostrar_Veterinario_cmb();
         }
-
+        private void Mostrar_Veterinario_cmb()
+        {
+            veterinarios = veterinario_repositorio.ObtenerVeterinarios();
+            cmb_Veterinario.DataSource = veterinarios;
+            cmb_Veterinario.DisplayMember = "nombre";
+            cmb_Veterinario.ValueMember = "documento";
+        }
         private void btn_Consultar_Click(object sender, EventArgs e)
         {
-            Cliente_Repositorio cliente_repositorio = new Cliente_Repositorio();
+            Consultar_CLiente();
+        }
+
+       private void Mostrar_Mascota_cmb()
+        {
             Mascota_Repositorio mascota_repositorio = new Mascota_Repositorio();
-
+            List<Mascota> mascotas = mascota_repositorio.Consulta_Mascota_Cliente(txt_Documento.Text);
+            cmb_Nombre_Mascota.DataSource = mascotas;
+            cmb_Nombre_Mascota.DisplayMember = "nombre";
+            cmb_Nombre_Mascota.ValueMember = "id";
+        }
+       private void Consultar_CLiente ()
+        {
+            Cliente_Repositorio cliente_repositorio = new Cliente_Repositorio();
             Cliente cliente = new Cliente();
-
             string cedula = txt_Documento.Text;
             cliente = cliente_repositorio.Consulta_Documento_Cliente(cedula);
             if (cliente != null)
             {
                 txt_Nombre_Cliente.Text = cliente.nombre;
-                List<Mascota> mascotas = mascota_repositorio.Consulta_Mascota_Cliente(txt_Documento.Text);
-                List<string> nombres_Mascotas = mascotas.Select(m => m.nombre).ToList();
-                foreach (var item in mascotas)
-                {
-
-                }
-                cmb_Nombre_Mascota.DataSource = nombres_Mascotas;
-                cmb_Nombre_Mascota.DisplayMember = "Nombre";
-                //cmb_Nombre_Mascota.ValueMember = "id";
+                Mostrar_Mascota_cmb();
             }
             else
             {
@@ -63,30 +65,53 @@ namespace Precentacion
             }
         }
 
-        private void cmb_Nombre_Mascota_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
-
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
+            Citas cita = new Citas();
 
+            cita.fecha_consulta = dtp_Fecha_Cita.Text;
+            cita.descripcion = rtb_Descripcion.Text;
+            cita.documento_veterinario = (string)cmb_Veterinario.SelectedValue;
+            cita.id_mascota = (int)cmb_Nombre_Mascota.SelectedValue;
+
+
+            try
+            {
+                Controladores control = new Controladores();
+                string respuesta = control.Validacion_Cita(cita);
+                if (respuesta.Length > 0)
+                {
+                    MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Cliente registrado");
+                    Menu_Recepcio recepcio = new Menu_Recepcio();
+                    recepcio.Visible = true;
+                    this.Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void Llenar_Datos_Mascota()
+        {
+            if (cmb_Nombre_Mascota.SelectedItem != null)
+            {
+                Mascota mascota = (Mascota)cmb_Nombre_Mascota.SelectedItem;
+                txt_Especie.Text = mascota.especie;
+                txt_Raza.Text = mascota.raza;
+                txt_Sexo_Mascota.Text = mascota.sexo;
+                txt_Edad.Text = mascota.edad;
+                cmb_Edad.Text = mascota.edad2;
+            }
         }
 
-        private void cmb_Veterinario_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmb_Nombre_Mascota_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            string nombreSeleccionado = cmb_Veterinario.SelectedItem.ToString();
-            Citas citas = new Citas();
-            Cita_Repositorio cita_Repositorio = new Cita_Repositorio();
-
-            Veterinario veterinarioSeleccionado = veterinarios.FirstOrDefault(v => v.nombre == nombreSeleccionado);
-
-            if (veterinarioSeleccionado != null)
-            {
-                citas.documento_veterinario = veterinarioSeleccionado.documento.ToString();
-            }
-           // cita_Repositorio.Registrar_Cita(citas);
+            Llenar_Datos_Mascota();
         }
     }
 }

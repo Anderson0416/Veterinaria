@@ -22,22 +22,6 @@ namespace Precentacion
             LlenarDataGridView_Cliente();
         }
     
-        private void Consulta_Cliente_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void Consulta_Cliente_Load_1(object sender, EventArgs e)
-        {
-
-        }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
         private void LlenarDataGridView_Cliente()
         {
 
@@ -100,14 +84,8 @@ namespace Precentacion
             cliente_Repositorio.Actualizar_Cliente(cliente);
             LlenarDataGridView_Cliente();
         }
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void dtv_Cliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
+       
     } 
 }
     

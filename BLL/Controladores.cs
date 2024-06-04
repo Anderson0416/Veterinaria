@@ -2,6 +2,7 @@
 using Entity;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -99,23 +100,14 @@ namespace BLL
             Producto_Repositorio producto_repositorio = new Producto_Repositorio();
             string respuesta = "";
 
-            if (string.IsNullOrEmpty(producto.Descripcion) || string.IsNullOrEmpty(producto.Nombre))
-            
-               
+            if (string.IsNullOrEmpty(producto.Descripcion) || string.IsNullOrEmpty(producto.Nombre) ||
+                producto.Precio<0)
             {
                 respuesta = "DEBE LLENAR TODOS LOS DATOS";
             }
             else
             {
-
-                if (producto_repositorio.Existencia_Producto(producto.Id))
-                {
-                    respuesta = "EL PRODUCTO YA EXISTE";
-                }
-                else
-                {
-                    producto_repositorio.Registrar_Producto(producto);
-                }
+            producto_repositorio.Registrar_Producto(producto);   
             }
             return respuesta;
         }
@@ -145,12 +137,30 @@ namespace BLL
             }
             return respuesta;
         }
+        public string Validacion_Cita (Citas citas)
+        {
+            Cita_Repositorio cita_repositorio = new Cita_Repositorio();
+            string respuesta = "";
+
+            if (string.IsNullOrEmpty(citas.fecha_consulta) || string.IsNullOrEmpty(citas.descripcion) ||
+                string.IsNullOrEmpty(citas.documento_veterinario) || citas.id_mascota<0)
+            {
+                respuesta = "DEBE LLENAR TODOS LOS DATOS";
+            }
+            else
+            {
+
+                cita_repositorio.Registrar_Cita(citas);
+                
+            }
+            return respuesta;
+        }
         public string control_Login(string usuario, string password)
         {
             Usuario_Repositorio usuario_repositorio = new Usuario_Repositorio();
 
             string respuesta = "";
-            Usuarios Datousuario = null;
+            Usuarios Datousuario = new Usuarios();
 
             if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(password))
             {
@@ -169,6 +179,13 @@ namespace BLL
                     if (Datousuario.Contraseña != generarSHA1(password))
                     {
                         respuesta = "EL USUARIO O LA CONTRASEÑA NO COINCIDEN";
+                    }
+                    else
+                    {
+                        
+                        Seccion.id = Datousuario.id;
+                        Seccion.Nombre = usuario;
+                        Seccion.Tipo_usuario = Datousuario.Tipo_usuario;
                     }
                 }
             }

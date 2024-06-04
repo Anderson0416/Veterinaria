@@ -24,10 +24,10 @@ namespace Precentacion
             Cliente cliente = new Cliente();
 
             cliente.documento = txt_Numero_Documento.Text;
-            cliente.tipo_documento = cmb_Tipo_Documento.Text.ToString();
+            cliente.tipo_documento = cmb_Tipo_Documento.Text;
             cliente.nombre = txt_Nombre.Text;
             cliente.apellido = txt_Apellido.Text;
-            cliente.sexo = cmb_Sexo.SelectedIndex.ToString();
+            cliente.sexo = cmb_Sexo.Text;
             cliente.fecha_nacimiento = dtp_Fecha.Text;
             cliente.telefono = txt_Telefono.Text;
 

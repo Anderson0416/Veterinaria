@@ -38,6 +38,8 @@
             this.btn_Registrar = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmb_Cargo = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,7 +93,7 @@
             // 
             // btn_Registrar
             // 
-            this.btn_Registrar.Location = new System.Drawing.Point(152, 260);
+            this.btn_Registrar.Location = new System.Drawing.Point(149, 330);
             this.btn_Registrar.Name = "btn_Registrar";
             this.btn_Registrar.Size = new System.Drawing.Size(151, 40);
             this.btn_Registrar.TabIndex = 19;
@@ -119,11 +121,33 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
+            // cmb_Cargo
+            // 
+            this.cmb_Cargo.FormattingEnabled = true;
+            this.cmb_Cargo.Items.AddRange(new object[] {
+            "Recepcionista",
+            "Veterinario"});
+            this.cmb_Cargo.Location = new System.Drawing.Point(169, 238);
+            this.cmb_Cargo.Name = "cmb_Cargo";
+            this.cmb_Cargo.Size = new System.Drawing.Size(121, 21);
+            this.cmb_Cargo.TabIndex = 23;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(75, 246);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Cargo";
+            // 
             // Registrar_Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 463);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cmb_Cargo);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_Registrar);
             this.Controls.Add(this.txt_Confirmar_Contraseña);
@@ -136,6 +160,7 @@
             this.Name = "Registrar_Usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.Registrar_Usuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -153,5 +178,7 @@
         private System.Windows.Forms.Button btn_Registrar;
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cmb_Cargo;
+        private System.Windows.Forms.Label label2;
     }
 }

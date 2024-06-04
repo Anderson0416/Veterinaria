@@ -48,8 +48,8 @@ namespace Precentacion
             mascota.especie = txt_Especie.Text;
             mascota.raza = txt_Raza.Text;
             mascota.edad = txt_Edad.Text;
-            mascota.edad2 = cmb_Edad2.Text.ToString();
-            mascota.sexo = cmb_Sexo.SelectedIndex.ToString();
+            mascota.edad2 = cmb_Edad2.Text;
+            mascota.sexo = cmb_Sexo.Text;
             mascota.cliente_documento = txt_cedulacliente.Text;
 
             try

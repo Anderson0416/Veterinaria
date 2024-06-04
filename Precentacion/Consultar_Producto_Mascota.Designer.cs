@@ -128,6 +128,7 @@
             this.btn_Actualizar_Producto.TabIndex = 10;
             this.btn_Actualizar_Producto.Text = "Actualizar  Producto";
             this.btn_Actualizar_Producto.UseVisualStyleBackColor = true;
+            this.btn_Actualizar_Producto.Click += new System.EventHandler(this.btn_Actualizar_Producto_Click_1);
             // 
             // rtb_Descripcion
             // 

@@ -41,42 +41,27 @@ namespace Precentacion
             txt_Precio.Text = dgv_Producto_Mascota.SelectedCells[3].Value.ToString();
 
         }
-        private void btn_E_Producto_Click(object sender, EventArgs e)
+        private void btn_Eliminar_Producto_Click_1(object sender, EventArgs e)
         {
-            int ID = int.Parse(txt_ID.Text);
-
-            Producto_Repositorio producto_Repositorio = new Producto_Repositorio();
-            producto_Repositorio.Eliminar_Producto(ID);
-            
-        }
-            private void btn_Eliminar_Producto_Click(object sender, EventArgs e)
-        { 
             int Id = int.Parse(txt_ID.Text);
 
             Producto_Repositorio producto_Repositorio = new Producto_Repositorio();
             producto_Repositorio.Eliminar_Producto(Id);
             LlenarDataGribView_Producto_Mascota();
-
         }
 
-        private void btn_Actualizar_Producto_Click(object sender, EventArgs e)
+        private void btn_Actualizar_Producto_Click_1(object sender, EventArgs e)
         {
-
             Producto producto = new Producto();
 
             producto.Id = int.Parse(txt_ID.Text);
             producto.Nombre = txt_Nombre.Text;
-            producto.Descripcion= rtb_Descripcion.Text;
+            producto.Descripcion = rtb_Descripcion.Text;
             producto.Precio = int.Parse(txt_Precio.Text);
-        
-            Producto_Repositorio producto_Repositorio = new Producto_Repositorio(); 
+
+            Producto_Repositorio producto_Repositorio = new Producto_Repositorio();
             producto_Repositorio.Actualizar_Producto(producto);
-           LlenarDataGribView_Producto_Mascota();
-        }
-
-        private void btn_Eliminar_Producto_Click_1(object sender, EventArgs e)
-        {
-
+            LlenarDataGribView_Producto_Mascota();
         }
     }
     }

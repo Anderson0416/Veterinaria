@@ -12,5 +12,7 @@ namespace Entity
         public string Nombre { get; set; }
         public string Contraseña { get; set; }
         public string Confirmar_Contraseña { get; set; }
+        public int Tipo_usuario { get; set; }
+        public int id { get; set; }
     }
 }

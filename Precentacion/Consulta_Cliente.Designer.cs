@@ -60,7 +60,6 @@
             this.dgv_Cliente.Size = new System.Drawing.Size(765, 150);
             this.dgv_Cliente.TabIndex = 0;
             this.dgv_Cliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dgv_Cliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_Cliente_CellContentClick);
             // 
             // label1
             // 
@@ -160,7 +159,6 @@
             this.label7.Size = new System.Drawing.Size(108, 13);
             this.label7.TabIndex = 14;
             this.label7.Text = "Fecha de Nacimiento";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txt_ID
             // 
@@ -247,7 +245,6 @@
             this.Controls.Add(this.dgv_Cliente);
             this.Name = "Consulta_Cliente";
             this.Text = "Consulta_Cliente";
-            this.Load += new System.EventHandler(this.Consulta_Cliente_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Cliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

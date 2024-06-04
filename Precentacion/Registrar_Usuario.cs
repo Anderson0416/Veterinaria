@@ -1,4 +1,5 @@
 ﻿using BLL;
+using DAL;
 using Entity;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,16 @@ namespace Precentacion
         {
             InitializeComponent();
         }
-
+        private void Mostrar_Veterinario_cmb()
+        {
+            Usuario_Repositorio usuario_repositorio = new Usuario_Repositorio();
+            List<Tipo_Usuario> tipo_usuarios;
+            tipo_usuarios = usuario_repositorio.Obtener_Tipo_Usuarios();
+            cmb_Cargo.DataSource = tipo_usuarios;
+            cmb_Cargo.DisplayMember = "nombre";
+            cmb_Cargo.ValueMember = "id";
+        }
+        
         private void btn_Registrar_Click(object sender, EventArgs e)
         {
             Usuarios usuario = new Usuarios();
@@ -27,6 +37,7 @@ namespace Precentacion
             usuario.Nombre = txt_Nombre.Text;
             usuario.Contraseña = txt_Contraseña.Text;
             usuario.Confirmar_Contraseña = txt_Confirmar_Contraseña.Text;
+            usuario.Tipo_usuario = (int)cmb_Cargo.SelectedValue;
 
             try
             {
@@ -55,6 +66,11 @@ namespace Precentacion
             Login login = new Login();
             login.Visible = true;
             this.Visible = false;
+        }
+
+        private void Registrar_Usuario_Load(object sender, EventArgs e)
+        {
+            Mostrar_Veterinario_cmb();
         }
     }
 }

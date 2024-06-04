@@ -19,16 +19,14 @@ namespace Precentacion
             InitializeComponent();
         }
 
-        private void rtb_Descripcion_TextChanged(object sender, EventArgs e)
-        {
 
-        }
         private void Registrar_Producto_Click(object sender, EventArgs e)
         {
             Producto producto = new Producto();
          
             producto.Nombre = txt_Nombre.Text.ToString();
-            producto.Descripcion = rtb_Descripcion.ToString();
+            producto.Descripcion = txt_Descripcion.Text.ToString();
+            producto.Precio =int.Parse(txt_Precio.Text.ToString());
        
             
             try

@@ -88,6 +88,36 @@ namespace DAL
             conectar.Close();
             return veterinarios;
         }
+        public Veterinario Consulta_Documento_Veterinario(string documento)
+        {
+            Veterinario veterinario = new Veterinario();
+            MySqlDataReader reader;
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+
+            string sql = "SELECT Nombre, Apellido, Tipo_Documento, Documento, Sexo, Fecha_Nacimiento, Fecha_Contrato " +
+             "FROM Veterinarios WHERE Documento LIKE @Documento";
+
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
+            comando.Parameters.AddWithValue("@Documento", documento);
+
+            reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    veterinario.nombre = reader.GetString(0);
+                    veterinario.apellido = reader.GetString(1);
+                    veterinario.tipo_documento = reader.GetString(2);
+                    veterinario.documento = reader.GetString(3);
+                    veterinario.sexo = reader.GetString(4);
+                    veterinario.fecha_nacimiento = reader.GetString(5);
+                    veterinario.fecha_contrato = reader.GetString(6);
+                }
+            }
+            return veterinario;
+        }
         public void Eliminar_Veterinario(string documento)
         {
             MySqlConnection conectar = conexion.crearConexion();
