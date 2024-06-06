@@ -16,6 +16,8 @@ namespace Entity
         public string sexo { get; set; }
         public string edad { get; set; }
         public string edad2 { get; set; }
-        public string cliente_documento { get; set; }
+        public Cliente cliente { get; set; }
+
+
     }
 }

@@ -11,14 +11,14 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        //protected override void Dispose(bool disposing)
+        //{
+        //    if (disposing && (components != null))
+        //    {
+        //        components.Dispose();
+        //    }
+        //    base.Dispose(disposing);
+        //}
 
         #region Windows Form Designer generated code
 
@@ -46,7 +46,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.SuspendLayout();
+
             // 
             // dataGridView1
             // 
@@ -73,7 +73,7 @@
             this.btn_Eliminar_Cita.TabIndex = 2;
             this.btn_Eliminar_Cita.Text = "Eliminar Cita";
             this.btn_Eliminar_Cita.UseVisualStyleBackColor = true;
-            this.btn_Eliminar_Cita.Click += new System.EventHandler(this.btn_Eliminar_Cita_Click);
+
             // 
             // rtb_Descripcion_Cita_Mascota
             // 
@@ -190,31 +190,8 @@
             // 
             // Consultar_Cita
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 582);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_Nombre_Veterinario);
-            this.Controls.Add(this.txt_Raza);
-            this.Controls.Add(this.txt_Especie);
-            this.Controls.Add(this.txt_Nombre_Mascota);
-            this.Controls.Add(this.txt_ID_Mascota);
-            this.Controls.Add(this.dtp_Fecha_Cita_Mascota);
-            this.Controls.Add(this.rtb_Descripcion_Cita_Mascota);
-            this.Controls.Add(this.btn_Eliminar_Cita);
-            this.Controls.Add(this.btn_Actualizar_Cita);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "Consultar_Cita";
-            this.Text = "Consultar_Cita";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+
+
 
         }
 

@@ -3,151 +3,197 @@ using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-//namespace DAL
-//{
- 
-    //public class Cita_Repositoriox  
-    //{
+namespace DAL
+{
 
-        //Conexion conexion = new Conexion();
-        //public int Registrar_Cita(Citas cita)
-        //{
-        //    MySqlConnection conectar = conexion.crearConexion();
-        //    conectar.Open();
+    public class Cita_Repositorio
+    {
 
-        //    string sql = "INSERT INTO Citas ( Fecha_Consulta, Descripcion, Documento_Veterinario, Id_Mascota )" +
-        //                 "VALUES ( @Fecha_Consulta, @Descripcion, @Documento_Veterinario, @Id_Mascota)";
-        //    MySqlCommand comando = new MySqlCommand(sql, conectar);
+        Conexion conexion = new Conexion();
 
-        //    comando.Parameters.AddWithValue("@Fecha_Consulta", cita.fecha_consulta);
-        //    comando.Parameters.AddWithValue("@Descripcion", cita.descripcion);
-        //    comando.Parameters.AddWithValue("@Documento_Veterinario", cita.documento_veterinario);
-        //    comando.Parameters.AddWithValue("@Id_Mascota", cita.id_mascota);
+        public int Registrar_Cita(Citas cita)
+        {
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
 
-        //    int resultado = comando.ExecuteNonQuery();
+            string sql = "INSERT INTO Citas ( Fecha_Consulta, Descripcion, Documento_Veterinario, Id_Mascota )" +
+                         "VALUES ( @Fecha_Consulta, @Descripcion, @Documento_Veterinario, @Id_Mascota)";
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
 
-        //    return resultado;
-        //}
-        //public List<Citas> Consultar_Citas_Veterinario(string documento)
-        //{
-        //    List<Citas> Citas = new List<Citas>();
+            comando.Parameters.AddWithValue("@Fecha_Consulta", cita.fecha_consulta);
+            comando.Parameters.AddWithValue("@Descripcion", cita.descripcion);
+            comando.Parameters.AddWithValue("@Documento_Veterinario", cita.veterinario.documento);
+            comando.Parameters.AddWithValue("@Id_Mascota", cita.mascota.id);
 
-        //    MySqlConnection conectar = conexion.crearConexion();
-        //    conectar.Open();
-        //    MySqlDataReader reader;
+            int resultado = comando.ExecuteNonQuery();
 
-        //    string sql = "SELECT Id, Fecha_Consulta, Descripcion, Id_Mascota" +
-        //        " FROM citas WHERE Documento_Veterinario LIKE @Documento_Veterinario";
+            return resultado;
+        }
+        public List<Citas> Consultar_Citas_Veterinario(string documento)
+        {
+            List<Citas> Citas = new List<Citas>();
 
-        //    using (var comando = new MySqlCommand(sql, conectar))
-        //    {
-        //        comando.Parameters.AddWithValue("@Documento_Veterinario", documento);
-        //        using (reader = comando.ExecuteReader())
-        //        {
-        //            while (reader.Read())
-        //            {
-        //                Citas citas = new Citas();
-        //                citas.id = reader.GetInt32("Id");
-        //                citas.descripcion = reader.GetString("Descripcion");
-        //                citas.id_mascota = reader.GetInt16("Id_Mascota");
-        //                citas.fecha_consulta = reader.GetString("Fecha_Consulta");
-        //                Citas.Add(citas);
-        //            }
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+            MySqlDataReader reader;
 
-        //        }
-        //    }
-        //    conectar.Close();
-        //    return Citas;
-        //}
+            string sql = "SELECT Id, Fecha_Consulta, Descripcion, Id_Mascota" +
+                " FROM citas WHERE Documento_Veterinario LIKE @Documento_Veterinario";
 
-        //public List<Citas> Consultar_Todos_Cita()
-        //{
-        //    List<Citas> citas = new List<Citas>();
-        //    List<Mascota> mascotas = new List<Mascota>();   
-        //    List<Veterinario> veterinarios = new List<Veterinario>();   
+            using (var comando = new MySqlCommand(sql, conectar))
+            {
+                comando.Parameters.AddWithValue("@Documento_Veterinario", documento);
+                using (reader = comando.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Citas citas = new Citas();
+                        citas.id = reader.GetInt32("Id");
+                        citas.descripcion = reader.GetString("Descripcion");
+                        citas.mascota.id = reader.GetInt16("Id_Mascota");
+                        citas.fecha_consulta = reader.GetString("Fecha_Consulta");
+                        Citas.Add(citas);
+                    }
 
-        //    MySqlConnection conectar = conexion.crearConexion();
-        //    conectar.Open();
-        //    MySqlDataReader reader;
+                }
+            }
+            conectar.Close();
+            return Citas;
+        }
 
-        //    string sql =
+        public void Eliminar_Cita(string Id_Mascota)
+        {
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
 
-        //       @"SELECT 
-        //     Citas.Fecha_Consulta,
-        //     Citas.Descripcion,
-        //     Mascotas.Id AS Id_Mascota,
-        //     Mascotas.Nombre AS Nombre_Mascota,
-        //     Mascotas.Especie,
-        //     Mascotas.Raza,
-        //     Veterinarios.Nombre AS Nombre_Veterinario,
-        //     Veterinarios.Documento AS Documento_Veterinario
-        //     FROM 
-        //     Citas
-        //     JOIN 
-        //     Mascotas ON Citas.Id_Mascota = Mascotas.Id
-        //     JOIN 
-        //     Veterinarios ON Citas.Documento_Veterinario = Veterinarios.Documento;";
+            string sql = "DELETE FROM citas WHERE (Id_Mascota) = @Id_Mascota";
+
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
 
 
-        //    using (var comando = new MySqlCommand(sql, conectar))
-        //    {
-        //        using (reader = comando.ExecuteReader())
-        //        {
-        //            while (reader.Read())
-        //            {
+            comando.Parameters.AddWithValue("@Id_Mascota", Id_Mascota);
 
+            int resultado = comando.ExecuteNonQuery();
+        }
+        public List<Citas> Consultar_CItas_Veterinarios(string documento)
+        {
+            List<Citas> Citas_veterinarios = new List<Citas>();
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+            MySqlDataReader reader;
 
-        //                Citas cita = new Citas
-        //                {
-        //                    fecha_consulta = reader["Fecha_Consulta"].ToString(),
-        //                    descripcion = reader["Descripcion"].ToString(),
-                         
-        //                     Mascota = new Mascota
-        //                    {
-        //                    id = Convert.ToInt32(reader["Id_Mascota"]),
-        //                    nombre = reader["Nombre_Mascota"].ToString(),
-        //                    especie = reader["Especie"].ToString(),
-        //                    raza = reader["Raza"].ToString()
-        //                    },
+            string sql = @"
+                    SELECT 
+                        Citas.Id AS CitaId,
+                        Citas.Fecha_Consulta AS FechaConsulta,
+                        Citas.Descripcion As Descripcion,
+                        Mascotas.Id AS MascotaId,
+                        Mascotas.Nombre AS MascotaNombre,
+                        Veterinarios.Nombre AS VeterinarioNombre,
+                        Veterinarios.Documento AS VeterinarioDocumento
+                    FROM 
+                        Citas
+                    JOIN 
+                        Mascotas ON Citas.Id_Mascota = Mascotas.Id
+                    JOIN 
+                        Veterinarios ON Citas.Documento_Veterinario = Veterinarios.Documento
+                    WHERE
+                    Veterinarios.Documento = @Documento_Veterinario";
 
-        //                    Veterinario = new Veterinario
-        //                    {
-        //                     nombre = reader["Nombre_Veterinario"].ToString(),
-        //                     documento = reader["Documento_Veterinario"].ToString()
-        //                    }
-        //                };
-        //                citas.Add(cita);
-        //            }
+            using (var comando = new MySqlCommand(sql, conectar))
+            {
+                comando.Parameters.AddWithValue("@Documento_Veterinario", documento);
+                using (reader = comando.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Citas_veterinarios.Add(Map(reader));
+                    }
 
-        //        }
-        //    }
-        //    conectar.Close();
-        //    return citas;
+                }
+            }
+            conectar.Close();
+            return Citas_veterinarios;
+        }
+        public List<Citas> Consultar_Todas_Citas()
+        {
+            List<Citas> Citas = new List<Citas>();
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+            MySqlDataReader reader;
 
+            string sql = @"
+                    SELECT 
+                        Citas.Id AS CitaId,
+                        Citas.Fecha_Consulta AS FechaConsulta,
+                        Citas.Descripcion As Descripcion,
+                        Mascotas.Id AS MascotaId,
+                        Mascotas.Nombre AS MascotaNombre,
+                        Veterinarios.Nombre AS VeterinarioNombre,
+                        Veterinarios.Documento AS VeterinarioDocumento
+                    FROM 
+                        Citas
+                    JOIN 
+                        Mascotas ON Citas.Id_Mascota = Mascotas.Id
+                    JOIN 
+                        Veterinarios ON Citas.Documento_Veterinario = Veterinarios.Documento";
 
+            using (var comando = new MySqlCommand(sql, conectar))
+            {
+                using (reader = comando.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Citas.Add(Map(reader));
+                    }
 
-        //}
+                }
+            }
+            conectar.Close();
+            return Citas;
+        }
+        public Citas Map(MySqlDataReader reader)
+        {
+            Veterinario veterinario = new Veterinario();
+            Citas citas = new Citas
+            {
+                id = reader.GetInt32("CitaId"),
+                descripcion = reader.GetString("Descripcion"),
+                fecha_consulta = reader.GetString("FechaConsulta"),
+            };
 
-        //public void Eliminar_Cita (string Id_Mascota)
-        //{
-        //    MySqlConnection conectar = conexion.crearConexion();
-        //    conectar.Open();
+            if (!reader.IsDBNull(reader.GetOrdinal("MascotaId")))
+            {
+                Mascota mascota = new Mascota
+                {
+                    id = reader.GetInt32("MascotaId"),
+                    nombre = reader.GetString("MascotaNombre"),
+                };
 
-        //    string sql = "DELETE FROM citas WHERE (Id_Mascota) = @Id_Mascota";
+                if (!reader.IsDBNull(reader.GetOrdinal("VeterinarioDocumento")))
+                {
+                    
+                   
+                        veterinario.documento = reader.GetString("VeterinarioDocumento");
+                        veterinario.nombre = reader.GetString("VeterinarioNombre");
+                    
+                }
 
-        //    MySqlCommand comando = new MySqlCommand(sql, conectar);
+                citas.mascota = mascota;
+                citas.veterinario = veterinario;
+            }
+            //else
+            //{
+            //    citas.Entrenador = null;
+            //}
 
-
-        //    comando.Parameters.AddWithValue("@Id_Mascota", Id_Mascota);
-
-        //    int resultado = comando.ExecuteNonQuery();
-        //}
-       
-
-//    }
-//}
+            return citas;
+        }
+    }
+}

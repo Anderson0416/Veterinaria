@@ -1,5 +1,6 @@
 ﻿using Entity;
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,7 @@ namespace DAL
                 comando.Parameters.AddWithValue("@Sexo", mascota.sexo);
                 comando.Parameters.AddWithValue("@Edad", mascota.edad);
                 comando.Parameters.AddWithValue("@Edad2", mascota.edad2);
-                comando.Parameters.AddWithValue("@Cliente_Documento", mascota.cliente_documento);
+                comando.Parameters.AddWithValue("@Cliente_Documento", mascota.cliente.documento);
 
                 int resultado = comando.ExecuteNonQuery();
 
@@ -57,6 +58,7 @@ namespace DAL
                     {
                  
                      Mascota mascota = new Mascota();
+                     mascota.cliente = new Cliente();
                      mascota.id = reader.GetInt32("Id");
                      mascota.nombre = reader.GetString("Nombre");
                      mascota.especie = reader.GetString("Especie");
@@ -64,7 +66,7 @@ namespace DAL
                      mascota.sexo = reader.GetString("Sexo");
                      mascota.edad = reader.GetString("Edad");
                      mascota.edad2 = reader.GetString("Edad2");
-                     mascota.cliente_documento = reader.GetString("Cliente_Documento");
+                     mascota.cliente.documento = reader.GetString("Cliente_Documento");
                      mascotas.Add(mascota);
                         
                     }
@@ -91,6 +93,8 @@ namespace DAL
                     while (reader.Read())
                     {
                         Mascota mascota = new Mascota();
+                        Cliente cliente = new Cliente();
+
                         mascota.id = reader.GetInt32("Id");
                         mascota.nombre = reader.GetString("Nombre");
                         mascota.especie = reader.GetString("Especie");
@@ -98,8 +102,10 @@ namespace DAL
                         mascota.sexo = reader.GetString("Sexo");
                         mascota.edad = reader.GetString("Edad");
                         mascota.edad2 = reader.GetString("Edad2");
-                        mascota.cliente_documento = reader.GetString("Cliente_Documento");
+                        cliente.documento = reader.GetString("Cliente_Documento");
+                        mascota.cliente = cliente;
                         mascotas.Add(mascota);
+                       
                     }
                 }
             }
@@ -138,7 +144,7 @@ namespace DAL
             comando.Parameters.AddWithValue("@Sexo", mascota.sexo);
             comando.Parameters.AddWithValue("@Edad", mascota.edad);
             comando.Parameters.AddWithValue("@Edad2", mascota.edad2);
-            comando.Parameters.AddWithValue("@Cliente_Documento", mascota.cliente_documento);
+            comando.Parameters.AddWithValue("@Cliente_Documento", mascota.cliente.documento);
            
 
             int resultado = comando.ExecuteNonQuery();

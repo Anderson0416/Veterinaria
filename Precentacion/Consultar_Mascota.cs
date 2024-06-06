@@ -30,29 +30,42 @@ namespace Precentacion
 
             List<Mascota> mascotas = mascota_Repositorio.Consultar_Todos_Mascota();
 
-            dgv_Mascota.DataSource = mascotas;
-            dgv_Mascota.Columns["ID"].HeaderText = "ID";
-            dgv_Mascota.Columns["nombre"].HeaderText = "Nombre";
-            dgv_Mascota.Columns["especie"].HeaderText = "Especie";
-            dgv_Mascota.Columns["raza"].HeaderText = "Raza";
-            dgv_Mascota.Columns["sexo"].HeaderText = "Sexo";
-            dgv_Mascota.Columns["edad"].HeaderText = "Edad";
-            dgv_Mascota.Columns["edad2"].HeaderText = "Edad2";
-            dgv_Mascota.Columns["cliente_documento"].HeaderText = "Documento del cliente";
-
-
-
+            dgv_Mascota.Rows.Clear();
+            dgv_Mascota.Columns.Add("ID", "ID");
+            dgv_Mascota.Columns.Add("Nombre", "Nombre");
+            dgv_Mascota.Columns.Add("Especie", "Especie");
+            dgv_Mascota.Columns.Add("Raza", "Raza");
+            dgv_Mascota.Columns.Add("Sexo", "Sexo");
+            dgv_Mascota.Columns.Add("Edad", "Edad");
+            dgv_Mascota.Columns.Add("Edad2", "Edad2");
+            dgv_Mascota.Columns.Add("Cliente_Documento", "Documento del Cliente");
+            foreach (Mascota mascota in mascotas)
+            {
+                dgv_Mascota.Rows.Add(
+                    mascota.id,
+                    mascota.nombre,
+                    mascota.especie,
+                    mascota.raza,
+                    mascota.sexo,
+                    mascota.edad,
+                    mascota.edad2,
+                    mascota.cliente.documento
+                );
+            }
+            
         }
         private void dgv_Mascota_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_ID.Text = dgv_Mascota.SelectedCells[0].Value.ToString();
-            txt_Nombre.Text = dgv_Mascota.SelectedCells[1].Value.ToString();
-            txt_Especie.Text = dgv_Mascota.SelectedCells[2].Value.ToString();
-            txt_Raza.Text = dgv_Mascota.SelectedCells[3].Value.ToString();
-            cbx_Sexo.Text = dgv_Mascota.SelectedCells[4].Value.ToString();
-            txt_Edad.Text = dgv_Mascota.SelectedCells[5].Value.ToString();
-            cbx_Edad2.Text = dgv_Mascota.SelectedCells[6].Value.ToString();
-            txt_Cliente_Documento.Text = dgv_Mascota.SelectedCells[7].Value.ToString();
+            DataGridViewRow row = dgv_Mascota.Rows[e.RowIndex];
+            txt_ID.Text = row.Cells["id"].Value.ToString();
+            txt_Nombre.Text = row.Cells["nombre"].Value.ToString();
+            txt_Especie.Text = row.Cells["especie"].Value.ToString();
+            txt_Raza.Text = row.Cells["raza"].Value.ToString();
+            cbx_Sexo.Text = row.Cells["sexo"].Value.ToString();
+            txt_Edad.Text = row.Cells["edad"].Value.ToString();
+            cbx_Edad2.Text = row.Cells["edad2"].Value.ToString();
+            txt_Cliente_Documento.Text = row.Cells["cliente_documento"].Value.ToString();
+            
 
         }
         private void btn_E_Mascota_Click(object sender, EventArgs e)
@@ -85,7 +98,7 @@ namespace Precentacion
                 mascota.sexo = cbx_Sexo.Text;
                 mascota.edad = txt_Edad.Text;
                 mascota.edad2 = cbx_Edad2.Text;
-                mascota.cliente_documento = txt_Cliente_Documento.Text;
+                mascota.cliente.documento = txt_Cliente_Documento.Text;
 
             Mascota_Repositorio mascota_Repositorio = new Mascota_Repositorio();
             mascota_Repositorio.Actualizar_Mascota(mascota);

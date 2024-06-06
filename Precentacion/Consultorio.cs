@@ -13,10 +13,13 @@ namespace Precentacion
 {
     public partial class Consultorio : Form
     {
-        public Consultorio(int id)
+        public Consultorio(int id, string nombre, string descripcion)
         {
             InitializeComponent();
-            lb_Nota.Text = id.ToString();
+            txt_Id_Mascota.Text = id.ToString();
+            txt_Nombre_Mascota.Text = nombre;
+            txt_Descripcion.Text = descripcion;
         }
+
     }
 }

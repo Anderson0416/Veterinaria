@@ -183,8 +183,6 @@ C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\bin\Debug\System
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\bin\Debug\K4os.Hash.xxHash.xml
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.AssemblyReference.cache
-C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.SuggestedBindingRedirects.cache
-C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe.config
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.cache
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CoreCompileInputs.cache
@@ -192,3 +190,4 @@ C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veteri
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Veterinaria\bin\Debug\Precentacion.dll.config
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\bin\Debug\Precentacion.dll.config

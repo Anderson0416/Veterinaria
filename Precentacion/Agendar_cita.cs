@@ -68,11 +68,13 @@ namespace Precentacion
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
             Citas cita = new Citas();
+            cita.veterinario= new Veterinario();
+            cita.mascota = new Mascota();
 
             cita.fecha_consulta = dtp_Fecha_Cita_Mascota.Text;
             cita.descripcion = rtb_Descripcion_Cita_Mascota.Text;
-            cita.documento_veterinario = (string)cmb_Veterinario.SelectedValue;
-            cita.id_mascota = (int)cmb_Nombre_Mascota.SelectedValue;
+            cita.veterinario.documento = (string)cmb_Veterinario.SelectedValue;
+            cita.mascota.id = (int)cmb_Nombre_Mascota.SelectedValue;
 
 
             try

@@ -79,24 +79,6 @@
     <Compile Include="Consultorio.Designer.cs">
       <DependentUpon>Consultorio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Eliminar_Cliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Eliminar_Cliente.Designer.cs">
-      <DependentUpon>Eliminar_Cliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Eliminar_Mascota.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Eliminar_Mascota.Designer.cs">
-      <DependentUpon>Eliminar_Mascota.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Eliminar_Veterinario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Eliminar_Veterinario.Designer.cs">
-      <DependentUpon>Eliminar_Veterinario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,15 +178,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultorio.resx">
       <DependentUpon>Consultorio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Eliminar_Cliente.resx">
-      <DependentUpon>Eliminar_Cliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Eliminar_Mascota.resx">
-      <DependentUpon>Eliminar_Mascota.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Eliminar_Veterinario.resx">
-      <DependentUpon>Eliminar_Veterinario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

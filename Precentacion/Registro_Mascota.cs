@@ -42,15 +42,15 @@ namespace Precentacion
         private void btn_Registrar_Mascota_Click(object sender, EventArgs e)
         {
             Mascota mascota = new Mascota();
+            mascota.cliente = new Cliente();
 
-         
             mascota.nombre = txt_Nombre.Text;
             mascota.especie = txt_Especie.Text;
             mascota.raza = txt_Raza.Text;
             mascota.edad = txt_Edad.Text;
             mascota.edad2 = cmb_Edad2.Text;
             mascota.sexo = cmb_Sexo.Text;
-            mascota.cliente_documento = txt_cedulacliente.Text;
+            mascota.cliente.documento = txt_cedulacliente.Text;
 
             try
             {

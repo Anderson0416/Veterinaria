@@ -53,17 +53,7 @@ namespace Precentacion
         private void btn_Eliminar_Click(object sender, EventArgs e)
         {
 
-           Eliminar_Cliente eliminar_Cliente = new Eliminar_Cliente();  
-            eliminar_Cliente.Visible = true;
-            this.Visible = false;
-
-            Eliminar_Veterinario eliminar_Veterinario = new Eliminar_Veterinario();
-            eliminar_Veterinario.Visible = true;
-            this.Visible = false;
-
-            Eliminar_Mascota eliminar_Mascota = new Eliminar_Mascota();
-            eliminar_Mascota.Visible = true;
-            this.Visible = false;
+          
 
             
         }

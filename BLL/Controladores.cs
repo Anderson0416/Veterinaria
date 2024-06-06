@@ -125,7 +125,7 @@ namespace BLL
             }
             else
             {
-                if (!cliente_repositorio.Existencia_CLiente(mascota.cliente_documento))
+                if (!cliente_repositorio.Existencia_CLiente(mascota.cliente.documento))
                 {
                     respuesta = "LA MASCOTA NO EXISTE";
                 }
@@ -143,7 +143,7 @@ namespace BLL
             string respuesta = "";
 
             if (string.IsNullOrEmpty(citas.fecha_consulta) || string.IsNullOrEmpty(citas.descripcion) ||
-                string.IsNullOrEmpty(citas.documento_veterinario) || citas.id_mascota<0)
+                string.IsNullOrEmpty(citas.veterinario.documento) || citas.mascota.id <0)
             {
                 respuesta = "DEBE LLENAR TODOS LOS DATOS";
             }
