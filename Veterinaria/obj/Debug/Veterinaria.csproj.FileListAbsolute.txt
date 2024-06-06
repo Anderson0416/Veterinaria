@@ -191,3 +191,4 @@ C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veteri
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veterina.BF1F9E00.Up2Date
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
+C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Veterinaria\bin\Debug\Precentacion.dll.config

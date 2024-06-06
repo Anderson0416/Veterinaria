@@ -115,7 +115,7 @@ namespace DAL
                         cliente.tipo_documento = reader.GetString("Tipo_Documento");
                         cliente.documento = reader.GetString("Documento");
                         cliente.sexo = reader.GetString("Sexo");
-                        //cliente.fecha_nacimiento = reader.GetString("Fecha_Nacimiento");
+                        cliente.fecha_nacimiento = reader.GetString("Fecha_Nacimiento");
                         cliente.telefono = reader.GetString("Telefono");
                         clientes.Add(cliente);
                     }

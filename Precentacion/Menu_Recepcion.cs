@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Precentacion
 {
@@ -65,6 +66,13 @@ namespace Precentacion
             this.Visible = false;
 
             
+        }
+
+        private void btn_Agendar_Click(object sender, EventArgs e)
+        {
+            Agendar_cita agendar_Cita = new Agendar_cita();
+            agendar_Cita.Visible = true;
+            this.Visible=false;
         }
     }
 }

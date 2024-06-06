@@ -41,8 +41,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txt_ID = new System.Windows.Forms.TextBox();
             this.txt_Telefono = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Fecha_Nacimiento = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Fecha_Contrato = new System.Windows.Forms.DateTimePicker();
             this.txt_Apellido = new System.Windows.Forms.TextBox();
             this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.btn_Eliminar_Veterinario = new System.Windows.Forms.Button();
@@ -166,19 +166,19 @@
             this.txt_Telefono.Size = new System.Drawing.Size(100, 20);
             this.txt_Telefono.TabIndex = 18;
             // 
-            // dateTimePicker1
+            // dtp_Fecha_Nacimiento
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(356, 106);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 19;
+            this.dtp_Fecha_Nacimiento.Location = new System.Drawing.Point(356, 106);
+            this.dtp_Fecha_Nacimiento.Name = "dtp_Fecha_Nacimiento";
+            this.dtp_Fecha_Nacimiento.Size = new System.Drawing.Size(200, 20);
+            this.dtp_Fecha_Nacimiento.TabIndex = 19;
             // 
-            // dateTimePicker2
+            // dtp_Fecha_Contrato
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(350, 132);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 20;
+            this.dtp_Fecha_Contrato.Location = new System.Drawing.Point(350, 132);
+            this.dtp_Fecha_Contrato.Name = "dtp_Fecha_Contrato";
+            this.dtp_Fecha_Contrato.Size = new System.Drawing.Size(200, 20);
+            this.dtp_Fecha_Contrato.TabIndex = 20;
             // 
             // txt_Apellido
             // 
@@ -222,7 +222,7 @@
             this.btn_Actualizar_Veterinario.Name = "btn_Actualizar_Veterinario";
             this.btn_Actualizar_Veterinario.Size = new System.Drawing.Size(120, 23);
             this.btn_Actualizar_Veterinario.TabIndex = 23;
-            this.btn_Actualizar_Veterinario.Text = "Actualiar Veterinario";
+            this.btn_Actualizar_Veterinario.Text = "Actualizar Veterinario";
             this.btn_Actualizar_Veterinario.UseVisualStyleBackColor = true;
             this.btn_Actualizar_Veterinario.Click += new System.EventHandler(this.btn_Actualizar_Veterinario_Click);
             // 
@@ -246,8 +246,8 @@
             this.Controls.Add(this.btn_Actualizar_Veterinario);
             this.Controls.Add(this.cbx_Sexo);
             this.Controls.Add(this.btn_Eliminar_Veterinario);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtp_Fecha_Contrato);
+            this.Controls.Add(this.dtp_Fecha_Nacimiento);
             this.Controls.Add(this.txt_Telefono);
             this.Controls.Add(this.txt_ID);
             this.Controls.Add(this.label9);
@@ -287,8 +287,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_ID;
         private System.Windows.Forms.TextBox txt_Telefono;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtp_Fecha_Nacimiento;
+        private System.Windows.Forms.DateTimePicker dtp_Fecha_Contrato;
         private System.Windows.Forms.TextBox txt_Apellido;
         private System.Windows.Forms.TextBox txt_Nombre;
         private System.Windows.Forms.Button btn_Eliminar_Veterinario;

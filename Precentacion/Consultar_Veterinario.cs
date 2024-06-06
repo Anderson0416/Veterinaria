@@ -42,8 +42,10 @@ namespace Precentacion
             dgv_Veterinario.Columns["tipo_documento"].HeaderText = "Tipo de Documento";
             dgv_Veterinario.Columns["documento"].HeaderText = "Documento";
             dgv_Veterinario.Columns["sexo"].HeaderText = "Sexo";
+            dgv_Veterinario.Columns["telefono"].HeaderText = "Telefono";
             dgv_Veterinario.Columns["fecha_nacimiento"].HeaderText = "Fecha de Nacimiento";
             dgv_Veterinario.Columns["fecha_contrato"].HeaderText = "Fecha de Contrato";
+     
 }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -53,7 +55,10 @@ namespace Precentacion
             txt_Documento.Text = dgv_Veterinario.SelectedCells[4].Value.ToString();
             cbx_Tipo_Documento.Text = dgv_Veterinario.SelectedCells[5].Value.ToString();
             cbx_Sexo.Text = dgv_Veterinario.SelectedCells[6].Value.ToString();
-            txt_Telefono.Text = dgv_Veterinario.SelectedCells[7].Value.ToString();
+            txt_Telefono.Text = dgv_Veterinario.SelectedCells[8].Value.ToString();
+            dtp_Fecha_Nacimiento.Value = Convert.ToDateTime(dgv_Veterinario.SelectedCells[7].Value.ToString());
+            dtp_Fecha_Contrato.Value = Convert.ToDateTime(dgv_Veterinario.SelectedCells[0].Value.ToString());
+
 
 
         }
@@ -81,8 +86,8 @@ namespace Precentacion
              veterinario.tipo_documento = cbx_Tipo_Documento.Text;   
              veterinario.documento = txt_Documento.Text;
              veterinario.sexo = cbx_Sexo.Text;
-            //veterinario.fecha_nacimiento = dtp_Fecha_Nacimiento.???;
-            //veterinario.fecha_contrato = dtp_Fecha_Contrato.???;
+            veterinario.fecha_nacimiento = dtp_Fecha_Nacimiento.Text;
+            veterinario.fecha_contrato = dtp_Fecha_Contrato.Text;
             veterinario.telefono = txt_Telefono.Text;   
 
             Veterinario_Repositorio veterinario_Repositorio = new Veterinario_Repositorio();

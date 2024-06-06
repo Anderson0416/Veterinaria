@@ -53,13 +53,13 @@
             // dgv_Cliente
             // 
             this.dgv_Cliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Cliente.Location = new System.Drawing.Point(23, 330);
+            this.dgv_Cliente.Location = new System.Drawing.Point(23, 254);
             this.dgv_Cliente.Name = "dgv_Cliente";
             this.dgv_Cliente.ReadOnly = true;
             this.dgv_Cliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Cliente.Size = new System.Drawing.Size(765, 150);
+            this.dgv_Cliente.Size = new System.Drawing.Size(765, 226);
             this.dgv_Cliente.TabIndex = 0;
-            this.dgv_Cliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dgv_Cliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Cliente_CellClick);
             // 
             // label1
             // 

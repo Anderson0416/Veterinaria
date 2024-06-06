@@ -45,9 +45,9 @@
             // 
             this.btn_Registrar_Medico.Location = new System.Drawing.Point(109, 299);
             this.btn_Registrar_Medico.Name = "btn_Registrar_Medico";
-            this.btn_Registrar_Medico.Size = new System.Drawing.Size(104, 24);
+            this.btn_Registrar_Medico.Size = new System.Drawing.Size(111, 24);
             this.btn_Registrar_Medico.TabIndex = 4;
-            this.btn_Registrar_Medico.Text = "Registrar Medico";
+            this.btn_Registrar_Medico.Text = "Registrar Veterinario";
             this.btn_Registrar_Medico.UseVisualStyleBackColor = true;
             this.btn_Registrar_Medico.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -73,7 +73,7 @@
             // 
             this.btn_Registrar_Cliente.Location = new System.Drawing.Point(109, 168);
             this.btn_Registrar_Cliente.Name = "btn_Registrar_Cliente";
-            this.btn_Registrar_Cliente.Size = new System.Drawing.Size(104, 21);
+            this.btn_Registrar_Cliente.Size = new System.Drawing.Size(111, 21);
             this.btn_Registrar_Cliente.TabIndex = 21;
             this.btn_Registrar_Cliente.Text = "Registrar Cliente";
             this.btn_Registrar_Cliente.UseVisualStyleBackColor = true;
@@ -83,7 +83,7 @@
             // 
             this.btn_Registrar_Mascota.Location = new System.Drawing.Point(109, 231);
             this.btn_Registrar_Mascota.Name = "btn_Registrar_Mascota";
-            this.btn_Registrar_Mascota.Size = new System.Drawing.Size(104, 23);
+            this.btn_Registrar_Mascota.Size = new System.Drawing.Size(111, 23);
             this.btn_Registrar_Mascota.TabIndex = 22;
             this.btn_Registrar_Mascota.Text = "Registrar Mascota";
             this.btn_Registrar_Mascota.UseVisualStyleBackColor = true;
@@ -117,6 +117,7 @@
             this.btn_Agendar.TabIndex = 25;
             this.btn_Agendar.Text = "Agendar cita";
             this.btn_Agendar.UseVisualStyleBackColor = true;
+            this.btn_Agendar.Click += new System.EventHandler(this.btn_Agendar_Click);
             // 
             // btn_Eliminar
             // 

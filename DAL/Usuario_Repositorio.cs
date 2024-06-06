@@ -16,7 +16,7 @@ namespace DAL
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "INSERT INTO usuarios ( Nombre, Contraseña, Id_Tipo)" +
+            string sql = "INSERT INTO usuario ( Nombre, Contrasena, Id_Tipo)" +
                          "VALUES ( @Nombre, @Contraseña, @Id_Tipo)";
             MySqlCommand comando = new MySqlCommand(sql, conectar);
 
@@ -34,7 +34,7 @@ namespace DAL
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "SELECT ID FROM Usuarios where Nombre like @Nombre";
+            string sql = "SELECT ID FROM Usuario where Nombre like @Nombre";
 
             MySqlCommand comando = new MySqlCommand(sql, conectar); ;
             comando.Parameters.AddWithValue("@Nombre", nombre);
@@ -56,7 +56,7 @@ namespace DAL
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "SELECT Id, Contraseña, Nombre, Id_Tipo FROM Usuarios where Nombre like @Nombre";
+            string sql = "SELECT Id, Contrasena, Nombre, Id_Tipo FROM Usuario where Nombre like @Nombre";
 
             MySqlCommand comando = new MySqlCommand(sql, conectar);
 
@@ -70,7 +70,7 @@ namespace DAL
                 usuarios = new Usuarios();
                 usuarios.id = int.Parse(reader["Id"].ToString());
                 usuarios.Nombre = reader["Nombre"].ToString();
-                usuarios.Contraseña = reader["Contraseña"].ToString();
+                usuarios.Contraseña = reader["Contrasena"].ToString();
                 usuarios.Tipo_usuario = int.Parse(reader["Id_Tipo"].ToString());
             }
             return usuarios;
@@ -84,7 +84,7 @@ namespace DAL
             MySqlDataReader reader;
 
             string sql = "SELECT Id, Nombre" +
-                " FROM Tipo_Usuarios";
+                " FROM Tipo_Usuario";
             using (var comando = new MySqlCommand(sql, conectar))
             {
                 using (reader = comando.ExecuteReader())

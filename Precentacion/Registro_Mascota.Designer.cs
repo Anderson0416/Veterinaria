@@ -152,6 +152,7 @@
             this.txt_cedulacliente.Name = "txt_cedulacliente";
             this.txt_cedulacliente.Size = new System.Drawing.Size(100, 20);
             this.txt_cedulacliente.TabIndex = 16;
+            this.txt_cedulacliente.TextChanged += new System.EventHandler(this.txt_cedulacliente_TextChanged);
             // 
             // label8
             // 

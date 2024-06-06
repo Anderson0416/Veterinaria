@@ -51,11 +51,9 @@
     <Compile Include="Agendar_cita.Designer.cs">
       <DependentUpon>Agendar_cita.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultar_cita.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Consultar_cita.Designer.cs">
-      <DependentUpon>Consultar_cita.cs</DependentUpon>
+    <Compile Include="Consultar_Cita.cs" />
+    <Compile Include="Consultar_Cita.Designer.cs">
+      <DependentUpon>Consultar_Cita.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultar_Mascota.cs">
       <SubType>Form</SubType>
@@ -184,8 +182,8 @@
     <EmbeddedResource Include="Agendar_cita.resx">
       <DependentUpon>Agendar_cita.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultar_cita.resx">
-      <DependentUpon>Consultar_cita.cs</DependentUpon>
+    <EmbeddedResource Include="Consultar_Cita.resx">
+      <DependentUpon>Consultar_Cita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultar_Mascota.resx">
       <DependentUpon>Consultar_Mascota.cs</DependentUpon>

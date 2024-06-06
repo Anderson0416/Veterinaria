@@ -82,5 +82,10 @@ namespace Precentacion
             this.Visible=false;
 
         }
+
+        private void txt_cedulacliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

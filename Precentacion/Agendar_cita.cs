@@ -69,8 +69,8 @@ namespace Precentacion
         {
             Citas cita = new Citas();
 
-            cita.fecha_consulta = dtp_Fecha_Cita.Text;
-            cita.descripcion = rtb_Descripcion.Text;
+            cita.fecha_consulta = dtp_Fecha_Cita_Mascota.Text;
+            cita.descripcion = rtb_Descripcion_Cita_Mascota.Text;
             cita.documento_veterinario = (string)cmb_Veterinario.SelectedValue;
             cita.id_mascota = (int)cmb_Nombre_Mascota.SelectedValue;
 
@@ -112,6 +112,13 @@ namespace Precentacion
         private void cmb_Nombre_Mascota_SelectedIndexChanged(object sender, EventArgs e)
         {
             Llenar_Datos_Mascota();
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            Menu_Recepcio menu_Recepcio = new Menu_Recepcio();
+            menu_Recepcio.Visible = true;
+            this.Visible = false;
         }
     }
 }

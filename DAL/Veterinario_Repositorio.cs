@@ -10,6 +10,7 @@ namespace DAL
 {
     public class Veterinario_Repositorio
     {
+
         Conexion conexion = new Conexion();
         public int Registrar_Veterinario(Veterinario veterinario)
         {
@@ -63,14 +64,14 @@ namespace DAL
             conectar.Open();
             MySqlDataReader reader;
 
-            string sql = "SELECT Id, Nombre, Apellido, Tipo_Documento, Documento, Sexo, Fecha_Nacimiento," +
-                " Telefono, Fecha_Contrato FROM Veterinarios";
+            string sql = "SELECT Id, Nombre, Apellido, Tipo_Documento, Documento, Sexo, Telefono," +
+                " Fecha_Nacimiento, Fecha_Contrato FROM Veterinarios";
                 using (var comando = new MySqlCommand(sql, conectar))
                 {
                     using ( reader = comando.ExecuteReader())
                     {
-                        while (reader.Read())
-                        {
+                    while (reader.Read())
+                    {
                         Veterinario veterinario = new Veterinario();
                         veterinario.id = reader.GetInt32("Id");
                         veterinario.nombre = reader.GetString("Nombre");
@@ -78,9 +79,10 @@ namespace DAL
                         veterinario.tipo_documento = reader.GetString("Tipo_Documento");
                         veterinario.documento = reader.GetString("Documento");
                         veterinario.sexo = reader.GetString("Sexo");
-                        veterinario.fecha_nacimiento = reader.GetString("Fecha_Nacimiento");
                         veterinario.telefono = reader.GetString("Telefono");
+                        veterinario.fecha_nacimiento = reader.GetString("Fecha_Nacimiento");
                         veterinario.fecha_contrato = reader.GetString("Fecha_Contrato");
+
                         veterinarios.Add(veterinario);
                         }
                      }
@@ -139,7 +141,7 @@ namespace DAL
             conectar.Open();
 
             string sql = "UPDATE Veterinarios SET Nombre = @Nombre, Apellido = @Apellido, Tipo_Documento = @Tipo_Documento" +
-                ", Documento = @Documento, Sexo = @Sexo, Fecha_Nacimiento = @Fecha_Nacimiento, Telefono = @Telefono," +
+                ", Documento = @Documento, Sexo = @Sexo, Telefono = @Telefono, Fecha_Nacimiento = @Fecha_Nacimiento," +
                 " Fecha_Contrato = @Fecha_Contrato  WHERE Id = @Id";
 
             MySqlCommand comando = new MySqlCommand(sql, conectar);
@@ -150,8 +152,8 @@ namespace DAL
             comando.Parameters.AddWithValue("@Tipo_Documento", veterinario.tipo_documento);
             comando.Parameters.AddWithValue("@Documento", veterinario.documento);
             comando.Parameters.AddWithValue("@Sexo", veterinario.sexo);
-            comando.Parameters.AddWithValue("@Fecha_Nacimiento", veterinario.fecha_nacimiento);
             comando.Parameters.AddWithValue("@Telefono", veterinario.telefono);
+            comando.Parameters.AddWithValue("@Fecha_Nacimiento", veterinario.fecha_nacimiento);
             comando.Parameters.AddWithValue("@Fecha_Contrato", veterinario.fecha_contrato);
 
             int resultado = comando.ExecuteNonQuery();
@@ -165,5 +167,6 @@ namespace DAL
                 Console.WriteLine("No se encontró el Veterinario con el ID especificado.");
             }
         }
+
     }
 }

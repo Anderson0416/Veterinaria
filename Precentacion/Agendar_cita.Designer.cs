@@ -41,13 +41,14 @@
             this.cmb_Veterinario = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dtp_Fecha_Cita = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Fecha_Cita_Mascota = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Registrar = new System.Windows.Forms.Button();
             this.btn_Consultar = new System.Windows.Forms.Button();
             this.txt_Documento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cmb_Edad = new System.Windows.Forms.ComboBox();
             this.cmb_Nombre_Mascota = new System.Windows.Forms.ComboBox();
             this.txt_Especie = new System.Windows.Forms.TextBox();
             this.txt_Sexo_Mascota = new System.Windows.Forms.TextBox();
@@ -55,10 +56,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.rtb_Descripcion = new System.Windows.Forms.RichTextBox();
+            this.rtb_Descripcion_Cita_Mascota = new System.Windows.Forms.RichTextBox();
             this.gb_Descripcion = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cmb_Edad = new System.Windows.Forms.ComboBox();
+            this.btn_Salir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -178,12 +179,12 @@
             this.button1.Text = "confirmar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // dtp_Fecha_Cita
+            // dtp_Fecha_Cita_Mascota
             // 
-            this.dtp_Fecha_Cita.Location = new System.Drawing.Point(128, 27);
-            this.dtp_Fecha_Cita.Name = "dtp_Fecha_Cita";
-            this.dtp_Fecha_Cita.Size = new System.Drawing.Size(208, 20);
-            this.dtp_Fecha_Cita.TabIndex = 31;
+            this.dtp_Fecha_Cita_Mascota.Location = new System.Drawing.Point(128, 27);
+            this.dtp_Fecha_Cita_Mascota.Name = "dtp_Fecha_Cita_Mascota";
+            this.dtp_Fecha_Cita_Mascota.Size = new System.Drawing.Size(208, 20);
+            this.dtp_Fecha_Cita_Mascota.TabIndex = 31;
             // 
             // groupBox1
             // 
@@ -257,6 +258,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informacion de la mascota";
             // 
+            // cmb_Edad
+            // 
+            this.cmb_Edad.FormattingEnabled = true;
+            this.cmb_Edad.Items.AddRange(new object[] {
+            "Dia",
+            "Mes",
+            "Año"});
+            this.cmb_Edad.Location = new System.Drawing.Point(128, 80);
+            this.cmb_Edad.Name = "cmb_Edad";
+            this.cmb_Edad.Size = new System.Drawing.Size(74, 21);
+            this.cmb_Edad.TabIndex = 37;
+            // 
             // cmb_Nombre_Mascota
             // 
             this.cmb_Nombre_Mascota.FormattingEnabled = true;
@@ -300,7 +313,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.dtp_Fecha_Cita);
+            this.groupBox3.Controls.Add(this.dtp_Fecha_Cita_Mascota);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.cmb_Veterinario);
@@ -319,17 +332,17 @@
             this.progressBar1.Size = new System.Drawing.Size(148, 10);
             this.progressBar1.TabIndex = 36;
             // 
-            // rtb_Descripcion
+            // rtb_Descripcion_Cita_Mascota
             // 
-            this.rtb_Descripcion.Location = new System.Drawing.Point(6, 19);
-            this.rtb_Descripcion.Name = "rtb_Descripcion";
-            this.rtb_Descripcion.Size = new System.Drawing.Size(245, 116);
-            this.rtb_Descripcion.TabIndex = 37;
-            this.rtb_Descripcion.Text = "";
+            this.rtb_Descripcion_Cita_Mascota.Location = new System.Drawing.Point(6, 19);
+            this.rtb_Descripcion_Cita_Mascota.Name = "rtb_Descripcion_Cita_Mascota";
+            this.rtb_Descripcion_Cita_Mascota.Size = new System.Drawing.Size(245, 116);
+            this.rtb_Descripcion_Cita_Mascota.TabIndex = 37;
+            this.rtb_Descripcion_Cita_Mascota.Text = "";
             // 
             // gb_Descripcion
             // 
-            this.gb_Descripcion.Controls.Add(this.rtb_Descripcion);
+            this.gb_Descripcion.Controls.Add(this.rtb_Descripcion_Cita_Mascota);
             this.gb_Descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_Descripcion.Location = new System.Drawing.Point(379, 339);
             this.gb_Descripcion.Name = "gb_Descripcion";
@@ -348,23 +361,22 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
-            // cmb_Edad
+            // btn_Salir
             // 
-            this.cmb_Edad.FormattingEnabled = true;
-            this.cmb_Edad.Items.AddRange(new object[] {
-            "Dia",
-            "Mes",
-            "Año"});
-            this.cmb_Edad.Location = new System.Drawing.Point(128, 80);
-            this.cmb_Edad.Name = "cmb_Edad";
-            this.cmb_Edad.Size = new System.Drawing.Size(74, 21);
-            this.cmb_Edad.TabIndex = 37;
+            this.btn_Salir.Location = new System.Drawing.Point(16, 13);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(75, 23);
+            this.btn_Salir.TabIndex = 40;
+            this.btn_Salir.Text = "salir";
+            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // Agendar_cita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 527);
+            this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.gb_Descripcion);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox3);
@@ -401,13 +413,13 @@
         private System.Windows.Forms.ComboBox cmb_Veterinario;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dtp_Fecha_Cita;
+        private System.Windows.Forms.DateTimePicker dtp_Fecha_Cita_Mascota;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.RichTextBox rtb_Descripcion;
+        private System.Windows.Forms.RichTextBox rtb_Descripcion_Cita_Mascota;
         private System.Windows.Forms.GroupBox gb_Descripcion;
         private System.Windows.Forms.TextBox txt_Edad;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -419,5 +431,6 @@
         private System.Windows.Forms.TextBox txt_Sexo_Mascota;
         private System.Windows.Forms.ComboBox cmb_Nombre_Mascota;
         private System.Windows.Forms.ComboBox cmb_Edad;
+        private System.Windows.Forms.Button btn_Salir;
     }
 }

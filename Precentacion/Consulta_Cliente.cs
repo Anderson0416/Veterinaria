@@ -38,7 +38,7 @@ namespace Precentacion
             dgv_Cliente.Columns["fecha_nacimiento"].HeaderText = "Fecha de Nacimiento";
             dgv_Cliente.Columns["telefono"].HeaderText = "Teléfono";
         }
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgv_Cliente_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_ID.Text = dgv_Cliente.SelectedCells[0].Value.ToString();
             txt_Nombre.Text = dgv_Cliente.SelectedCells[1].Value.ToString();
@@ -47,7 +47,8 @@ namespace Precentacion
             cbx_Tipo_Documento.Text = dgv_Cliente.SelectedCells[4].Value.ToString();
             cbx_Sexo.Text = dgv_Cliente.SelectedCells[5].Value.ToString();
             txt_Telefono.Text = dgv_Cliente.SelectedCells[7].Value.ToString();
-
+            dateTimePicker1.Value= Convert.ToDateTime(dgv_Cliente.SelectedCells[6].Value.ToString());
+           
         }
         private void btn_E_Cliente_Click(object sender, EventArgs e)
         {

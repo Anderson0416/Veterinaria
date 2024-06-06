@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.dgv_Citas = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo_Mascota = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_Buscar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,10 +41,6 @@
             this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_Consultar = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo_Mascota = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Citas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,9 +54,39 @@
             this.Fecha});
             this.dgv_Citas.Location = new System.Drawing.Point(12, 135);
             this.dgv_Citas.Name = "dgv_Citas";
+            this.dgv_Citas.ReadOnly = true;
+            this.dgv_Citas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Citas.Size = new System.Drawing.Size(703, 283);
             this.dgv_Citas.TabIndex = 0;
             this.dgv_Citas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Citas_CellClick);
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            this.Descripcion.Visible = false;
+            // 
+            // Codigo_Mascota
+            // 
+            this.Codigo_Mascota.HeaderText = "Codigo_Mascota";
+            this.Codigo_Mascota.Name = "Codigo_Mascota";
+            this.Codigo_Mascota.ReadOnly = true;
+            this.Codigo_Mascota.Visible = false;
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            this.Fecha.Visible = false;
             // 
             // label1
             // 
@@ -124,34 +154,6 @@
             this.btn_Consultar.Text = "Consultar";
             this.btn_Consultar.UseVisualStyleBackColor = true;
             this.btn_Consultar.Click += new System.EventHandler(this.btn_Consultar_Click);
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            this.Descripcion.Visible = false;
-            // 
-            // Codigo_Mascota
-            // 
-            this.Codigo_Mascota.HeaderText = "Codigo_Mascota";
-            this.Codigo_Mascota.Name = "Codigo_Mascota";
-            this.Codigo_Mascota.ReadOnly = true;
-            this.Codigo_Mascota.Visible = false;
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
-            this.Fecha.Visible = false;
             // 
             // Menu_Veterinario
             // 
