@@ -45,8 +45,23 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.dgv_Llenar_Tabla_Cita = new System.Windows.Forms.DataGridView();
+            this.dtp_Fecha_Consulta = new System.Windows.Forms.DateTimePicker();
+            this.cmb_Nombre_Veterinario = new System.Windows.Forms.ComboBox();
+            this.rtb_Descripcion = new System.Windows.Forms.RichTextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txt_Nombre_Mascot = new System.Windows.Forms.TextBox();
+            this.btn_Actualizar = new System.Windows.Forms.Button();
+            this.btn_Eliminar = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_ID_Mascot = new System.Windows.Forms.TextBox();
+            this.txt_Id_Cita = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Llenar_Tabla_Cita)).BeginInit();
+            this.SuspendLayout();
             // 
             // dataGridView1
             // 
@@ -73,7 +88,6 @@
             this.btn_Eliminar_Cita.TabIndex = 2;
             this.btn_Eliminar_Cita.Text = "Eliminar Cita";
             this.btn_Eliminar_Cita.UseVisualStyleBackColor = true;
-
             // 
             // rtb_Descripcion_Cita_Mascota
             // 
@@ -188,10 +202,149 @@
             this.label7.TabIndex = 52;
             this.label7.Text = "Descripcion de la Mascota";
             // 
+            // dgv_Llenar_Tabla_Cita
+            // 
+            this.dgv_Llenar_Tabla_Cita.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Llenar_Tabla_Cita.Location = new System.Drawing.Point(12, 363);
+            this.dgv_Llenar_Tabla_Cita.Name = "dgv_Llenar_Tabla_Cita";
+            this.dgv_Llenar_Tabla_Cita.ReadOnly = true;
+            this.dgv_Llenar_Tabla_Cita.Size = new System.Drawing.Size(899, 196);
+            this.dgv_Llenar_Tabla_Cita.TabIndex = 0;
+            this.dgv_Llenar_Tabla_Cita.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Llenar_Tabla_Cita_CellClick);
+            // 
+            // dtp_Fecha_Consulta
+            // 
+            this.dtp_Fecha_Consulta.Location = new System.Drawing.Point(216, 166);
+            this.dtp_Fecha_Consulta.Name = "dtp_Fecha_Consulta";
+            this.dtp_Fecha_Consulta.Size = new System.Drawing.Size(200, 20);
+            this.dtp_Fecha_Consulta.TabIndex = 1;
+            // 
+            // cmb_Nombre_Veterinario
+            // 
+            this.cmb_Nombre_Veterinario.FormattingEnabled = true;
+            this.cmb_Nombre_Veterinario.Location = new System.Drawing.Point(216, 87);
+            this.cmb_Nombre_Veterinario.Name = "cmb_Nombre_Veterinario";
+            this.cmb_Nombre_Veterinario.Size = new System.Drawing.Size(121, 21);
+            this.cmb_Nombre_Veterinario.TabIndex = 4;
+            // 
+            // rtb_Descripcion
+            // 
+            this.rtb_Descripcion.Location = new System.Drawing.Point(216, 205);
+            this.rtb_Descripcion.Name = "rtb_Descripcion";
+            this.rtb_Descripcion.Size = new System.Drawing.Size(245, 116);
+            this.rtb_Descripcion.TabIndex = 38;
+            this.rtb_Descripcion.Text = "";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(77, 57);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(120, 13);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "Nombre De La Mascota";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(77, 87);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(116, 13);
+            this.label9.TabIndex = 40;
+            this.label9.Text = "Nombre Del Veterinario";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(84, 166);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(113, 13);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "Fecha De La Consulta";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(77, 208);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(132, 13);
+            this.label11.TabIndex = 42;
+            this.label11.Text = "Descipcion De la Mascota";
+            // 
+            // txt_Nombre_Mascot
+            // 
+            this.txt_Nombre_Mascot.Location = new System.Drawing.Point(216, 54);
+            this.txt_Nombre_Mascot.Name = "txt_Nombre_Mascot";
+            this.txt_Nombre_Mascot.Size = new System.Drawing.Size(121, 20);
+            this.txt_Nombre_Mascot.TabIndex = 43;
+            // 
+            // btn_Actualizar
+            // 
+            this.btn_Actualizar.Location = new System.Drawing.Point(764, 225);
+            this.btn_Actualizar.Name = "btn_Actualizar";
+            this.btn_Actualizar.Size = new System.Drawing.Size(103, 51);
+            this.btn_Actualizar.TabIndex = 44;
+            this.btn_Actualizar.Text = "Actualizar Cita";
+            this.btn_Actualizar.UseVisualStyleBackColor = true;
+            this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click);
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.Location = new System.Drawing.Point(764, 282);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(103, 39);
+            this.btn_Eliminar.TabIndex = 45;
+            this.btn_Eliminar.Text = "Eliminar Cita";
+            this.btn_Eliminar.UseVisualStyleBackColor = true;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(84, 31);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(94, 13);
+            this.label12.TabIndex = 47;
+            this.label12.Text = "ID De La Mascota";
+            // 
+            // txt_ID_Mascot
+            // 
+            this.txt_ID_Mascot.Location = new System.Drawing.Point(216, 28);
+            this.txt_ID_Mascot.Name = "txt_ID_Mascot";
+            this.txt_ID_Mascot.Size = new System.Drawing.Size(30, 20);
+            this.txt_ID_Mascot.TabIndex = 48;
+            // 
+            // txt_Id_Cita
+            // 
+            this.txt_Id_Cita.Location = new System.Drawing.Point(505, 49);
+            this.txt_Id_Cita.Name = "txt_Id_Cita";
+            this.txt_Id_Cita.Size = new System.Drawing.Size(100, 20);
+            this.txt_Id_Cita.TabIndex = 49;
+            // 
             // Consultar_Cita
             // 
-
-
+            this.ClientSize = new System.Drawing.Size(923, 571);
+            this.Controls.Add(this.txt_Id_Cita);
+            this.Controls.Add(this.txt_ID_Mascot);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.btn_Eliminar);
+            this.Controls.Add(this.btn_Actualizar);
+            this.Controls.Add(this.txt_Nombre_Mascot);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.rtb_Descripcion);
+            this.Controls.Add(this.cmb_Nombre_Veterinario);
+            this.Controls.Add(this.dtp_Fecha_Consulta);
+            this.Controls.Add(this.dgv_Llenar_Tabla_Cita);
+            this.Name = "Consultar_Cita";
+            this.Text = "Consultar_Cita.cs";
+            this.Load += new System.EventHandler(this.Consultar_Cita_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Llenar_Tabla_Cita)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -214,5 +367,19 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dgv_Llenar_Tabla_Cita;
+        private System.Windows.Forms.DateTimePicker dtp_Fecha_Consulta;
+        private System.Windows.Forms.ComboBox cmb_Nombre_Veterinario;
+        private System.Windows.Forms.RichTextBox rtb_Descripcion;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txt_Nombre_Mascot;
+        private System.Windows.Forms.Button btn_Actualizar;
+        private System.Windows.Forms.Button btn_Eliminar;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txt_ID_Mascot;
+        private System.Windows.Forms.TextBox txt_Id_Cita;
     }
 }

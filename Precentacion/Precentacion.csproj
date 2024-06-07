@@ -51,7 +51,9 @@
     <Compile Include="Agendar_cita.Designer.cs">
       <DependentUpon>Agendar_cita.cs</DependentUpon>
     </Compile>
-    <Compile Include="Consultar_Cita.cs" />
+    <Compile Include="Consultar_Cita.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Consultar_Cita.Designer.cs">
       <DependentUpon>Consultar_Cita.cs</DependentUpon>
     </Compile>

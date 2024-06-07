@@ -87,8 +87,6 @@ C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Veterinaria\bin\Debug
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Veterinaria\bin\Debug\K4os.Hash.xxHash.xml
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Veterinaria\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.AssemblyReference.cache
-C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.SuggestedBindingRedirects.cache
-C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe.config
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.cache
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CoreCompileInputs.cache

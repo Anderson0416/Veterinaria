@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Schema;
 using DAL;
 using Entity;
 using Precentacion;
@@ -19,7 +20,7 @@ namespace Veterinaria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu_Veterinario());
+            Application.Run(new Consultar_Cita());
         }
     }
 }

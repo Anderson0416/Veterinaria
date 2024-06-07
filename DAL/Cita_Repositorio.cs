@@ -67,20 +67,6 @@ namespace DAL
             return Citas;
         }
 
-        public void Eliminar_Cita(string Id_Mascota)
-        {
-            MySqlConnection conectar = conexion.crearConexion();
-            conectar.Open();
-
-            string sql = "DELETE FROM citas WHERE (Id_Mascota) = @Id_Mascota";
-
-            MySqlCommand comando = new MySqlCommand(sql, conectar);
-
-
-            comando.Parameters.AddWithValue("@Id_Mascota", Id_Mascota);
-
-            int resultado = comando.ExecuteNonQuery();
-        }
         public List<Citas> Consultar_CItas_Veterinarios(string documento)
         {
             List<Citas> Citas_veterinarios = new List<Citas>();
@@ -194,6 +180,51 @@ namespace DAL
             //}
 
             return citas;
+        }
+        public void Eliminar_Cita(string Id)
+        {
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+
+            string sql = "DELETE FROM citas WHERE (Id) = @Id";
+
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
+
+
+            comando.Parameters.AddWithValue("@Id", Id);
+
+            int resultado = comando.ExecuteNonQuery();
+        }
+        public void Actualizar_Cita(Citas citas)
+        {
+            Veterinario veterinario = new Veterinario();
+            Mascota mascota = new Mascota();
+            
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+
+            string sql = "UPDATE Citas SET Fecha_Consulta = @Fecha_Consulta, Descripcion = @Descripcion," +
+                "Documento_Veterinario = @Documento_Veterinario, Id_Mascota = @Id_Mascota WHERE Id = @Id";
+
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
+            comando.Parameters.AddWithValue("@Id", citas.id);
+            comando.Parameters.AddWithValue("@Id_Mascota", citas.mascota.id);
+            comando.Parameters.AddWithValue("@Fecha_Consulta", citas.fecha_consulta);
+            comando.Parameters.AddWithValue("@Descripcion", citas.descripcion);
+            comando.Parameters.AddWithValue("@Documento_Veterinario", citas.veterinario.documento);
+            //citas.mascota = mascota;
+            //citas.veterinario = veterinario;
+            int resultado = comando.ExecuteNonQuery();
+
+            if (resultado > 0)
+
+            {
+                Console.WriteLine("Cita actualizado correctamente.");
+            }
+            else
+            {
+                Console.WriteLine("No se encontró la cita con el ID especificado.");
+            }
         }
     }
 }

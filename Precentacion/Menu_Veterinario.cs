@@ -87,11 +87,8 @@ namespace Precentacion
         public int Id_Mascota()
         {
             Mascota mascota = new Mascota();
-            Citas citas = new Citas();
-            
             mascota.id = int.Parse(dgv_Citas.SelectedCells[3].Value.ToString());
-            mascota.nombre = dgv_Citas.SelectedCells[4].Value.ToString();
-            citas.descripcion = dgv_Citas.SelectedCells[2].Value.ToString();
+            
 
             return mascota.id;
         }

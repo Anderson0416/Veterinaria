@@ -85,8 +85,6 @@ namespace Precentacion
             cliente_Repositorio.Actualizar_Cliente(cliente);
             LlenarDataGridView_Cliente();
         }
-       
-       
     } 
 }
     
