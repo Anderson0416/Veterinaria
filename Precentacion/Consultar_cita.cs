@@ -79,7 +79,6 @@ namespace Precentacion
             Llenar_Tabla_Citas();
   
         }
-
         private void btn_Actualizar_Click(object sender, EventArgs e)
         {
             Citas citas = new Citas();
@@ -101,7 +100,6 @@ namespace Precentacion
 
 
         }
-
         private void dgv_Llenar_Tabla_Cita_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_Id_Cita.Text = dgv_Llenar_Tabla_Cita.SelectedCells[0].Value.ToString();
