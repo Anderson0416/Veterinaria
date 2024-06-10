@@ -43,11 +43,9 @@ namespace Precentacion
             Cita_Repositorio citas_Repositorio = new Cita_Repositorio();
             List<Citas> lista_Citas = citas_Repositorio.Consultar_Todas_Citas();
 
-            // Limpiar las filas existentes en el DataGridView
             dgv_Llenar_Tabla_Cita.Rows.Clear();
 
-            // Agregar las columnas al DataGridView
-            dgv_Llenar_Tabla_Cita.Columns.Clear(); // Limpiar las columnas existentes en el DataGridView
+            dgv_Llenar_Tabla_Cita.Columns.Clear(); 
             dgv_Llenar_Tabla_Cita.Columns.Add("id", "ID de Cita");
             dgv_Llenar_Tabla_Cita.Columns.Add("fecha_consulta", "Fecha de Consulta");
             dgv_Llenar_Tabla_Cita.Columns.Add("descripcion", "Descripción");
@@ -56,7 +54,6 @@ namespace Precentacion
             dgv_Llenar_Tabla_Cita.Columns.Add("veterinario_nombre", "Nombre de Veterinario");
             dgv_Llenar_Tabla_Cita.Columns.Add("veterinario_documento", "Documento de Veterinario");
 
-            // Agregar las filas al DataGridView
             foreach (var cita in lista_Citas)
             {
                 dgv_Llenar_Tabla_Cita.Rows.Add(

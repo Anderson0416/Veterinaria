@@ -19,7 +19,7 @@ namespace DAL
 
         public Conexion()
         {
-            this.Base = "veterinaria2.0";
+            this.Base = "veterinaria";
             this.Servidor = "localhost";
             this.Puerto = "3306";
             this.Usuario = "root";

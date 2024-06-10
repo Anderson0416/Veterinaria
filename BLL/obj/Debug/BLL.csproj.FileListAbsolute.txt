@@ -154,3 +154,11 @@ C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\obj\Debug\BLL.csproj.Cor
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\obj\Debug\BLL.csproj.Up2Date
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\obj\Debug\BLL.dll
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\obj\Debug\BLL.pdb
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\bin\Debug\itextsharp.dll
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\bin\Debug\System.Collections.Immutable.dll
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\bin\Debug\itextsharp.xml
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\bin\Debug\System.Collections.Immutable.xml
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\bin\Debug\System.Reflection.Metadata.xml
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\BLL\bin\Debug\itextsharp.xmlworker.dll

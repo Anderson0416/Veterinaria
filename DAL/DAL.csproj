@@ -93,9 +93,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anamnesis_Repositorio.cs" />
     <Compile Include="Cita_Repositorio.cs" />
     <Compile Include="Cliente_Repositorio.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="Hitoriales_Repositorio.cs" />
     <Compile Include="Mascota_Repositorio.cs" />
     <Compile Include="Producto_Repositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

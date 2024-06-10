@@ -174,10 +174,6 @@ namespace DAL
                 citas.mascota = mascota;
                 citas.veterinario = veterinario;
             }
-            //else
-            //{
-            //    citas.Entrenador = null;
-            //}
 
             return citas;
         }
@@ -226,5 +222,6 @@ namespace DAL
                 Console.WriteLine("No se encontró la cita con el ID especificado.");
             }
         }
+        
     }
 }

@@ -20,7 +20,7 @@ namespace Veterinaria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Consultar_Cita());
+            Application.Run(new Historial());
         }
     }
 }

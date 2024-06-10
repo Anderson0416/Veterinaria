@@ -64,5 +64,12 @@ namespace Precentacion
             agendar_Cita.Visible = true;
             this.Visible=false;
         }
+
+        private void btn_Historial_Click(object sender, EventArgs e)
+        {
+            Historial historial = new Historial();
+            historial.Visible = true;
+            this.Visible=false;
+        }
     }
 }

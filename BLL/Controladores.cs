@@ -155,6 +155,25 @@ namespace BLL
             }
             return respuesta;
         }
+        public string Validacion_Anamnesis(Anamnesis anamnesis)
+        {
+            Anamnesis_Repositorio anamnesis_repositorio = new Anamnesis_Repositorio();
+            string respuesta = "";
+
+            if (string.IsNullOrEmpty(anamnesis.vacunas_previas) || anamnesis.peso<0 ||
+                string.IsNullOrEmpty(anamnesis.motivos_consulta) ||
+                string.IsNullOrEmpty(anamnesis.sintomas_mascota))
+            {
+                respuesta = "DEBE LLENAR TODOS LOS DATOS";
+            }
+            else
+            {
+
+                anamnesis_repositorio.Registrar_Anamnesis(anamnesis);
+
+            }
+            return respuesta;
+        }
         public string control_Login(string usuario, string password)
         {
             Usuario_Repositorio usuario_repositorio = new Usuario_Repositorio();

@@ -108,6 +108,7 @@
             this.btn_Historial.TabIndex = 24;
             this.btn_Historial.Text = "Historial";
             this.btn_Historial.UseVisualStyleBackColor = true;
+            this.btn_Historial.Click += new System.EventHandler(this.btn_Historial_Click);
             // 
             // btn_Agendar
             // 
