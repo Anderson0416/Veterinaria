@@ -33,6 +33,11 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Messaging" />
@@ -53,6 +58,12 @@
     </Compile>
     <Compile Include="Botones\Botones.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra.Designer.cs">
+      <DependentUpon>Compra.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultar_Cita.cs">
       <SubType>Form</SubType>
@@ -181,6 +192,9 @@
     <EmbeddedResource Include="Agendar_cita.resx">
       <DependentUpon>Agendar_cita.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Compra.resx">
+      <DependentUpon>Compra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultar_Cita.resx">
       <DependentUpon>Consultar_Cita.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +253,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

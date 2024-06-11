@@ -24,11 +24,12 @@ namespace Precentacion
         {
             Producto producto = new Producto();
          
-            producto.Nombre = txt_Nombre.Text.ToString();
-            producto.Descripcion = rtb_Descripcion.Text.ToString();
-            producto.Precio =int.Parse(txt_Precio.Text.ToString());
-       
-            
+            producto.Nombre = txt_Nombre.Text;
+            producto.Descripcion = rtb_Descripcion.Text;
+            producto.Precio =int.Parse(txt_Precio.Text);
+            producto.cantidad = int.Parse(txt_Cantidad.Text);
+
+
             try
             {
                 Controladores control = new Controladores();

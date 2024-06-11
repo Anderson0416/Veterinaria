@@ -146,7 +146,6 @@ C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Prece
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Agendar_cita.resources
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Consultar_cita.resources
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Login.resources
-C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Menu_Recepcio.resources
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Properties.Resources.resources
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Registrar_Usuario.resources
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Registro_Cliente.resources
@@ -223,3 +222,5 @@ C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\bin\Debu
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Todos_Los_Consultar.resources
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Todos_Los_Consultar.resources
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Menu_Recepcion.resources
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Menu_Recepcion.resources
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Compra.resources

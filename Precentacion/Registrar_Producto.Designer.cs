@@ -36,6 +36,8 @@
             this.txt_Precio = new System.Windows.Forms.TextBox();
             this.rtb_Descripcion = new System.Windows.Forms.RichTextBox();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_Cantidad = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_Registrar_Producto
@@ -52,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 69);
+            this.label2.Location = new System.Drawing.Point(60, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 40;
@@ -70,7 +72,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(60, 108);
+            this.label4.Location = new System.Drawing.Point(60, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 42;
@@ -78,14 +80,14 @@
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Location = new System.Drawing.Point(110, 66);
+            this.txt_Nombre.Location = new System.Drawing.Point(110, 38);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(100, 20);
             this.txt_Nombre.TabIndex = 44;
             // 
             // txt_Precio
             // 
-            this.txt_Precio.Location = new System.Drawing.Point(110, 105);
+            this.txt_Precio.Location = new System.Drawing.Point(110, 77);
             this.txt_Precio.Name = "txt_Precio";
             this.txt_Precio.Size = new System.Drawing.Size(100, 20);
             this.txt_Precio.TabIndex = 45;
@@ -117,11 +119,29 @@
             this.rjButton1.TextColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rjButton1.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(53, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "Cantidad";
+            // 
+            // txt_Cantidad
+            // 
+            this.txt_Cantidad.Location = new System.Drawing.Point(110, 134);
+            this.txt_Cantidad.Name = "txt_Cantidad";
+            this.txt_Cantidad.Size = new System.Drawing.Size(100, 20);
+            this.txt_Cantidad.TabIndex = 50;
+            // 
             // Registrar_Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(578, 374);
+            this.Controls.Add(this.txt_Cantidad);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.rtb_Descripcion);
             this.Controls.Add(this.txt_Precio);
@@ -148,5 +168,7 @@
         private System.Windows.Forms.TextBox txt_Precio;
         private System.Windows.Forms.RichTextBox rtb_Descripcion;
         private CustomControls.RJControls.RJButton rjButton1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_Cantidad;
     }
 }

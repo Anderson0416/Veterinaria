@@ -39,13 +39,15 @@
             this.btn_Eliminar_Producto = new System.Windows.Forms.Button();
             this.btn_Actualizar_Producto = new System.Windows.Forms.Button();
             this.rtb_Descripcion = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_Cantidad = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Producto_Mascota)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(80, 90);
+            this.label1.Location = new System.Drawing.Point(80, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +56,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 119);
+            this.label2.Location = new System.Drawing.Point(54, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 1;
@@ -72,7 +74,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(61, 151);
+            this.label4.Location = new System.Drawing.Point(61, 119);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 3;
@@ -80,21 +82,21 @@
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(104, 87);
+            this.txt_ID.Location = new System.Drawing.Point(104, 55);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 20);
             this.txt_ID.TabIndex = 4;
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Location = new System.Drawing.Point(104, 116);
+            this.txt_Nombre.Location = new System.Drawing.Point(104, 84);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(100, 20);
             this.txt_Nombre.TabIndex = 5;
             // 
             // txt_Precio
             // 
-            this.txt_Precio.Location = new System.Drawing.Point(104, 148);
+            this.txt_Precio.Location = new System.Drawing.Point(104, 116);
             this.txt_Precio.Name = "txt_Precio";
             this.txt_Precio.Size = new System.Drawing.Size(100, 20);
             this.txt_Precio.TabIndex = 7;
@@ -140,12 +142,30 @@
             this.rtb_Descripcion.TabIndex = 38;
             this.rtb_Descripcion.Text = "";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(49, 154);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "Cantidad";
+            // 
+            // txt_Cantidad
+            // 
+            this.txt_Cantidad.Location = new System.Drawing.Point(104, 154);
+            this.txt_Cantidad.Name = "txt_Cantidad";
+            this.txt_Cantidad.Size = new System.Drawing.Size(100, 20);
+            this.txt_Cantidad.TabIndex = 40;
+            // 
             // Consultar_Producto_Mascota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(599, 578);
+            this.Controls.Add(this.txt_Cantidad);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.rtb_Descripcion);
             this.Controls.Add(this.btn_Actualizar_Producto);
             this.Controls.Add(this.btn_Eliminar_Producto);
@@ -178,5 +198,7 @@
         private System.Windows.Forms.Button btn_Eliminar_Producto;
         private System.Windows.Forms.Button btn_Actualizar_Producto;
         private System.Windows.Forms.RichTextBox rtb_Descripcion;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txt_Cantidad;
     }
 }

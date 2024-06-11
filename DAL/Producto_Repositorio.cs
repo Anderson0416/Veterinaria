@@ -39,14 +39,14 @@ namespace DAL
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
 
-            string sql = "INSERT INTO Productos ( Nombre, Descripcion, Precio )" +
-                         "VALUES ( @Nombre, @Descripcion, @Precio)";
+            string sql = "INSERT INTO Productos ( Nombre, Descripcion, Precio, Cantidad )" +
+                         "VALUES ( @Nombre, @Descripcion, @Precio, @Cantidad)";
             MySqlCommand comando = new MySqlCommand(sql, conectar);
 
             comando.Parameters.AddWithValue("@Nombre", producto.Nombre);
             comando.Parameters.AddWithValue("@Descripcion", producto.Descripcion);
             comando.Parameters.AddWithValue("@Precio", producto.Precio);
-
+            comando.Parameters.AddWithValue("@Cantidad", producto.cantidad);
 
             int resultado = comando.ExecuteNonQuery();
 
@@ -62,8 +62,8 @@ namespace DAL
                 conectar.Open();
                 MySqlDataReader reader;
 
-                string sql = "SELECT Id, Precio, " +
-                    " Nombre, Descripcion FROM Productos";
+                string sql = "SELECT Id, Nombre, " +
+                    " Precio, Cantidad, Descripcion FROM Productos";
 
 
                 using (var comando = new MySqlCommand(sql, conectar))
@@ -76,9 +76,10 @@ namespace DAL
                             Producto producto = new Producto();
                             producto.Id = reader.GetInt32("Id");
                             producto.Nombre = reader.GetString("Nombre");
-                            producto.Descripcion = reader.GetString("Descripcion");
+                            producto.cantidad = reader.GetInt32("Cantidad");
                             producto.Precio = reader.GetInt32("Precio");
-                            productos.Add(producto);
+                            producto.Descripcion = reader.GetString("Descripcion");
+                        productos.Add(producto);
 
                         }
                     }
@@ -104,7 +105,48 @@ namespace DAL
             int resultado = comando.ExecuteNonQuery();
 
         }
+        public int Cantidad_Actual_Producto(int ID) 
+        {
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+            MySqlDataReader reader;
+            string sql = "SELECT Cantidad FROM Productos WHERE Id = @id";
+            using (var comando = new MySqlCommand(sql, conectar))
+            {
+                comando.Parameters.AddWithValue("@id", ID);
+                int Cantidad_Actual = Convert.ToInt32(comando.ExecuteScalar());
+                return Cantidad_Actual;
+            }
+        }
+        public void Actualizar_Cantidad_Resta_Producto(Producto producto)
+        {
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+            MySqlDataReader reader;
+            string sql = "UPDATE Productos SET Cantidad = Cantidad - @cantidadComprada WHERE Id = @id";
+            using (var comando = new MySqlCommand(sql, conectar))
+            {
+               comando.Parameters.AddWithValue("@cantidadComprada", producto.cantidad);
+               comando.Parameters.AddWithValue("@id", producto.Id);
+               comando.ExecuteNonQuery();
+            }
+            
+        }
+        public void Actualizar_Cantidad_Suma_Producto(Producto producto)
+        {
+            int cantidad_actual = Cantidad_Actual_Producto(producto.Id);
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+            MySqlDataReader reader;
+            string sql = "UPDATE Productos SET Cantidad = Cantidad + @cantidadComprada WHERE Id = @id";
+            using (var comando = new MySqlCommand(sql, conectar))
+            {
+                comando.Parameters.AddWithValue("@cantidadComprada", producto.cantidad);
+                comando.Parameters.AddWithValue("@id", producto.Id);
+                comando.ExecuteNonQuery();
+            }
 
+        }
         public void Actualizar_Producto(Producto producto)
         {
             MySqlConnection conectar = conexion.crearConexion() ;
@@ -112,7 +154,7 @@ namespace DAL
                 conectar.Open();
 
             string sql = "UPDATE Productos SET Nombre = @Nombre, Descripcion = @Descripcion, " +
-            "Precio = @Precio WHERE Id = @Id";
+            "Precio = @Precio, Cantidad = @Cantidad WHERE Id = @Id";
 
             MySqlCommand comando = new MySqlCommand(sql, conectar) ;
 
@@ -120,8 +162,10 @@ namespace DAL
                 comando.Parameters.AddWithValue("@Nombre", producto.Nombre);
                 comando.Parameters.AddWithValue("@Descripcion", producto.Descripcion);
                 comando.Parameters.AddWithValue("@Precio", producto.Precio);
+                comando.Parameters.AddWithValue("@Cantidad", producto.cantidad);
 
-                int resultado = comando.ExecuteNonQuery();
+
+            int resultado = comando.ExecuteNonQuery();
 
                 if (resultado > 0)
 
