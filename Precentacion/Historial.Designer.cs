@@ -194,6 +194,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Historial";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Historial";
             this.Load += new System.EventHandler(this.Historial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Historial)).EndInit();

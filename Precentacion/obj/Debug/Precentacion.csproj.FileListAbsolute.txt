@@ -88,7 +88,6 @@ C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debu
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precenta.52C0AE40.Up2Date
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.dll
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.pdb
-C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Menu_Recepcio.resources
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Agendar_cita.resources
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Consultar_cita.resources
 C:\Users\RYZEN\Desktop\c#\Veterinaria\Veterinaria\Precentacion\obj\Debug\Precentacion.csproj.AssemblyReference.cache
@@ -223,3 +222,4 @@ C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\bin\Debu
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\bin\Debug\itextsharp.xml
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Todos_Los_Consultar.resources
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Todos_Los_Consultar.resources
+C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Menu_Recepcion.resources

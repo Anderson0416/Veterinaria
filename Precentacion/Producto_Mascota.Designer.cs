@@ -62,6 +62,7 @@
             this.Controls.Add(this.btn_Consultar_Producto);
             this.Controls.Add(this.btn_Registrar_Producto);
             this.Name = "Producto_Mascota";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Producto_Mascota";
             this.ResumeLayout(false);
 

@@ -493,6 +493,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Consultorio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultorio";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);

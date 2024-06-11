@@ -389,6 +389,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Consultar_Cita";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar_Cita.cs";
             this.Load += new System.EventHandler(this.Consultar_Cita_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

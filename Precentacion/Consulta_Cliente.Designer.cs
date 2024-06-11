@@ -293,6 +293,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Consulta_Cliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta_Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

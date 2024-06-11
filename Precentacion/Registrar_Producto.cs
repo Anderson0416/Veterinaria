@@ -40,7 +40,7 @@ namespace Precentacion
                 else
                 {
                     MessageBox.Show("Producto registrado");
-                    Menu_Recepcio recepcio = new Menu_Recepcio();
+                    Menu_Recepcion recepcio = new Menu_Recepcion();
                     recepcio.Visible = true;
                     this.Visible = false;
                 }

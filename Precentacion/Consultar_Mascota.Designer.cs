@@ -286,6 +286,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Consultar_Mascota";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar_Mascota";
             this.Load += new System.EventHandler(this.Consultar_Mascota_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Mascota)).EndInit();

@@ -24,7 +24,7 @@ namespace Precentacion
         }
         private void Inicio_Seccion()
         {
-            Menu_Recepcio menu_recepcio = new Menu_Recepcio();
+            Menu_Recepcion menu_recepcio = new Menu_Recepcion();
             Menu_Veterinario menu_veterinario = new Menu_Veterinario();
             int tipo_Usuario = Seccion.Tipo_usuario;
             

@@ -11,9 +11,9 @@ using System.Windows.Forms.VisualStyles;
 
 namespace Precentacion
 {
-    public partial class Menu_Recepcio : Form
+    public partial class Menu_Recepcion : Form
     {
-        public Menu_Recepcio()
+        public Menu_Recepcion()
         {
             InitializeComponent();
         }

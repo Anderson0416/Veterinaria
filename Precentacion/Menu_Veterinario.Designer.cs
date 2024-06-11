@@ -216,6 +216,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Menu_Veterinario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_Veterinario";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Citas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -35,6 +35,7 @@
             this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.txt_Precio = new System.Windows.Forms.TextBox();
             this.rtb_Descripcion = new System.Windows.Forms.RichTextBox();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.SuspendLayout();
             // 
             // btn_Registrar_Producto
@@ -97,11 +98,31 @@
             this.rtb_Descripcion.TabIndex = 47;
             this.rtb_Descripcion.Text = "";
             // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.rjButton1.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton1.BorderRadius = 10;
+            this.rjButton1.BorderSize = 3;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton1.Location = new System.Drawing.Point(304, 108);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(150, 40);
+            this.rjButton1.TabIndex = 48;
+            this.rjButton1.Text = "Agregar Cita";
+            this.rjButton1.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            // 
             // Registrar_Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(578, 374);
+            this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.rtb_Descripcion);
             this.Controls.Add(this.txt_Precio);
             this.Controls.Add(this.txt_Nombre);
@@ -110,6 +131,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_Registrar_Producto);
             this.Name = "Registrar_Producto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar_Producto";
             this.Load += new System.EventHandler(this.Registrar_Producto_Load);
             this.ResumeLayout(false);
@@ -125,5 +147,6 @@
         private System.Windows.Forms.TextBox txt_Nombre;
         private System.Windows.Forms.TextBox txt_Precio;
         private System.Windows.Forms.RichTextBox rtb_Descripcion;
+        private CustomControls.RJControls.RJButton rjButton1;
     }
 }

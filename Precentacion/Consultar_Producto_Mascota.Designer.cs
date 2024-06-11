@@ -45,7 +45,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(129, 115);
+            this.label1.Location = new System.Drawing.Point(80, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(113, 179);
+            this.label2.Location = new System.Drawing.Point(54, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 1;
@@ -63,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(426, 112);
+            this.label3.Location = new System.Drawing.Point(32, 187);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 2;
@@ -72,7 +72,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(120, 248);
+            this.label4.Location = new System.Drawing.Point(61, 151);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 3;
@@ -80,21 +80,21 @@
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(180, 112);
+            this.txt_ID.Location = new System.Drawing.Point(104, 87);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 20);
             this.txt_ID.TabIndex = 4;
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Location = new System.Drawing.Point(180, 179);
+            this.txt_Nombre.Location = new System.Drawing.Point(104, 116);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(100, 20);
             this.txt_Nombre.TabIndex = 5;
             // 
             // txt_Precio
             // 
-            this.txt_Precio.Location = new System.Drawing.Point(180, 245);
+            this.txt_Precio.Location = new System.Drawing.Point(104, 148);
             this.txt_Precio.Name = "txt_Precio";
             this.txt_Precio.Size = new System.Drawing.Size(100, 20);
             this.txt_Precio.TabIndex = 7;
@@ -102,18 +102,18 @@
             // dgv_Producto_Mascota
             // 
             this.dgv_Producto_Mascota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Producto_Mascota.Location = new System.Drawing.Point(12, 390);
+            this.dgv_Producto_Mascota.Location = new System.Drawing.Point(12, 373);
             this.dgv_Producto_Mascota.Name = "dgv_Producto_Mascota";
             this.dgv_Producto_Mascota.ReadOnly = true;
             this.dgv_Producto_Mascota.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Producto_Mascota.Size = new System.Drawing.Size(918, 194);
+            this.dgv_Producto_Mascota.Size = new System.Drawing.Size(569, 194);
             this.dgv_Producto_Mascota.TabIndex = 8;
             this.dgv_Producto_Mascota.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Producto_Mascota_CellClick);
             // 
             // btn_Eliminar_Producto
             // 
             this.btn_Eliminar_Producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Eliminar_Producto.Location = new System.Drawing.Point(811, 344);
+            this.btn_Eliminar_Producto.Location = new System.Drawing.Point(462, 344);
             this.btn_Eliminar_Producto.Name = "btn_Eliminar_Producto";
             this.btn_Eliminar_Producto.Size = new System.Drawing.Size(119, 23);
             this.btn_Eliminar_Producto.TabIndex = 9;
@@ -124,7 +124,7 @@
             // btn_Actualizar_Producto
             // 
             this.btn_Actualizar_Producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Actualizar_Producto.Location = new System.Drawing.Point(811, 293);
+            this.btn_Actualizar_Producto.Location = new System.Drawing.Point(462, 293);
             this.btn_Actualizar_Producto.Name = "btn_Actualizar_Producto";
             this.btn_Actualizar_Producto.Size = new System.Drawing.Size(119, 45);
             this.btn_Actualizar_Producto.TabIndex = 10;
@@ -134,7 +134,7 @@
             // 
             // rtb_Descripcion
             // 
-            this.rtb_Descripcion.Location = new System.Drawing.Point(498, 109);
+            this.rtb_Descripcion.Location = new System.Drawing.Point(104, 184);
             this.rtb_Descripcion.Name = "rtb_Descripcion";
             this.rtb_Descripcion.Size = new System.Drawing.Size(259, 116);
             this.rtb_Descripcion.TabIndex = 38;
@@ -144,7 +144,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 596);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(599, 578);
             this.Controls.Add(this.rtb_Descripcion);
             this.Controls.Add(this.btn_Actualizar_Producto);
             this.Controls.Add(this.btn_Eliminar_Producto);
