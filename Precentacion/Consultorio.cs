@@ -28,6 +28,7 @@ namespace Precentacion
             txt_Codigo_Cita.Text = id_cita.ToString();
             id_anamnesi = id_anamnesis;
             id_historia = id_historial;
+            imprimir();
             llenar_Datos_Anamnesis();
             llenar_Datos_Historial();
         }
@@ -36,6 +37,13 @@ namespace Precentacion
             Agregar_Historial();
             Guardar();
             Eliminar_Cita();
+        }
+        public void imprimir()
+        {
+            if(id_historia == 0)
+            {
+                btn_imprimir.Visible = false;
+            }
         }
         public void Agregar_Historial()
         {
@@ -152,9 +160,6 @@ namespace Precentacion
 
         private void btn_Salir_Click(object sender, EventArgs e)
         {
-            Menu_Veterinario menu_Veterinario = new Menu_Veterinario();
-            menu_Veterinario.Visible = true;
-
             this.Visible = false;
         }
     }

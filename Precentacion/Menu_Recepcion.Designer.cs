@@ -36,6 +36,7 @@
             this.btn_Consultar = new System.Windows.Forms.Button();
             this.btn_Historial = new System.Windows.Forms.Button();
             this.btn_Agendar = new System.Windows.Forms.Button();
+            this.btn_Salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,11 +126,22 @@
             this.btn_Agendar.UseVisualStyleBackColor = true;
             this.btn_Agendar.Click += new System.EventHandler(this.btn_Agendar_Click);
             // 
+            // btn_Salir
+            // 
+            this.btn_Salir.Location = new System.Drawing.Point(36, 25);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(110, 23);
+            this.btn_Salir.TabIndex = 26;
+            this.btn_Salir.Text = "Salir";
+            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            // 
             // Menu_Recepcio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 593);
+            this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_Agendar);
             this.Controls.Add(this.btn_Historial);
             this.Controls.Add(this.btn_Registrar_Mascota);
@@ -154,5 +166,6 @@
         private System.Windows.Forms.Button btn_Consultar;
         private System.Windows.Forms.Button btn_Historial;
         private System.Windows.Forms.Button btn_Agendar;
+        private System.Windows.Forms.Button btn_Salir;
     }
 }

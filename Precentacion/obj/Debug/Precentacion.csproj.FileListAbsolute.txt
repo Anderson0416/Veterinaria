@@ -222,3 +222,4 @@ C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\bin\Debu
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\bin\Debug\itextsharp.xml
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Todos_Los_Consultar.resources
+C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Todos_Los_Consultar.resources

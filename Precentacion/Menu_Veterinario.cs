@@ -86,7 +86,6 @@ namespace Precentacion
                 int id_historial = 0;
                 Consultorio consultorio = new Consultorio(id_mascota , id_cita, nombre, descripcion, id_anamnesis, id_historial);
                 consultorio.Show();
-                this.Visible = false;
             }
         } 
         public int Id_Cita()
@@ -122,6 +121,19 @@ namespace Precentacion
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            var confirmacion = MessageBox.Show("¿Seguro que quiere cerrar sesión?", "Confirmar cierre de sesión", MessageBoxButtons.OKCancel);
+
+            if (confirmacion == DialogResult.OK)
+            {
+                this.Close();
+
+                Login login = new Login();
+                login.Show();
+            }
         }
     }
 }
