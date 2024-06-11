@@ -100,7 +100,7 @@ namespace DAL
             MySqlDataReader reader;
 
             string sql = "SELECT Id, Nombre, Apellido, Tipo_Documento, Documento, Sexo, Fecha_Nacimiento," +
-                " Telefono FROM clientes";
+                " Telefono FROM Clientes";
 
             using (var comando = new MySqlCommand(sql, conectar))
             {

@@ -34,9 +34,10 @@
             // 
             // btn_Registrar_Producto
             // 
-            this.btn_Registrar_Producto.Location = new System.Drawing.Point(47, 73);
+            this.btn_Registrar_Producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Registrar_Producto.Location = new System.Drawing.Point(119, 42);
             this.btn_Registrar_Producto.Name = "btn_Registrar_Producto";
-            this.btn_Registrar_Producto.Size = new System.Drawing.Size(108, 23);
+            this.btn_Registrar_Producto.Size = new System.Drawing.Size(128, 23);
             this.btn_Registrar_Producto.TabIndex = 0;
             this.btn_Registrar_Producto.Text = "Registrar Producto";
             this.btn_Registrar_Producto.UseVisualStyleBackColor = true;
@@ -44,9 +45,10 @@
             // 
             // btn_Consultar_Producto
             // 
-            this.btn_Consultar_Producto.Location = new System.Drawing.Point(201, 73);
+            this.btn_Consultar_Producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Consultar_Producto.Location = new System.Drawing.Point(114, 93);
             this.btn_Consultar_Producto.Name = "btn_Consultar_Producto";
-            this.btn_Consultar_Producto.Size = new System.Drawing.Size(110, 23);
+            this.btn_Consultar_Producto.Size = new System.Drawing.Size(133, 23);
             this.btn_Consultar_Producto.TabIndex = 1;
             this.btn_Consultar_Producto.Text = "Consultar Producto";
             this.btn_Consultar_Producto.UseVisualStyleBackColor = true;

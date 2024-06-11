@@ -106,5 +106,11 @@ namespace Precentacion
             dtp_Fecha_Consulta.Value = Convert.ToDateTime(dgv_Llenar_Tabla_Cita.SelectedCells[1].Value.ToString());
             rtb_Descripcion.Text = dgv_Llenar_Tabla_Cita.SelectedCells[2].Value.ToString();
         }
+
+        private void btn_Regresar_Click(object sender, EventArgs e)
+        {
+         
+            this.Visible = false;
+        }
     }
 }

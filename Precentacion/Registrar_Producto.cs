@@ -25,7 +25,7 @@ namespace Precentacion
             Producto producto = new Producto();
          
             producto.Nombre = txt_Nombre.Text.ToString();
-            producto.Descripcion = txt_Descripcion.Text.ToString();
+            producto.Descripcion = rtb_Descripcion.Text.ToString();
             producto.Precio =int.Parse(txt_Precio.Text.ToString());
        
             
@@ -52,7 +52,10 @@ namespace Precentacion
 
         }
 
-   
+        private void Registrar_Producto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

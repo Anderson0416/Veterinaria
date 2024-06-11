@@ -95,7 +95,7 @@ namespace Precentacion
 
         private void Historial_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void dgv_Historial_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -129,11 +129,34 @@ namespace Precentacion
 
         private void btn_Imprimir_Historial_Click(object sender, EventArgs e)
         {
-            int idHistorial = int.Parse(dgv_Historial.SelectedCells[0].Value.ToString());
-            string rutaDirectorio = @"C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\pdf";
-            pdf_Historial pdf_Historial = new pdf_Historial();
-            string respuesta = (pdf_Historial.Generar_Pdf_List_aHistorial(idHistorial, rutaDirectorio));
-            MessageBox.Show(respuesta);
+            // Ensure a row is selected
+            if (dgv_Historial.SelectedCells.Count > 0)
+            {
+                int rowIndex = dgv_Historial.SelectedCells[0].RowIndex;
+
+                // Ensure the column index is valid
+                if (dgv_Historial.Rows[rowIndex].Cells.Count > 2)
+                {
+                    // Get the idMascota from the 3rd column (index 2)
+                    object value = dgv_Historial.Rows[rowIndex].Cells[2].Value;
+
+                    if (value != null && int.TryParse(value.ToString(), out int idMascota))
+                    {
+                        // Call method to generate PDF
+                        string rutaDirectorio = @"C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\pdf";
+                        pdf_Historial pdf_Historial = new pdf_Historial();
+                        string respuesta = (pdf_Historial.Generar_Pdf_Historiales_Mascota(idMascota, rutaDirectorio));
+
+                        MessageBox.Show(respuesta);
+                    }
+                }
+            }
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+      
+            this.Visible = false;
         }
     }
 }

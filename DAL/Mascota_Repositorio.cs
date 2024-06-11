@@ -76,6 +76,42 @@ namespace DAL
             conectar.Close();
             return mascotas;
         }
+        public Mascota Consulta_Mascota_Id(int idMascota)
+        {
+            Mascota mascota = null;
+
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+            MySqlDataReader reader;
+
+            string sql = "SELECT Id, Nombre, Especie, Raza, Sexo, Edad, Edad2 " +
+                         "FROM Mascotas WHERE Id = @IdMascota"; // Aquí se añade el espacio antes de FROM
+
+            using (var comando = new MySqlCommand(sql, conectar))
+            {
+                comando.Parameters.AddWithValue("@IdMascota", idMascota);
+
+                using (reader = comando.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        mascota = new Mascota
+                        {
+                            id = reader.GetInt32("Id"),
+                            nombre = reader.GetString("Nombre"),
+                            especie = reader.GetString("Especie"),
+                            raza = reader.GetString("Raza"),
+                            sexo = reader.GetString("Sexo"),
+                            edad = reader.GetString("Edad"),
+                            edad2 = reader.GetString("Edad2"),
+                        };
+                    }
+                }
+            }
+
+            conectar.Close();
+            return mascota;
+        }
         public List<Mascota> Consultar_Todos_Mascota()
         {
             List<Mascota> mascotas = new List<Mascota>();

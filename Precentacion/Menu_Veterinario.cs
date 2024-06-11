@@ -23,6 +23,8 @@ namespace Precentacion
         {
             Consultar_Veterinario();
             Llenar_Tabla_Citas_Veterinario();
+
+       
         }
         private void Consultar_Veterinario()
         {
@@ -110,6 +112,16 @@ namespace Precentacion
             Citas citas = new Citas();
             citas.descripcion = dgv_Citas.SelectedCells[2].Value.ToString();
             return citas.descripcion;
+        }
+
+        private void dgv_Citas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

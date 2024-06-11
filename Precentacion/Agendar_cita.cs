@@ -118,8 +118,7 @@ namespace Precentacion
 
         private void btn_Salir_Click(object sender, EventArgs e)
         {
-            Menu_Recepcio menu_Recepcio = new Menu_Recepcio();
-            menu_Recepcio.Visible = true;
+           
             this.Visible = false;
         }
     }

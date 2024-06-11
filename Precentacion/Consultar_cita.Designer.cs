@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultar_Cita));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_Actualizar_Cita = new System.Windows.Forms.Button();
             this.btn_Eliminar_Cita = new System.Windows.Forms.Button();
@@ -59,8 +60,14 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txt_ID_Mascot = new System.Windows.Forms.TextBox();
             this.txt_Id_Cita = new System.Windows.Forms.TextBox();
+            this.btn_Regresar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Llenar_Tabla_Cita)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -205,16 +212,16 @@
             // dgv_Llenar_Tabla_Cita
             // 
             this.dgv_Llenar_Tabla_Cita.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Llenar_Tabla_Cita.Location = new System.Drawing.Point(12, 363);
+            this.dgv_Llenar_Tabla_Cita.Location = new System.Drawing.Point(54, 359);
             this.dgv_Llenar_Tabla_Cita.Name = "dgv_Llenar_Tabla_Cita";
             this.dgv_Llenar_Tabla_Cita.ReadOnly = true;
-            this.dgv_Llenar_Tabla_Cita.Size = new System.Drawing.Size(899, 196);
+            this.dgv_Llenar_Tabla_Cita.Size = new System.Drawing.Size(745, 225);
             this.dgv_Llenar_Tabla_Cita.TabIndex = 0;
             this.dgv_Llenar_Tabla_Cita.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Llenar_Tabla_Cita_CellClick);
             // 
             // dtp_Fecha_Consulta
             // 
-            this.dtp_Fecha_Consulta.Location = new System.Drawing.Point(216, 166);
+            this.dtp_Fecha_Consulta.Location = new System.Drawing.Point(161, 182);
             this.dtp_Fecha_Consulta.Name = "dtp_Fecha_Consulta";
             this.dtp_Fecha_Consulta.Size = new System.Drawing.Size(200, 20);
             this.dtp_Fecha_Consulta.TabIndex = 1;
@@ -222,23 +229,23 @@
             // cmb_Nombre_Veterinario
             // 
             this.cmb_Nombre_Veterinario.FormattingEnabled = true;
-            this.cmb_Nombre_Veterinario.Location = new System.Drawing.Point(216, 87);
+            this.cmb_Nombre_Veterinario.Location = new System.Drawing.Point(161, 155);
             this.cmb_Nombre_Veterinario.Name = "cmb_Nombre_Veterinario";
             this.cmb_Nombre_Veterinario.Size = new System.Drawing.Size(121, 21);
             this.cmb_Nombre_Veterinario.TabIndex = 4;
             // 
             // rtb_Descripcion
             // 
-            this.rtb_Descripcion.Location = new System.Drawing.Point(216, 205);
+            this.rtb_Descripcion.Location = new System.Drawing.Point(9, 45);
             this.rtb_Descripcion.Name = "rtb_Descripcion";
-            this.rtb_Descripcion.Size = new System.Drawing.Size(245, 116);
+            this.rtb_Descripcion.Size = new System.Drawing.Size(299, 117);
             this.rtb_Descripcion.TabIndex = 38;
             this.rtb_Descripcion.Text = "";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(77, 57);
+            this.label8.Location = new System.Drawing.Point(35, 132);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(120, 13);
             this.label8.TabIndex = 39;
@@ -247,7 +254,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(77, 87);
+            this.label9.Location = new System.Drawing.Point(39, 159);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(116, 13);
             this.label9.TabIndex = 40;
@@ -256,7 +263,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(84, 166);
+            this.label10.Location = new System.Drawing.Point(42, 188);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(113, 13);
             this.label10.TabIndex = 41;
@@ -265,7 +272,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(77, 208);
+            this.label11.Location = new System.Drawing.Point(6, 29);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(132, 13);
             this.label11.TabIndex = 42;
@@ -273,16 +280,17 @@
             // 
             // txt_Nombre_Mascot
             // 
-            this.txt_Nombre_Mascot.Location = new System.Drawing.Point(216, 54);
+            this.txt_Nombre_Mascot.Location = new System.Drawing.Point(161, 129);
             this.txt_Nombre_Mascot.Name = "txt_Nombre_Mascot";
             this.txt_Nombre_Mascot.Size = new System.Drawing.Size(121, 20);
             this.txt_Nombre_Mascot.TabIndex = 43;
             // 
             // btn_Actualizar
             // 
-            this.btn_Actualizar.Location = new System.Drawing.Point(764, 225);
+            this.btn_Actualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Actualizar.Location = new System.Drawing.Point(731, 277);
             this.btn_Actualizar.Name = "btn_Actualizar";
-            this.btn_Actualizar.Size = new System.Drawing.Size(103, 51);
+            this.btn_Actualizar.Size = new System.Drawing.Size(108, 39);
             this.btn_Actualizar.TabIndex = 44;
             this.btn_Actualizar.Text = "Actualizar Cita";
             this.btn_Actualizar.UseVisualStyleBackColor = true;
@@ -290,9 +298,10 @@
             // 
             // btn_Eliminar
             // 
-            this.btn_Eliminar.Location = new System.Drawing.Point(764, 282);
+            this.btn_Eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar.Location = new System.Drawing.Point(731, 319);
             this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(103, 39);
+            this.btn_Eliminar.Size = new System.Drawing.Size(108, 34);
             this.btn_Eliminar.TabIndex = 45;
             this.btn_Eliminar.Text = "Eliminar Cita";
             this.btn_Eliminar.UseVisualStyleBackColor = true;
@@ -301,7 +310,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(84, 31);
+            this.label12.Location = new System.Drawing.Point(35, 90);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(94, 13);
             this.label12.TabIndex = 47;
@@ -309,40 +318,84 @@
             // 
             // txt_ID_Mascot
             // 
-            this.txt_ID_Mascot.Location = new System.Drawing.Point(216, 28);
+            this.txt_ID_Mascot.Location = new System.Drawing.Point(135, 87);
             this.txt_ID_Mascot.Name = "txt_ID_Mascot";
-            this.txt_ID_Mascot.Size = new System.Drawing.Size(30, 20);
+            this.txt_ID_Mascot.Size = new System.Drawing.Size(55, 20);
             this.txt_ID_Mascot.TabIndex = 48;
             // 
             // txt_Id_Cita
             // 
-            this.txt_Id_Cita.Location = new System.Drawing.Point(505, 49);
+            this.txt_Id_Cita.Location = new System.Drawing.Point(731, 30);
             this.txt_Id_Cita.Name = "txt_Id_Cita";
             this.txt_Id_Cita.Size = new System.Drawing.Size(100, 20);
             this.txt_Id_Cita.TabIndex = 49;
             // 
+            // btn_Regresar
+            // 
+            this.btn_Regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Regresar.Location = new System.Drawing.Point(13, 13);
+            this.btn_Regresar.Name = "btn_Regresar";
+            this.btn_Regresar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Regresar.TabIndex = 50;
+            this.btn_Regresar.Text = "Salir";
+            this.btn_Regresar.UseVisualStyleBackColor = true;
+            this.btn_Regresar.Click += new System.EventHandler(this.btn_Regresar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(857, 606);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(22, 76);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(355, 153);
+            this.groupBox1.TabIndex = 52;
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.rtb_Descripcion);
+            this.groupBox2.Location = new System.Drawing.Point(408, 76);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(314, 172);
+            this.groupBox2.TabIndex = 53;
+            this.groupBox2.TabStop = false;
+            // 
             // Consultar_Cita
             // 
-            this.ClientSize = new System.Drawing.Size(923, 571);
+            this.ClientSize = new System.Drawing.Size(853, 605);
+            this.Controls.Add(this.btn_Regresar);
             this.Controls.Add(this.txt_Id_Cita);
             this.Controls.Add(this.txt_ID_Mascot);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btn_Eliminar);
             this.Controls.Add(this.btn_Actualizar);
             this.Controls.Add(this.txt_Nombre_Mascot);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.rtb_Descripcion);
             this.Controls.Add(this.cmb_Nombre_Veterinario);
             this.Controls.Add(this.dtp_Fecha_Consulta);
             this.Controls.Add(this.dgv_Llenar_Tabla_Cita);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Consultar_Cita";
             this.Text = "Consultar_Cita.cs";
             this.Load += new System.EventHandler(this.Consultar_Cita_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Llenar_Tabla_Cita)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,5 +434,9 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txt_ID_Mascot;
         private System.Windows.Forms.TextBox txt_Id_Cita;
+        private System.Windows.Forms.Button btn_Regresar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

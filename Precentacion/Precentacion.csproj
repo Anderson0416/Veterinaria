@@ -51,6 +51,9 @@
     <Compile Include="Agendar_cita.Designer.cs">
       <DependentUpon>Agendar_cita.cs</DependentUpon>
     </Compile>
+    <Compile Include="Botones\Botones.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Consultar_Cita.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +156,12 @@
     <Compile Include="Registro_Mascota.Designer.cs">
       <DependentUpon>Registro_Mascota.cs</DependentUpon>
     </Compile>
+    <Compile Include="Todos_Los_Consultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Todos_Los_Consultar.Designer.cs">
+      <DependentUpon>Todos_Los_Consultar.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
@@ -223,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registro_Mascota.resx">
       <DependentUpon>Registro_Mascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Todos_Los_Consultar.resx">
+      <DependentUpon>Todos_Los_Consultar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -65,10 +65,14 @@ namespace Precentacion
         {
 
         }
-
         private void cmb_Sexo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+        
+            this.Visible = false;
         }
     }
 }

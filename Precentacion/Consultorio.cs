@@ -31,7 +31,6 @@ namespace Precentacion
             llenar_Datos_Anamnesis();
             llenar_Datos_Historial();
         }
-
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
             Agregar_Historial();
@@ -55,7 +54,7 @@ namespace Precentacion
         public void Guardar()
         {
             Anamnesis anamnesis = new Anamnesis();
-        
+
             anamnesis.peso = int.Parse(txt_Peso.Text);
             anamnesis.peso2 = txt_Peso2.Text;
             anamnesis.estado_reproductivo = cmb_Estado_Reproductivo.Text;
@@ -110,11 +109,11 @@ namespace Precentacion
         }
         public void llenar_Datos_Anamnesis()
         {
-            if(id_anamnesi != 0)
+            if (id_anamnesi != 0)
             {
                 Anamnesis anamnesis = new Anamnesis();
                 Anamnesis_Repositorio anamnesis_Repositorio = new Anamnesis_Repositorio();
-                anamnesis =  anamnesis_Repositorio.Consulta_Anamnesis_id(id_anamnesi);
+                anamnesis = anamnesis_Repositorio.Consulta_Anamnesis_id(id_anamnesi);
                 txt_Peso.Text = anamnesis.peso.ToString();
                 rtb_Vacunas_Previas.Text = anamnesis.vacunas_previas;
                 rtb_Vacumas_Precias_Desparasitacion.Text = anamnesis.vacunas_precias_desparecitacion;
@@ -130,7 +129,7 @@ namespace Precentacion
         }
         public void llenar_Datos_Historial()
         {
-            if(id_historia != 0)
+            if (id_historia != 0)
             {
                 Hitoriales hitoriales = new Hitoriales();
                 Hitoriales_Repositorio hitoriales_Repositorio = new Hitoriales_Repositorio();
@@ -140,15 +139,23 @@ namespace Precentacion
                 txt_Nombre_Mascota.Text = hitoriales.mascota.nombre;
             }
         }
-
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
             int idHistorial = id_historia;
-            string rutaDirectorio = @"C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\pdf";
+            string rutaDirectorio = @"C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\pdf";
             pdf_Anamnesis pdf_Anamnesis = new pdf_Anamnesis();
             string respuesta = (pdf_Anamnesis.Generar_Pdf_Anamnesis(idHistorial, rutaDirectorio));
             MessageBox.Show(respuesta);
+
+
         }
-        
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            Menu_Veterinario menu_Veterinario = new Menu_Veterinario();
+            menu_Veterinario.Visible = true;
+
+            this.Visible = false;
+        }
     }
 }

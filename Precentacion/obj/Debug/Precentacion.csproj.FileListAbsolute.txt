@@ -216,3 +216,9 @@ C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\bin\Debug\Prece
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\bin\Debug\itextsharp.dll
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\bin\Debug\itextsharp.xml
+C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Historial.resources
+C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\bin\Debug\Precentacion.dll.config
+C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\bin\Debug\itextsharp.dll
+C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\bin\Debug\itextsharp.xml
+C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Todos_Los_Consultar.resources

@@ -55,7 +55,6 @@
             this.txt_Edad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.rtb_Descripcion_Cita_Mascota = new System.Windows.Forms.RichTextBox();
             this.gb_Descripcion = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -71,7 +70,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 65);
+            this.label2.Location = new System.Drawing.Point(12, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 13);
             this.label2.TabIndex = 1;
@@ -79,7 +78,7 @@
             // 
             // txt_Nombre_Cliente
             // 
-            this.txt_Nombre_Cliente.Location = new System.Drawing.Point(100, 62);
+            this.txt_Nombre_Cliente.Location = new System.Drawing.Point(100, 87);
             this.txt_Nombre_Cliente.Name = "txt_Nombre_Cliente";
             this.txt_Nombre_Cliente.Size = new System.Drawing.Size(100, 20);
             this.txt_Nombre_Cliente.TabIndex = 3;
@@ -143,7 +142,8 @@
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.Location = new System.Drawing.Point(432, 58);
+            this.btn_Agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Agregar.Location = new System.Drawing.Point(538, 503);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(151, 40);
             this.btn_Agregar.TabIndex = 20;
@@ -172,7 +172,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(117, 94);
+            this.button1.Location = new System.Drawing.Point(114, 113);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 22);
             this.button1.TabIndex = 27;
@@ -181,6 +181,7 @@
             // 
             // dtp_Fecha_Cita_Mascota
             // 
+            this.dtp_Fecha_Cita_Mascota.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_Fecha_Cita_Mascota.Location = new System.Drawing.Point(128, 27);
             this.dtp_Fecha_Cita_Mascota.Name = "dtp_Fecha_Cita_Mascota";
             this.dtp_Fecha_Cita_Mascota.Size = new System.Drawing.Size(208, 20);
@@ -195,16 +196,17 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_Nombre_Cliente);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(16, 58);
+            this.groupBox1.Location = new System.Drawing.Point(16, 72);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(394, 97);
+            this.groupBox1.Size = new System.Drawing.Size(394, 135);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion del paciente ";
             // 
             // btn_Registrar
             // 
-            this.btn_Registrar.Location = new System.Drawing.Point(256, 54);
+            this.btn_Registrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Registrar.Location = new System.Drawing.Point(281, 80);
             this.btn_Registrar.Name = "btn_Registrar";
             this.btn_Registrar.Size = new System.Drawing.Size(75, 23);
             this.btn_Registrar.TabIndex = 7;
@@ -213,7 +215,8 @@
             // 
             // btn_Consultar
             // 
-            this.btn_Consultar.Location = new System.Drawing.Point(256, 20);
+            this.btn_Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Consultar.Location = new System.Drawing.Point(281, 51);
             this.btn_Consultar.Name = "btn_Consultar";
             this.btn_Consultar.Size = new System.Drawing.Size(75, 23);
             this.btn_Consultar.TabIndex = 6;
@@ -223,7 +226,7 @@
             // 
             // txt_Documento
             // 
-            this.txt_Documento.Location = new System.Drawing.Point(100, 20);
+            this.txt_Documento.Location = new System.Drawing.Point(100, 42);
             this.txt_Documento.Name = "txt_Documento";
             this.txt_Documento.Size = new System.Drawing.Size(102, 20);
             this.txt_Documento.TabIndex = 5;
@@ -231,9 +234,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 26);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Documento";
             // 
@@ -251,9 +255,9 @@
             this.groupBox2.Controls.Add(this.txt_Raza);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(16, 198);
+            this.groupBox2.Location = new System.Drawing.Point(16, 238);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(480, 110);
+            this.groupBox2.Size = new System.Drawing.Size(457, 123);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informacion de la mascota";
@@ -318,19 +322,12 @@
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.cmb_Veterinario);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(16, 339);
+            this.groupBox3.Location = new System.Drawing.Point(15, 390);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(357, 141);
+            this.groupBox3.Size = new System.Drawing.Size(357, 153);
             this.groupBox3.TabIndex = 35;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detalles de la cita";
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(432, 104);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(148, 10);
-            this.progressBar1.TabIndex = 36;
             // 
             // rtb_Descripcion_Cita_Mascota
             // 
@@ -344,7 +341,7 @@
             // 
             this.gb_Descripcion.Controls.Add(this.rtb_Descripcion_Cita_Mascota);
             this.gb_Descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_Descripcion.Location = new System.Drawing.Point(379, 339);
+            this.gb_Descripcion.Location = new System.Drawing.Point(438, 72);
             this.gb_Descripcion.Name = "gb_Descripcion";
             this.gb_Descripcion.Size = new System.Drawing.Size(261, 141);
             this.gb_Descripcion.TabIndex = 38;
@@ -356,18 +353,19 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(652, 532);
+            this.pictureBox1.Size = new System.Drawing.Size(742, 608);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
             // btn_Salir
             // 
+            this.btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Salir.Location = new System.Drawing.Point(16, 13);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 23);
             this.btn_Salir.TabIndex = 40;
-            this.btn_Salir.Text = "salir";
+            this.btn_Salir.Text = "Salir";
             this.btn_Salir.UseVisualStyleBackColor = true;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
@@ -375,10 +373,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 527);
+            this.ClientSize = new System.Drawing.Size(738, 604);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.gb_Descripcion);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -418,7 +415,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.RichTextBox rtb_Descripcion_Cita_Mascota;
         private System.Windows.Forms.GroupBox gb_Descripcion;
         private System.Windows.Forms.TextBox txt_Edad;

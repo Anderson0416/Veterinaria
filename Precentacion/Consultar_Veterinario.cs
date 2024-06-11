@@ -96,7 +96,16 @@ namespace Precentacion
 
         }
 
+        private void btn_Regresar_Click(object sender, EventArgs e)
+        {
+        
+            this.Visible = false;
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
