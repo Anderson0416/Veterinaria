@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|c:\\users\\home\\onedrive\\escritorio\\sistemas\\vet\\veterinaria\\precentacion\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|solutionrelative:precentacion\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|c:\\users\\home\\onedrive\\escritorio\\sistemas\\vet\\veterinaria\\precentacion\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|solutionrelative:precentacion\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BA2229-AFFE-424D-A660-E1352CAF422F}|Veterinaria\\Veterinaria.csproj|c:\\users\\home\\onedrive\\escritorio\\sistemas\\vet\\veterinaria\\veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BA2229-AFFE-424D-A660-E1352CAF422F}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|c:\\users\\home\\onedrive\\escritorio\\sistemas\\vet\\veterinaria\\precentacion\\registro_mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\precentacion\\registro_mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|solutionrelative:precentacion\\registro_mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|c:\\users\\home\\onedrive\\escritorio\\sistemas\\vet\\veterinaria\\precentacion\\registro_mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|solutionrelative:precentacion\\registro_mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|c:\\users\\home\\onedrive\\escritorio\\sistemas\\vet\\veterinaria\\dal\\cliente_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|solutionrelative:dal\\cliente_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BA2229-AFFE-424D-A660-E1352CAF422F}|Veterinaria\\Veterinaria.csproj|C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BA2229-AFFE-424D-A660-E1352CAF422F}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,57 +33,33 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cliente_Repositorio.cs",
+              "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\DAL\\Cliente_Repositorio.cs",
+              "RelativeDocumentMoniker": "DAL\\Cliente_Repositorio.cs",
+              "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\DAL\\Cliente_Repositorio.cs",
+              "RelativeToolTip": "DAL\\Cliente_Repositorio.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAD0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T13:34:02.219Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Registro_Mascota.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Registro_Mascota.cs",
               "RelativeDocumentMoniker": "Precentacion\\Registro_Mascota.cs",
               "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Registro_Mascota.cs",
               "RelativeToolTip": "Precentacion\\Registro_Mascota.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAwwA0AAAAWAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAqwCAAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T12:23:16.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Registro_Mascota.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Registro_Mascota.cs",
-              "RelativeDocumentMoniker": "Precentacion\\Registro_Mascota.cs",
-              "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Registro_Mascota.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Precentacion\\Registro_Mascota.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T12:23:12.466Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Historial.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Historial.cs",
-              "RelativeDocumentMoniker": "Precentacion\\Historial.cs",
-              "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Historial.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Precentacion\\Historial.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T12:19:33.26Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Historial.cs",
-              "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Historial.cs",
-              "RelativeDocumentMoniker": "Precentacion\\Historial.cs",
-              "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Historial.cs",
-              "RelativeToolTip": "Precentacion\\Historial.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAA3wHcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T12:17:41.718Z",
               "EditorCaption": ""
             },
             {
@@ -102,7 +70,7 @@
               "RelativeDocumentMoniker": "Veterinaria\\Program.cs",
               "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Veterinaria\\Program.cs",
               "RelativeToolTip": "Veterinaria\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T06:01:49.094Z",
               "EditorCaption": ""
