@@ -60,6 +60,7 @@
             // 
             // dgv_Veterinario
             // 
+            this.dgv_Veterinario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgv_Veterinario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Veterinario.Location = new System.Drawing.Point(12, 327);
             this.dgv_Veterinario.Name = "dgv_Veterinario";
@@ -202,13 +203,15 @@
             // 
             // btn_Eliminar_Veterinario
             // 
-            this.btn_Eliminar_Veterinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar_Veterinario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_Eliminar_Veterinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar_Veterinario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Eliminar_Veterinario.Location = new System.Drawing.Point(718, 266);
             this.btn_Eliminar_Veterinario.Name = "btn_Eliminar_Veterinario";
             this.btn_Eliminar_Veterinario.Size = new System.Drawing.Size(130, 38);
             this.btn_Eliminar_Veterinario.TabIndex = 21;
             this.btn_Eliminar_Veterinario.Text = "Eliminar Veterinario";
-            this.btn_Eliminar_Veterinario.UseVisualStyleBackColor = true;
+            this.btn_Eliminar_Veterinario.UseVisualStyleBackColor = false;
             this.btn_Eliminar_Veterinario.Click += new System.EventHandler(this.btn_Eliminar_Veterinario_Click);
             // 
             // cbx_Sexo
@@ -225,13 +228,15 @@
             // 
             // btn_Actualizar_Veterinario
             // 
-            this.btn_Actualizar_Veterinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Actualizar_Veterinario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_Actualizar_Veterinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Actualizar_Veterinario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Actualizar_Veterinario.Location = new System.Drawing.Point(718, 222);
             this.btn_Actualizar_Veterinario.Name = "btn_Actualizar_Veterinario";
             this.btn_Actualizar_Veterinario.Size = new System.Drawing.Size(130, 38);
             this.btn_Actualizar_Veterinario.TabIndex = 23;
             this.btn_Actualizar_Veterinario.Text = "Actualizar Veterinario";
-            this.btn_Actualizar_Veterinario.UseVisualStyleBackColor = true;
+            this.btn_Actualizar_Veterinario.UseVisualStyleBackColor = false;
             this.btn_Actualizar_Veterinario.Click += new System.EventHandler(this.btn_Actualizar_Veterinario_Click);
             // 
             // cbx_Tipo_Documento
@@ -247,13 +252,15 @@
             // 
             // btn_Regresar
             // 
+            this.btn_Regresar.BackColor = System.Drawing.Color.Moccasin;
             this.btn_Regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Regresar.ForeColor = System.Drawing.Color.Olive;
             this.btn_Regresar.Location = new System.Drawing.Point(12, 13);
             this.btn_Regresar.Name = "btn_Regresar";
             this.btn_Regresar.Size = new System.Drawing.Size(75, 23);
             this.btn_Regresar.TabIndex = 25;
             this.btn_Regresar.Text = "Salir";
-            this.btn_Regresar.UseVisualStyleBackColor = true;
+            this.btn_Regresar.UseVisualStyleBackColor = false;
             this.btn_Regresar.Click += new System.EventHandler(this.btn_Regresar_Click);
             // 
             // pictureBox1
@@ -268,6 +275,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.MintCream;
             this.groupBox1.Controls.Add(this.txt_Nombre);
             this.groupBox1.Controls.Add(this.cbx_Tipo_Documento);
             this.groupBox1.Controls.Add(this.cbx_Sexo);
@@ -304,6 +312,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Consultar_Veterinario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta_Veterinario";
             this.Load += new System.EventHandler(this.Consultar_Veterinario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Veterinario)).EndInit();

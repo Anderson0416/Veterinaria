@@ -63,6 +63,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.MintCream;
             this.label7.Location = new System.Drawing.Point(355, 76);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 13);
@@ -71,13 +72,15 @@
             // 
             // btn_Registrar
             // 
-            this.btn_Registrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Registrar.Location = new System.Drawing.Point(410, 162);
+            this.btn_Registrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_Registrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Registrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_Registrar.Location = new System.Drawing.Point(480, 253);
             this.btn_Registrar.Name = "btn_Registrar";
-            this.btn_Registrar.Size = new System.Drawing.Size(99, 37);
+            this.btn_Registrar.Size = new System.Drawing.Size(72, 26);
             this.btn_Registrar.TabIndex = 50;
             this.btn_Registrar.Text = "Registrar";
-            this.btn_Registrar.UseVisualStyleBackColor = true;
+            this.btn_Registrar.UseVisualStyleBackColor = false;
             this.btn_Registrar.Click += new System.EventHandler(this.btn_Registrar_Click);
             // 
             // dtp_Fecha_Nacimiento
@@ -102,6 +105,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.MintCream;
             this.label6.Location = new System.Drawing.Point(373, 102);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
@@ -111,6 +115,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.MintCream;
             this.label5.Location = new System.Drawing.Point(53, 153);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 13);
@@ -170,6 +175,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.MintCream;
             this.label2.Location = new System.Drawing.Point(53, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
@@ -179,6 +185,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.MintCream;
             this.label1.Location = new System.Drawing.Point(53, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
@@ -198,6 +205,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.MintCream;
             this.label8.Location = new System.Drawing.Point(53, 207);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 13);
@@ -213,22 +221,24 @@
             // 
             // btn_Salir
             // 
+            this.btn_Salir.BackColor = System.Drawing.Color.Moccasin;
             this.btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Salir.ForeColor = System.Drawing.Color.Olive;
             this.btn_Salir.Location = new System.Drawing.Point(37, 13);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 23);
             this.btn_Salir.TabIndex = 56;
             this.btn_Salir.Text = "Salir";
-            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.MintCream;
             this.groupBox1.Controls.Add(this.txt_Numero_Documento);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cmb_Tipo_Documento);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.btn_Registrar);
             this.groupBox1.Location = new System.Drawing.Point(37, 42);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(515, 205);
@@ -244,6 +254,7 @@
             this.Controls.Add(this.dtp_Fecha_Contrato);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_Telefono);
+            this.Controls.Add(this.btn_Registrar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dtp_Fecha_Nacimiento);
             this.Controls.Add(this.cmb_Sexo);

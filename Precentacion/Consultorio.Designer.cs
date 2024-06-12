@@ -126,18 +126,22 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(41, 360);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 13);
+            this.label4.Size = new System.Drawing.Size(149, 15);
             this.label4.TabIndex = 7;
             this.label4.Text = "Motivo De La consulta";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(39, 506);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(177, 13);
+            this.label5.Size = new System.Drawing.Size(236, 15);
             this.label5.TabIndex = 8;
             this.label5.Text = "Sintomas Que Presenta La Mascota";
             // 
@@ -160,9 +164,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(364, 123);
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(346, 124);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 13);
+            this.label6.Size = new System.Drawing.Size(116, 15);
             this.label6.TabIndex = 11;
             this.label6.Text = "Vacunas Previas ";
             // 
@@ -177,7 +183,7 @@
             "Vanguard® -Plus 5",
             "Nobivac® - Canine Flu H3",
             "Vanguard® - CIV H3N2/H3N8"});
-            this.cmb_Vacunas_Previas.Location = new System.Drawing.Point(367, 142);
+            this.cmb_Vacunas_Previas.Location = new System.Drawing.Point(349, 143);
             this.cmb_Vacunas_Previas.Name = "cmb_Vacunas_Previas";
             this.cmb_Vacunas_Previas.Size = new System.Drawing.Size(125, 21);
             this.cmb_Vacunas_Previas.TabIndex = 12;
@@ -186,11 +192,13 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(518, 123);
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(483, 124);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(186, 13);
+            this.label7.Size = new System.Drawing.Size(228, 15);
             this.label7.TabIndex = 13;
-            this.label7.Text = "Vacunas Previas De Desparasitacion ";
+            this.label7.Text = "Vacunas Previas  Desparasitacion ";
             // 
             // cmb_Vacunas_Desparasitacion
             // 
@@ -204,7 +212,7 @@
             "Purevax - RCP",
             "Filavac - VHD K + V",
             "Equivac - T"});
-            this.cmb_Vacunas_Desparasitacion.Location = new System.Drawing.Point(521, 139);
+            this.cmb_Vacunas_Desparasitacion.Location = new System.Drawing.Point(509, 142);
             this.cmb_Vacunas_Desparasitacion.Name = "cmb_Vacunas_Desparasitacion";
             this.cmb_Vacunas_Desparasitacion.Size = new System.Drawing.Size(121, 21);
             this.cmb_Vacunas_Desparasitacion.TabIndex = 14;
@@ -235,15 +243,17 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(364, 445);
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(346, 445);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 13);
+            this.label9.Size = new System.Drawing.Size(140, 15);
             this.label9.TabIndex = 17;
             this.label9.Text = "Dieta Y Alimentacion";
             // 
             // rtb_Dieta_Alimentacion
             // 
-            this.rtb_Dieta_Alimentacion.Location = new System.Drawing.Point(367, 461);
+            this.rtb_Dieta_Alimentacion.Location = new System.Drawing.Point(349, 461);
             this.rtb_Dieta_Alimentacion.Name = "rtb_Dieta_Alimentacion";
             this.rtb_Dieta_Alimentacion.Size = new System.Drawing.Size(264, 96);
             this.rtb_Dieta_Alimentacion.TabIndex = 18;
@@ -294,15 +304,17 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(364, 296);
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(346, 296);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(138, 13);
+            this.label12.Size = new System.Drawing.Size(183, 15);
             this.label12.TabIndex = 23;
             this.label12.Text = "Observaciones Adicionales ";
             // 
             // rtb_Observaciones_Adicionales
             // 
-            this.rtb_Observaciones_Adicionales.Location = new System.Drawing.Point(367, 312);
+            this.rtb_Observaciones_Adicionales.Location = new System.Drawing.Point(349, 312);
             this.rtb_Observaciones_Adicionales.Name = "rtb_Observaciones_Adicionales";
             this.rtb_Observaciones_Adicionales.Size = new System.Drawing.Size(264, 96);
             this.rtb_Observaciones_Adicionales.TabIndex = 24;
@@ -310,7 +322,7 @@
             // 
             // rtb_Vacunas_Previas
             // 
-            this.rtb_Vacunas_Previas.Location = new System.Drawing.Point(367, 166);
+            this.rtb_Vacunas_Previas.Location = new System.Drawing.Point(349, 166);
             this.rtb_Vacunas_Previas.Name = "rtb_Vacunas_Previas";
             this.rtb_Vacunas_Previas.Size = new System.Drawing.Size(151, 96);
             this.rtb_Vacunas_Previas.TabIndex = 25;
@@ -318,7 +330,7 @@
             // 
             // rtb_Vacumas_Precias_Desparasitacion
             // 
-            this.rtb_Vacumas_Precias_Desparasitacion.Location = new System.Drawing.Point(538, 166);
+            this.rtb_Vacumas_Precias_Desparasitacion.Location = new System.Drawing.Point(509, 166);
             this.rtb_Vacumas_Precias_Desparasitacion.Name = "rtb_Vacumas_Precias_Desparasitacion";
             this.rtb_Vacumas_Precias_Desparasitacion.Size = new System.Drawing.Size(157, 96);
             this.rtb_Vacumas_Precias_Desparasitacion.TabIndex = 26;
@@ -350,13 +362,15 @@
             // 
             // btn_Guardar
             // 
-            this.btn_Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Guardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Guardar.Location = new System.Drawing.Point(497, 585);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(98, 33);
             this.btn_Guardar.TabIndex = 30;
             this.btn_Guardar.Text = "Guardar";
-            this.btn_Guardar.UseVisualStyleBackColor = true;
+            this.btn_Guardar.UseVisualStyleBackColor = false;
             this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
             // label13
@@ -393,13 +407,15 @@
             // 
             // btn_imprimir
             // 
-            this.btn_imprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_imprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_imprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_imprimir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_imprimir.Location = new System.Drawing.Point(601, 584);
             this.btn_imprimir.Name = "btn_imprimir";
             this.btn_imprimir.Size = new System.Drawing.Size(94, 33);
             this.btn_imprimir.TabIndex = 35;
-            this.btn_imprimir.Text = "imprimir";
-            this.btn_imprimir.UseVisualStyleBackColor = true;
+            this.btn_imprimir.Text = "Imprimir";
+            this.btn_imprimir.UseVisualStyleBackColor = false;
             this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
             // 
             // pictureBox1
@@ -407,13 +423,14 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-4, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(723, 632);
+            this.pictureBox1.Size = new System.Drawing.Size(719, 630);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.MintCream;
             this.groupBox1.Controls.Add(this.txt_Codigo_Cita);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label2);
@@ -430,6 +447,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.MintCream;
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.dtp_Fecha_Consulta);
             this.groupBox2.Controls.Add(this.txt_Peso2);
@@ -441,6 +459,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.MintCream;
             this.groupBox3.Controls.Add(this.cmb_Actividad_Fisica);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.cmb_Estado_Reproductivo);
@@ -455,20 +474,23 @@
             // 
             // btn_Salir
             // 
+            this.btn_Salir.BackColor = System.Drawing.Color.Moccasin;
+            this.btn_Salir.FlatAppearance.BorderSize = 0;
             this.btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Salir.ForeColor = System.Drawing.Color.Olive;
             this.btn_Salir.Location = new System.Drawing.Point(12, 12);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 23);
             this.btn_Salir.TabIndex = 40;
             this.btn_Salir.Text = "Salir";
-            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // Consultorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 626);
+            this.ClientSize = new System.Drawing.Size(713, 626);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_imprimir);
             this.Controls.Add(this.btn_Guardar);

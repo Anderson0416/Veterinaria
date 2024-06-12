@@ -49,12 +49,11 @@
             this.btn_Salir = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtp_Fecha
             // 
-            this.dtp_Fecha.Location = new System.Drawing.Point(53, 174);
+            this.dtp_Fecha.Location = new System.Drawing.Point(52, 150);
             this.dtp_Fecha.Name = "dtp_Fecha";
             this.dtp_Fecha.Size = new System.Drawing.Size(200, 20);
             this.dtp_Fecha.TabIndex = 33;
@@ -66,7 +65,7 @@
             "Masculino",
             "Femenino",
             "Otros"});
-            this.cmb_Sexo.Location = new System.Drawing.Point(379, 108);
+            this.cmb_Sexo.Location = new System.Drawing.Point(378, 84);
             this.cmb_Sexo.Name = "cmb_Sexo";
             this.cmb_Sexo.Size = new System.Drawing.Size(73, 21);
             this.cmb_Sexo.TabIndex = 32;
@@ -75,7 +74,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(342, 112);
+            this.label6.BackColor = System.Drawing.Color.MintCream;
+            this.label6.Location = new System.Drawing.Point(341, 88);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 31;
@@ -84,7 +84,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(50, 158);
+            this.label5.BackColor = System.Drawing.Color.MintCream;
+            this.label5.Location = new System.Drawing.Point(49, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 13);
             this.label5.TabIndex = 30;
@@ -97,7 +98,7 @@
             this.cmb_Tipo_Documento.Items.AddRange(new object[] {
             "Tarjeta de identidad",
             "Cédula de Ciudadanía"});
-            this.cmb_Tipo_Documento.Location = new System.Drawing.Point(155, 223);
+            this.cmb_Tipo_Documento.Location = new System.Drawing.Point(154, 199);
             this.cmb_Tipo_Documento.Name = "cmb_Tipo_Documento";
             this.cmb_Tipo_Documento.Size = new System.Drawing.Size(131, 21);
             this.cmb_Tipo_Documento.TabIndex = 29;
@@ -105,21 +106,21 @@
             // 
             // txt_Numero_Documento
             // 
-            this.txt_Numero_Documento.Location = new System.Drawing.Point(171, 248);
+            this.txt_Numero_Documento.Location = new System.Drawing.Point(170, 224);
             this.txt_Numero_Documento.Name = "txt_Numero_Documento";
             this.txt_Numero_Documento.Size = new System.Drawing.Size(115, 20);
             this.txt_Numero_Documento.TabIndex = 28;
             // 
             // txt_Apellido
             // 
-            this.txt_Apellido.Location = new System.Drawing.Point(100, 113);
+            this.txt_Apellido.Location = new System.Drawing.Point(99, 89);
             this.txt_Apellido.Name = "txt_Apellido";
             this.txt_Apellido.Size = new System.Drawing.Size(186, 20);
             this.txt_Apellido.TabIndex = 27;
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Location = new System.Drawing.Point(100, 86);
+            this.txt_Nombre.Location = new System.Drawing.Point(99, 62);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(186, 20);
             this.txt_Nombre.TabIndex = 26;
@@ -127,7 +128,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(50, 251);
+            this.label4.BackColor = System.Drawing.Color.MintCream;
+            this.label4.Location = new System.Drawing.Point(49, 227);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 13);
             this.label4.TabIndex = 25;
@@ -136,7 +138,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 226);
+            this.label3.BackColor = System.Drawing.Color.MintCream;
+            this.label3.Location = new System.Drawing.Point(49, 202);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 13);
             this.label3.TabIndex = 24;
@@ -145,7 +148,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 116);
+            this.label2.BackColor = System.Drawing.Color.MintCream;
+            this.label2.Location = new System.Drawing.Point(49, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 23;
@@ -154,7 +158,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 89);
+            this.label1.BackColor = System.Drawing.Color.MintCream;
+            this.label1.Location = new System.Drawing.Point(49, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 22;
@@ -173,7 +178,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(324, 89);
+            this.label7.BackColor = System.Drawing.Color.MintCream;
+            this.label7.Location = new System.Drawing.Point(323, 65);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 13);
             this.label7.TabIndex = 35;
@@ -181,7 +187,7 @@
             // 
             // txt_Telefono
             // 
-            this.txt_Telefono.Location = new System.Drawing.Point(379, 86);
+            this.txt_Telefono.Location = new System.Drawing.Point(378, 62);
             this.txt_Telefono.Name = "txt_Telefono";
             this.txt_Telefono.Size = new System.Drawing.Size(122, 20);
             this.txt_Telefono.TabIndex = 36;
@@ -189,9 +195,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-6, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(553, 297);
+            this.pictureBox1.Size = new System.Drawing.Size(566, 296);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
@@ -199,32 +205,36 @@
             // 
             // btn_Registro_Cliente
             // 
-            this.btn_Registro_Cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Registro_Cliente.Location = new System.Drawing.Point(365, 142);
+            this.btn_Registro_Cliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_Registro_Cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Registro_Cliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_Registro_Cliente.Location = new System.Drawing.Point(388, 266);
             this.btn_Registro_Cliente.Name = "btn_Registro_Cliente";
-            this.btn_Registro_Cliente.Size = new System.Drawing.Size(109, 49);
+            this.btn_Registro_Cliente.Size = new System.Drawing.Size(125, 22);
             this.btn_Registro_Cliente.TabIndex = 38;
             this.btn_Registro_Cliente.Text = "Registrar Cliente";
-            this.btn_Registro_Cliente.UseVisualStyleBackColor = true;
+            this.btn_Registro_Cliente.UseVisualStyleBackColor = false;
             this.btn_Registro_Cliente.Click += new System.EventHandler(this.btn_Registro_Cliente_Click);
             // 
             // btn_Salir
             // 
+            this.btn_Salir.BackColor = System.Drawing.Color.Moccasin;
             this.btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Salir.ForeColor = System.Drawing.Color.Olive;
             this.btn_Salir.Location = new System.Drawing.Point(35, 12);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 23);
             this.btn_Salir.TabIndex = 39;
             this.btn_Salir.Text = "Salir";
-            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btn_Registro_Cliente);
-            this.groupBox1.Location = new System.Drawing.Point(35, 71);
+            this.groupBox1.BackColor = System.Drawing.Color.MintCream;
+            this.groupBox1.Location = new System.Drawing.Point(36, 41);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(480, 197);
+            this.groupBox1.Size = new System.Drawing.Size(477, 219);
             this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
             // 
@@ -233,6 +243,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 294);
+            this.Controls.Add(this.btn_Registro_Cliente);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.txt_Telefono);
             this.Controls.Add(this.label7);
@@ -254,7 +265,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro_Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

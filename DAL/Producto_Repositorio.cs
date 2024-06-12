@@ -56,37 +56,37 @@ namespace DAL
         {
 
             List<Producto> productos = new List<Producto>();
-            
-
-                MySqlConnection conectar = conexion.crearConexion();
-                conectar.Open();
-                MySqlDataReader reader;
-
-                string sql = "SELECT Id, Nombre, " +
-                    " Precio, Cantidad, Descripcion FROM Productos";
 
 
-                using (var comando = new MySqlCommand(sql, conectar))
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+            MySqlDataReader reader;
+
+            string sql = "SELECT Id, Nombre, " +
+                " Precio, Cantidad, Descripcion FROM Productos";
+
+
+            using (var comando = new MySqlCommand(sql, conectar))
+            {
+                using (reader = comando.ExecuteReader())
                 {
-                    using (reader = comando.ExecuteReader())
+                    while (reader.Read())
                     {
-                        while (reader.Read())
-                        {
 
-                            Producto producto = new Producto();
-                            producto.Id = reader.GetInt32("Id");
-                            producto.Nombre = reader.GetString("Nombre");
-                            producto.cantidad = reader.GetInt32("Cantidad");
-                            producto.Precio = reader.GetInt32("Precio");
-                            producto.Descripcion = reader.GetString("Descripcion");
+                        Producto producto = new Producto();
+                        producto.Id = reader.GetInt32("Id");
+                        producto.Nombre = reader.GetString("Nombre");
+                        producto.cantidad = reader.GetInt32("Cantidad");
+                        producto.Precio = reader.GetInt32("Precio");
+                        producto.Descripcion = reader.GetString("Descripcion");
                         productos.Add(producto);
 
-                        }
                     }
                 }
-                conectar.Close();
-                return productos;
-            
+            }
+            conectar.Close();
+            return productos;
+
 
         }
 
@@ -105,7 +105,7 @@ namespace DAL
             int resultado = comando.ExecuteNonQuery();
 
         }
-        public int Cantidad_Actual_Producto(int ID) 
+        public int Cantidad_Actual_Producto(int ID)
         {
             MySqlConnection conectar = conexion.crearConexion();
             conectar.Open();
@@ -126,11 +126,11 @@ namespace DAL
             string sql = "UPDATE Productos SET Cantidad = Cantidad - @cantidadComprada WHERE Id = @id";
             using (var comando = new MySqlCommand(sql, conectar))
             {
-               comando.Parameters.AddWithValue("@cantidadComprada", producto.cantidad);
-               comando.Parameters.AddWithValue("@id", producto.Id);
-               comando.ExecuteNonQuery();
+                comando.Parameters.AddWithValue("@cantidadComprada", producto.cantidad);
+                comando.Parameters.AddWithValue("@id", producto.Id);
+                comando.ExecuteNonQuery();
             }
-            
+
         }
         public void Actualizar_Cantidad_Suma_Producto(Producto producto)
         {
@@ -149,34 +149,34 @@ namespace DAL
         }
         public void Actualizar_Producto(Producto producto)
         {
-            MySqlConnection conectar = conexion.crearConexion() ;
-            
-                conectar.Open();
+            MySqlConnection conectar = conexion.crearConexion();
+
+            conectar.Open();
 
             string sql = "UPDATE Productos SET Nombre = @Nombre, Descripcion = @Descripcion, " +
             "Precio = @Precio, Cantidad = @Cantidad WHERE Id = @Id";
 
-            MySqlCommand comando = new MySqlCommand(sql, conectar) ;
+            MySqlCommand comando = new MySqlCommand(sql, conectar);
 
-                comando.Parameters.AddWithValue("@Id", producto.Id);
-                comando.Parameters.AddWithValue("@Nombre", producto.Nombre);
-                comando.Parameters.AddWithValue("@Descripcion", producto.Descripcion);
-                comando.Parameters.AddWithValue("@Precio", producto.Precio);
-                comando.Parameters.AddWithValue("@Cantidad", producto.cantidad);
+            comando.Parameters.AddWithValue("@Id", producto.Id);
+            comando.Parameters.AddWithValue("@Nombre", producto.Nombre);
+            comando.Parameters.AddWithValue("@Descripcion", producto.Descripcion);
+            comando.Parameters.AddWithValue("@Precio", producto.Precio);
+            comando.Parameters.AddWithValue("@Cantidad", producto.cantidad);
 
 
             int resultado = comando.ExecuteNonQuery();
 
-                if (resultado > 0)
+            if (resultado > 0)
 
-                {
-                    Console.WriteLine("Producto actualizado correctamente.");
-                }
-                else
-                {
-                    Console.WriteLine("No se encontró el Producto con el ID especificado.");
-                }
+            {
+                Console.WriteLine("Producto actualizado correctamente.");
+            }
+            else
+            {
+                Console.WriteLine("No se encontró el Producto con el ID especificado.");
             }
         }
+    }
     }
    

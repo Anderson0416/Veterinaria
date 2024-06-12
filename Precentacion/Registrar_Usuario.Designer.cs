@@ -56,14 +56,14 @@
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Location = new System.Drawing.Point(187, 82);
+            this.txt_Nombre.Location = new System.Drawing.Point(123, 17);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(166, 20);
             this.txt_Nombre.TabIndex = 4;
             // 
             // txt_Contraseña
             // 
-            this.txt_Contraseña.Location = new System.Drawing.Point(187, 115);
+            this.txt_Contraseña.Location = new System.Drawing.Point(123, 50);
             this.txt_Contraseña.Name = "txt_Contraseña";
             this.txt_Contraseña.Size = new System.Drawing.Size(166, 20);
             this.txt_Contraseña.TabIndex = 15;
@@ -80,7 +80,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 97);
+            this.label8.Location = new System.Drawing.Point(13, 84);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 13);
             this.label8.TabIndex = 17;
@@ -88,31 +88,35 @@
             // 
             // txt_Confirmar_Contraseña
             // 
-            this.txt_Confirmar_Contraseña.Location = new System.Drawing.Point(187, 159);
+            this.txt_Confirmar_Contraseña.Location = new System.Drawing.Point(123, 81);
             this.txt_Confirmar_Contraseña.Name = "txt_Confirmar_Contraseña";
             this.txt_Confirmar_Contraseña.Size = new System.Drawing.Size(164, 20);
             this.txt_Confirmar_Contraseña.TabIndex = 18;
             // 
             // btn_Registrar
             // 
-            this.btn_Registrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Registrar.Location = new System.Drawing.Point(187, 298);
+            this.btn_Registrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Registrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Registrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_Registrar.Location = new System.Drawing.Point(156, 277);
             this.btn_Registrar.Name = "btn_Registrar";
             this.btn_Registrar.Size = new System.Drawing.Size(164, 40);
             this.btn_Registrar.TabIndex = 19;
             this.btn_Registrar.Text = "Registrar";
-            this.btn_Registrar.UseVisualStyleBackColor = true;
+            this.btn_Registrar.UseVisualStyleBackColor = false;
             this.btn_Registrar.Click += new System.EventHandler(this.btn_Registrar_Click);
             // 
             // btn_Salir
             // 
+            this.btn_Salir.BackColor = System.Drawing.Color.Moccasin;
             this.btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Salir.ForeColor = System.Drawing.Color.Olive;
             this.btn_Salir.Location = new System.Drawing.Point(475, 420);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(84, 33);
             this.btn_Salir.TabIndex = 20;
             this.btn_Salir.Text = "Salir";
-            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // pictureBox1
@@ -131,7 +135,7 @@
             this.cmb_Cargo.Items.AddRange(new object[] {
             "Recepcionista",
             "Veterinario"});
-            this.cmb_Cargo.Location = new System.Drawing.Point(187, 202);
+            this.cmb_Cargo.Location = new System.Drawing.Point(123, 122);
             this.cmb_Cargo.Name = "cmb_Cargo";
             this.cmb_Cargo.Size = new System.Drawing.Size(121, 21);
             this.cmb_Cargo.TabIndex = 23;
@@ -139,7 +143,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(82, 140);
+            this.label2.Location = new System.Drawing.Point(82, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 24;
@@ -147,9 +151,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.MintCream;
+            this.groupBox1.Controls.Add(this.cmb_Cargo);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txt_Nombre);
+            this.groupBox1.Controls.Add(this.txt_Contraseña);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.txt_Confirmar_Contraseña);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(53, 65);
             this.groupBox1.Name = "groupBox1";
@@ -162,12 +171,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 463);
-            this.Controls.Add(this.cmb_Cargo);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_Registrar);
-            this.Controls.Add(this.txt_Confirmar_Contraseña);
-            this.Controls.Add(this.txt_Contraseña);
-            this.Controls.Add(this.txt_Nombre);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Registrar_Usuario";
@@ -178,7 +183,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

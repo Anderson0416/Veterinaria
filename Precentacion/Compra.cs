@@ -120,11 +120,36 @@ namespace Precentacion
             txt_Precio.Text = dgv_Productos.SelectedCells[2].Value.ToString();
         }
 
+        private void imprimir()
+        {
+            string rutaDirectorio = @"C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\pdf";
+            pdf_Factura pdf_Factura = new pdf_Factura();
+            string respuesta = (pdf_Factura.Generar_Pdf_Factura(dgv_Compra, rutaDirectorio));
+            MessageBox.Show(respuesta);
+        }
+        private decimal Total_Pagar(DataGridView dataGridView)
+        {
+            decimal sumaPrecios = 0;
+
+            foreach (DataGridViewRow fila in dataGridView.Rows)
+            {
+                if (!fila.IsNewRow)
+                {
+                    decimal precio = Convert.ToDecimal(fila.Cells["Precio"].Value);
+                    sumaPrecios += precio;
+                }
+            }
+
+            return sumaPrecios;
+        }
+
+
         private void btn_agregar_Click(object sender, EventArgs e)
         {
             Lennar_dgv_compra();
             limpiar();
             Llenar_dgv_Productos();
+            lb_Total_Pagar.Text = Total_Pagar(dgv_Compra).ToString();
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
@@ -144,8 +169,27 @@ namespace Precentacion
                     dgv_Compra.DataSource = tabla; 
 
                     Llenar_dgv_Productos();
+
+                    lb_Total_Pagar.Text = Total_Pagar(dgv_Compra).ToString();
+
                 }
             }
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Imprimir_Click(object sender, EventArgs e)
+        {
+            imprimir();
+
         }
     }
 }

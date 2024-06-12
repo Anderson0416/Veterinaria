@@ -49,6 +49,7 @@
             // 
             // dgv_Historial
             // 
+            this.dgv_Historial.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgv_Historial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Historial.Location = new System.Drawing.Point(12, 350);
             this.dgv_Historial.Name = "dgv_Historial";
@@ -59,6 +60,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.MintCream;
             this.label1.Location = new System.Drawing.Point(326, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 13);
@@ -75,6 +77,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.MintCream;
             this.label2.Location = new System.Drawing.Point(342, 136);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 13);
@@ -90,18 +93,21 @@
             // 
             // btn_Consultar
             // 
-            this.btn_Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Consultar.Location = new System.Drawing.Point(727, 272);
+            this.btn_Consultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Consultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_Consultar.Location = new System.Drawing.Point(727, 261);
             this.btn_Consultar.Name = "btn_Consultar";
-            this.btn_Consultar.Size = new System.Drawing.Size(83, 23);
+            this.btn_Consultar.Size = new System.Drawing.Size(83, 34);
             this.btn_Consultar.TabIndex = 5;
             this.btn_Consultar.Text = "Consultar";
-            this.btn_Consultar.UseVisualStyleBackColor = true;
+            this.btn_Consultar.UseVisualStyleBackColor = false;
             this.btn_Consultar.Click += new System.EventHandler(this.btn_Consultar_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.MintCream;
             this.label3.Location = new System.Drawing.Point(380, 217);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
@@ -121,6 +127,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.MintCream;
             this.label4.Location = new System.Drawing.Point(342, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 13);
@@ -136,24 +143,28 @@
             // 
             // btn_Imprimir_Historial
             // 
-            this.btn_Imprimir_Historial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Imprimir_Historial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_Imprimir_Historial.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Imprimir_Historial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Imprimir_Historial.Location = new System.Drawing.Point(727, 301);
             this.btn_Imprimir_Historial.Name = "btn_Imprimir_Historial";
             this.btn_Imprimir_Historial.Size = new System.Drawing.Size(83, 43);
             this.btn_Imprimir_Historial.TabIndex = 10;
             this.btn_Imprimir_Historial.Text = "Imprimir historial";
-            this.btn_Imprimir_Historial.UseVisualStyleBackColor = true;
+            this.btn_Imprimir_Historial.UseVisualStyleBackColor = false;
             this.btn_Imprimir_Historial.Click += new System.EventHandler(this.btn_Imprimir_Historial_Click);
             // 
             // btn_Salir
             // 
+            this.btn_Salir.BackColor = System.Drawing.Color.Moccasin;
             this.btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Salir.ForeColor = System.Drawing.Color.Olive;
             this.btn_Salir.Location = new System.Drawing.Point(12, 13);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 23);
             this.btn_Salir.TabIndex = 11;
             this.btn_Salir.Text = "Salir";
-            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // pictureBox1
@@ -168,6 +179,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.MintCream;
             this.groupBox1.Location = new System.Drawing.Point(292, 67);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(273, 214);

@@ -142,13 +142,15 @@
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Agregar.Location = new System.Drawing.Point(538, 503);
+            this.btn_Agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Agregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_Agregar.Location = new System.Drawing.Point(575, 503);
             this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Size = new System.Drawing.Size(151, 40);
+            this.btn_Agregar.Size = new System.Drawing.Size(114, 40);
             this.btn_Agregar.TabIndex = 20;
             this.btn_Agregar.Text = "Agendar Cita";
-            this.btn_Agregar.UseVisualStyleBackColor = true;
+            this.btn_Agregar.UseVisualStyleBackColor = false;
             this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // cmb_Veterinario
@@ -189,6 +191,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.MintCream;
             this.groupBox1.Controls.Add(this.btn_Registrar);
             this.groupBox1.Controls.Add(this.btn_Consultar);
             this.groupBox1.Controls.Add(this.txt_Documento);
@@ -243,6 +246,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.MintCream;
             this.groupBox2.Controls.Add(this.cmb_Edad);
             this.groupBox2.Controls.Add(this.cmb_Nombre_Mascota);
             this.groupBox2.Controls.Add(this.txt_Especie);
@@ -316,6 +320,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.MintCream;
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.dtp_Fecha_Cita_Mascota);
             this.groupBox3.Controls.Add(this.label9);
@@ -339,6 +344,7 @@
             // 
             // gb_Descripcion
             // 
+            this.gb_Descripcion.BackColor = System.Drawing.Color.MintCream;
             this.gb_Descripcion.Controls.Add(this.rtb_Descripcion_Cita_Mascota);
             this.gb_Descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_Descripcion.Location = new System.Drawing.Point(438, 72);
@@ -360,13 +366,15 @@
             // 
             // btn_Salir
             // 
+            this.btn_Salir.BackColor = System.Drawing.Color.Moccasin;
             this.btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Salir.ForeColor = System.Drawing.Color.Olive;
             this.btn_Salir.Location = new System.Drawing.Point(16, 13);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 23);
             this.btn_Salir.TabIndex = 40;
             this.btn_Salir.Text = "Salir";
-            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // Agendar_cita

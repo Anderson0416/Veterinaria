@@ -59,6 +59,7 @@
             // 
             // dgv_Mascota
             // 
+            this.dgv_Mascota.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgv_Mascota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Mascota.Location = new System.Drawing.Point(12, 327);
             this.dgv_Mascota.Name = "dgv_Mascota";
@@ -176,13 +177,15 @@
             // 
             // btn_Eliminar_Mascota
             // 
-            this.btn_Eliminar_Mascota.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar_Mascota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Eliminar_Mascota.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar_Mascota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Eliminar_Mascota.Location = new System.Drawing.Point(685, 291);
             this.btn_Eliminar_Mascota.Name = "btn_Eliminar_Mascota";
             this.btn_Eliminar_Mascota.Size = new System.Drawing.Size(127, 30);
             this.btn_Eliminar_Mascota.TabIndex = 17;
             this.btn_Eliminar_Mascota.Text = "Eliminar Mascota";
-            this.btn_Eliminar_Mascota.UseVisualStyleBackColor = true;
+            this.btn_Eliminar_Mascota.UseVisualStyleBackColor = false;
             this.btn_Eliminar_Mascota.Click += new System.EventHandler(this.btn_Eliminar_Mascota_Click);
             // 
             // cbx_Sexo
@@ -199,13 +202,15 @@
             // 
             // btn_Actualizar_Mascota
             // 
-            this.btn_Actualizar_Mascota.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Actualizar_Mascota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Actualizar_Mascota.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Actualizar_Mascota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Actualizar_Mascota.Location = new System.Drawing.Point(685, 242);
             this.btn_Actualizar_Mascota.Name = "btn_Actualizar_Mascota";
             this.btn_Actualizar_Mascota.Size = new System.Drawing.Size(127, 43);
             this.btn_Actualizar_Mascota.TabIndex = 19;
             this.btn_Actualizar_Mascota.Text = "Actualizar Mascota";
-            this.btn_Actualizar_Mascota.UseVisualStyleBackColor = true;
+            this.btn_Actualizar_Mascota.UseVisualStyleBackColor = false;
             this.btn_Actualizar_Mascota.Click += new System.EventHandler(this.btn_Actualizar_Mascota_Click);
             // 
             // cbx_Edad2
@@ -222,13 +227,15 @@
             // 
             // btn_Regresar
             // 
+            this.btn_Regresar.BackColor = System.Drawing.Color.Moccasin;
             this.btn_Regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Regresar.ForeColor = System.Drawing.Color.Olive;
             this.btn_Regresar.Location = new System.Drawing.Point(12, 12);
             this.btn_Regresar.Name = "btn_Regresar";
             this.btn_Regresar.Size = new System.Drawing.Size(75, 23);
             this.btn_Regresar.TabIndex = 22;
             this.btn_Regresar.Text = "Salir";
-            this.btn_Regresar.UseVisualStyleBackColor = true;
+            this.btn_Regresar.UseVisualStyleBackColor = false;
             this.btn_Regresar.Click += new System.EventHandler(this.btn_Regresar_Click);
             // 
             // pictureBox1
@@ -244,6 +251,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.MintCream;
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_ID);
             this.groupBox1.Controls.Add(this.label2);
@@ -262,6 +270,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.MintCream;
             this.groupBox2.Controls.Add(this.txt_Cliente_Documento);
             this.groupBox2.Controls.Add(this.cbx_Edad2);
             this.groupBox2.Controls.Add(this.label8);

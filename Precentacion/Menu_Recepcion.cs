@@ -85,5 +85,19 @@ namespace Precentacion
                 login.Show();
             }
         }
+
+        private void btn_Registrar_Producto_Click(object sender, EventArgs e)
+        {
+            Registrar_Producto registrar_Producto = new Registrar_Producto();
+            registrar_Producto.Visible = true;
+        
+        }
+
+        private void btn_Comprar_Click(object sender, EventArgs e)
+        {
+            Compra compra = new Compra();
+            compra.Visible = true;
+            
+        }
     }
 }

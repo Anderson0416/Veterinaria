@@ -180,34 +180,41 @@
             // 
             // btn_Consultar
             // 
-            this.btn_Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Consultar.Location = new System.Drawing.Point(311, 48);
+            this.btn_Consultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Consultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_Consultar.Location = new System.Drawing.Point(272, 80);
             this.btn_Consultar.Name = "btn_Consultar";
-            this.btn_Consultar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Consultar.Size = new System.Drawing.Size(114, 23);
             this.btn_Consultar.TabIndex = 19;
-            this.btn_Consultar.Text = "Consultar";
-            this.btn_Consultar.UseVisualStyleBackColor = true;
+            this.btn_Consultar.Text = "Consultar Cliente";
+            this.btn_Consultar.UseVisualStyleBackColor = false;
             this.btn_Consultar.Click += new System.EventHandler(this.btn_Consultar_Click);
             // 
             // btn_Registro_Cliente
             // 
-            this.btn_Registro_Cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Registro_Cliente.Location = new System.Drawing.Point(311, 87);
+            this.btn_Registro_Cliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Registro_Cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Registro_Cliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_Registro_Cliente.Location = new System.Drawing.Point(272, 109);
             this.btn_Registro_Cliente.Name = "btn_Registro_Cliente";
-            this.btn_Registro_Cliente.Size = new System.Drawing.Size(75, 23);
+            this.btn_Registro_Cliente.Size = new System.Drawing.Size(114, 23);
             this.btn_Registro_Cliente.TabIndex = 26;
-            this.btn_Registro_Cliente.Text = "Registrar";
+            this.btn_Registro_Cliente.Text = "Registrar Cliente";
+            this.btn_Registro_Cliente.UseVisualStyleBackColor = false;
             this.btn_Registro_Cliente.Click += new System.EventHandler(this.btn_Registro_Cliente_Click);
             // 
             // btn_Registrar_Mascota
             // 
-            this.btn_Registrar_Mascota.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Registrar_Mascota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Registrar_Mascota.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Registrar_Mascota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Registrar_Mascota.Location = new System.Drawing.Point(268, 397);
             this.btn_Registrar_Mascota.Name = "btn_Registrar_Mascota";
             this.btn_Registrar_Mascota.Size = new System.Drawing.Size(118, 51);
             this.btn_Registrar_Mascota.TabIndex = 21;
             this.btn_Registrar_Mascota.Text = "Registrar mascota";
-            this.btn_Registrar_Mascota.UseVisualStyleBackColor = true;
+            this.btn_Registrar_Mascota.UseVisualStyleBackColor = false;
             this.btn_Registrar_Mascota.Click += new System.EventHandler(this.btn_Registrar_Mascota_Click);
             // 
             // txt_Nombre_Cliente
@@ -248,13 +255,15 @@
             // 
             // btn_Salir
             // 
+            this.btn_Salir.BackColor = System.Drawing.Color.Moccasin;
             this.btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Salir.Location = new System.Drawing.Point(41, 26);
+            this.btn_Salir.ForeColor = System.Drawing.Color.Olive;
+            this.btn_Salir.Location = new System.Drawing.Point(49, 12);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 23);
             this.btn_Salir.TabIndex = 27;
             this.btn_Salir.Text = "Salir";
-            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // groupBox1

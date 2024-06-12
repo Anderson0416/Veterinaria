@@ -65,6 +65,16 @@ namespace Precentacion
             Producto_Repositorio producto_Repositorio = new Producto_Repositorio();
             producto_Repositorio.Actualizar_Producto(producto);
             LlenarDataGribView_Producto_Mascota();
+
+
+
+
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+          
+            this.Visible = false;
         }
     }
     }

@@ -53,5 +53,13 @@ namespace Precentacion
       
             this.Visible = false;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Consultar_Producto_Mascota consultar_Producto_Mascota = new Consultar_Producto_Mascota();
+            consultar_Producto_Mascota.Visible = true;
+            this.Visible = false;   
+           
+        }
     }
 }

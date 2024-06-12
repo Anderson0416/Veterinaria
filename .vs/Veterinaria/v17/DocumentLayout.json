@@ -1,18 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\",
+  "WorkspaceRootPath": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|c:\\users\\ryzen\\desktop\\c#\\veterinaria_2\\veterinaria\\precentacion\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|c:\\users\\home\\onedrive\\escritorio\\sistemas\\vet\\veterinaria\\precentacion\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|solutionrelative:precentacion\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|c:\\users\\ryzen\\desktop\\c#\\veterinaria_2\\veterinaria\\precentacion\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\precentacion\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{930ED6CF-166F-42C1-B99C-4CFF467F3A72}|Precentacion\\Precentacion.csproj|solutionrelative:precentacion\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BA2229-AFFE-424D-A660-E1352CAF422F}|Veterinaria\\Veterinaria.csproj|C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{67BA2229-AFFE-424D-A660-E1352CAF422F}|Veterinaria\\Veterinaria.csproj|C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67BA2229-AFFE-424D-A660-E1352CAF422F}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\dal\\producto_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{641314EA-75A2-412C-A98E-CF7D0DD1E144}|DAL\\DAL.csproj|solutionrelative:dal\\producto_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0943FFB9-4C1C-4894-B43A-93CD0C4330B2}|BLL\\BLL.csproj|C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\bll\\pdf_historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0943FFB9-4C1C-4894-B43A-93CD0C4330B2}|BLL\\BLL.csproj|solutionrelative:bll\\pdf_historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{072F8769-CD8A-4DC3-A5C1-E1A04A1ADAFD}|Entity\\Entity.csproj|C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\entity\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{072F8769-CD8A-4DC3-A5C1-E1A04A1ADAFD}|Entity\\Entity.csproj|solutionrelative:entity\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0943FFB9-4C1C-4894-B43A-93CD0C4330B2}|BLL\\BLL.csproj|C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\bll\\pdf_factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0943FFB9-4C1C-4894-B43A-93CD0C4330B2}|BLL\\BLL.csproj|solutionrelative:bll\\pdf_factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,42 +49,93 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Compra.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Precentacion\\Compra.cs",
+              "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Compra.cs",
               "RelativeDocumentMoniker": "Precentacion\\Compra.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Precentacion\\Compra.cs",
+              "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Compra.cs",
               "RelativeToolTip": "Precentacion\\Compra.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAxwHUAAAAMAAAA",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAswHwAAABkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T23:20:12.289Z",
+              "WhenOpened": "2024-06-12T03:14:41.243Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Compra.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Precentacion\\Compra.cs",
+              "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Compra.cs",
               "RelativeDocumentMoniker": "Precentacion\\Compra.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Precentacion\\Compra.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Precentacion\\Compra.cs [Dise\u00F1o]",
               "RelativeToolTip": "Precentacion\\Compra.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T23:20:43.687Z",
+              "WhenOpened": "2024-06-12T03:14:37.423Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producto_Repositorio.cs",
+              "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\DAL\\Producto_Repositorio.cs",
+              "RelativeDocumentMoniker": "DAL\\Producto_Repositorio.cs",
+              "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\DAL\\Producto_Repositorio.cs",
+              "RelativeToolTip": "DAL\\Producto_Repositorio.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAwwLIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T03:09:40.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Entity\\Producto.cs",
+              "RelativeDocumentMoniker": "Entity\\Producto.cs",
+              "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Entity\\Producto.cs",
+              "RelativeToolTip": "Entity\\Producto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T03:09:16.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "pdf_Factura.cs",
+              "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\BLL\\pdf_Factura.cs",
+              "RelativeDocumentMoniker": "BLL\\pdf_Factura.cs",
+              "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\BLL\\pdf_Factura.cs",
+              "RelativeToolTip": "BLL\\pdf_Factura.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T03:06:31.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "pdf_Historial.cs",
+              "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\BLL\\pdf_Historial.cs",
+              "RelativeDocumentMoniker": "BLL\\pdf_Historial.cs",
+              "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\BLL\\pdf_Historial.cs",
+              "RelativeToolTip": "BLL\\pdf_Historial.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T03:05:58.301Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Veterinaria\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Veterinaria\\Program.cs",
               "RelativeDocumentMoniker": "Veterinaria\\Program.cs",
-              "ToolTip": "C:\\Users\\RYZEN\\Desktop\\c#\\Veterinaria_2\\Veterinaria\\Veterinaria\\Program.cs",
+              "ToolTip": "C:\\Users\\HOME\\OneDrive\\Escritorio\\SISTEMAS\\Vet\\Veterinaria\\Veterinaria\\Program.cs",
               "RelativeToolTip": "Veterinaria\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T03:20:00.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T00:52:51.748Z"
             }
           ]
         }
