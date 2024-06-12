@@ -173,6 +173,7 @@
             // dtp_Fecha_Cita_Mascota
             // 
             this.dtp_Fecha_Cita_Mascota.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_Fecha_Cita_Mascota.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_Fecha_Cita_Mascota.Location = new System.Drawing.Point(128, 27);
             this.dtp_Fecha_Cita_Mascota.Name = "dtp_Fecha_Cita_Mascota";
             this.dtp_Fecha_Cita_Mascota.Size = new System.Drawing.Size(208, 20);

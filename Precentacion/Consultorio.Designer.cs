@@ -400,6 +400,7 @@
             // 
             // dtp_Fecha_Consulta
             // 
+            this.dtp_Fecha_Consulta.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_Fecha_Consulta.Location = new System.Drawing.Point(130, 16);
             this.dtp_Fecha_Consulta.Name = "dtp_Fecha_Consulta";
             this.dtp_Fecha_Consulta.Size = new System.Drawing.Size(200, 20);

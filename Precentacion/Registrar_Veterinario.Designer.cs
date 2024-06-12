@@ -85,6 +85,7 @@
             // 
             // dtp_Fecha_Nacimiento
             // 
+            this.dtp_Fecha_Nacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_Fecha_Nacimiento.Location = new System.Drawing.Point(56, 169);
             this.dtp_Fecha_Nacimiento.Name = "dtp_Fecha_Nacimiento";
             this.dtp_Fecha_Nacimiento.Size = new System.Drawing.Size(200, 20);
@@ -214,6 +215,7 @@
             // 
             // dtp_Fecha_Contrato
             // 
+            this.dtp_Fecha_Contrato.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_Fecha_Contrato.Location = new System.Drawing.Point(56, 223);
             this.dtp_Fecha_Contrato.Name = "dtp_Fecha_Contrato";
             this.dtp_Fecha_Contrato.Size = new System.Drawing.Size(200, 20);

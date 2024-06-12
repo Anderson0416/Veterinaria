@@ -224,3 +224,4 @@ C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debu
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Menu_Recepcion.resources
 C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Precentacion\obj\Debug\Precentacion.Compra.resources
 C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Compra.resources
+C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Precentacion\obj\Debug\Precentacion.Form2.resources

@@ -92,11 +92,33 @@ namespace Precentacion
             Cita_Repositorio cita_Repositorio = new Cita_Repositorio();
             cita_Repositorio.Actualizar_Cita(citas);
             Llenar_Tabla_Citas();
-
-
-
-
         }
+        //public void actualizar()
+        //{
+        //    //Cita_Repositorio cita_Repositorio = new Cita_Repositorio();
+        //    //DateTime fechaConsulta;
+
+        //    //// Intentar convertir el texto del TextBox a una fecha
+        //    //if (DateTime.TryParse(txtFechaConsulta.Text, out fechaConsulta))
+        //    //{
+        //    //    // Llamar al método para buscar citas por fecha
+        //    //    List<Citas> citas = cita_Repositorio.Consultar_Citas_Por_Fecha(fechaConsulta);
+
+        //    //    // Mostrar los resultados en el DataGridView
+        //    //    if (citas != null && citas.Count > 0)
+        //    //    {
+        //    //        dgv_Form.DataSource = citas;
+        //    //    }
+        //    //    else
+        //    //    {
+        //    //        MessageBox.Show("No se encontraron citas para la fecha especificada.");
+        //    //    }
+        //    //}
+        //    //else
+        //    //{
+        //    //    MessageBox.Show("Por favor, ingrese una fecha válida.");
+        //    //}
+        //}
         private void dgv_Llenar_Tabla_Cita_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_Id_Cita.Text = dgv_Llenar_Tabla_Cita.SelectedCells[0].Value.ToString();

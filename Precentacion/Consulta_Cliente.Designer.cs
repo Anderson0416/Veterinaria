@@ -159,6 +159,7 @@
             // 
             // dtp_Fecha_Nacimiento
             // 
+            this.dtp_Fecha_Nacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_Fecha_Nacimiento.Location = new System.Drawing.Point(483, 121);
             this.dtp_Fecha_Nacimiento.Name = "dtp_Fecha_Nacimiento";
             this.dtp_Fecha_Nacimiento.Size = new System.Drawing.Size(212, 20);

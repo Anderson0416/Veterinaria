@@ -107,6 +107,49 @@ namespace DAL
             conectar.Close();
             return Citas_veterinarios;
         }
+        public List<Citas> Consultar_Cit(DateTime fechaConsulta)
+        {
+            List<Citas> citas = new List<Citas>();
+            MySqlConnection conectar = conexion.crearConexion();
+            conectar.Open();
+            MySqlDataReader reader;
+
+            string sql = @"
+    SELECT 
+        Citas.Id AS CitaId,
+        Citas.Fecha_Consulta AS FechaConsulta,
+        Citas.Descripcion As Descripcion,
+        Mascotas.Id AS MascotaId,
+        Mascotas.Nombre AS MascotaNombre,
+        Veterinarios.Nombre AS VeterinarioNombre,
+        Veterinarios.Documento AS VeterinarioDocumento
+    FROM 
+        Citas
+    JOIN 
+        Mascotas ON Citas.Id_Mascota = Mascotas.Id
+    JOIN 
+        Veterinarios ON Citas.Documento_Veterinario = Veterinarios.Documento
+    WHERE 
+        Citas.Fecha_Consulta = @Fecha_Consulta";
+
+            using (var comando = new MySqlCommand(sql, conectar))
+            {
+                comando.Parameters.AddWithValue("@Fecha_Consulta", fechaConsulta.ToString("dd/MM/yyyy"));
+                using (reader = comando.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        citas.Add(Map(reader));
+                    }
+                }
+            }
+            conectar.Close();
+
+            // Depuración: Verifica la cantidad de registros obtenidos
+            Console.WriteLine("Registros obtenidos: " + citas.Count);
+
+            return citas;
+        }
         public List<Citas> Consultar_Todas_Citas()
         {
             List<Citas> Citas = new List<Citas>();
@@ -144,39 +187,59 @@ namespace DAL
             conectar.Close();
             return Citas;
         }
-        public Citas Map(MySqlDataReader reader)
+
+        private Citas Map(MySqlDataReader reader)
         {
-            Veterinario veterinario = new Veterinario();
-            Citas citas = new Citas
+            return new Citas
             {
-                id = reader.GetInt32("CitaId"),
-                descripcion = reader.GetString("Descripcion"),
-                fecha_consulta = reader.GetString("FechaConsulta"),
+                id = Convert.ToInt32(reader["CitaId"]),
+                fecha_consulta = reader["FechaConsulta"].ToString(),
+                descripcion = reader["Descripcion"].ToString(),
+                veterinario = new Veterinario
+                {
+                    nombre = reader["VeterinarioNombre"].ToString(),
+                    documento = reader["VeterinarioDocumento"].ToString()
+                },
+                mascota = new Mascota
+                {
+                    id = Convert.ToInt32(reader["MascotaId"]),
+                    nombre = reader["MascotaNombre"].ToString()
+                }
             };
+        }
+        //public Citas Map(MySqlDataReader reader)
+        //{
+        //    Veterinario veterinario = new Veterinario();
+        //    Citas citas = new Citas
+        //    {
+        //        id = reader.GetInt32("CitaId"),
+        //        descripcion = reader.GetString("Descripcion"),
+        //        fecha_consulta = reader.GetString("FechaConsulta"),
+        //    };
 
-            if (!reader.IsDBNull(reader.GetOrdinal("MascotaId")))
-            {
-                Mascota mascota = new Mascota
-                {
-                    id = reader.GetInt32("MascotaId"),
-                    nombre = reader.GetString("MascotaNombre"),
-                };
+        //    if (!reader.IsDBNull(reader.GetOrdinal("MascotaId")))
+        //    {
+        //        Mascota mascota = new Mascota
+        //        {
+        //            id = reader.GetInt32("MascotaId"),
+        //            nombre = reader.GetString("MascotaNombre"),
+        //        };
 
-                if (!reader.IsDBNull(reader.GetOrdinal("VeterinarioDocumento")))
-                {
+        //        if (!reader.IsDBNull(reader.GetOrdinal("VeterinarioDocumento")))
+        //        {
                     
                    
-                        veterinario.documento = reader.GetString("VeterinarioDocumento");
-                        veterinario.nombre = reader.GetString("VeterinarioNombre");
+        //                veterinario.documento = reader.GetString("VeterinarioDocumento");
+        //                veterinario.nombre = reader.GetString("VeterinarioNombre");
                     
-                }
+        //        }
 
-                citas.mascota = mascota;
-                citas.veterinario = veterinario;
-            }
+        //        citas.mascota = mascota;
+        //        citas.veterinario = veterinario;
+        //    }
 
-            return citas;
-        }
+        //    return citas;
+        //}
         public void Eliminar_Cita(string Id)
         {
             MySqlConnection conectar = conexion.crearConexion();

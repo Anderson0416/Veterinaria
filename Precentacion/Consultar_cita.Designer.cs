@@ -62,8 +62,8 @@
             this.btn_Regresar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Llenar_Tabla_Cita)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -223,6 +223,7 @@
             // 
             // dtp_Fecha_Consulta
             // 
+            this.dtp_Fecha_Consulta.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_Fecha_Consulta.Location = new System.Drawing.Point(161, 182);
             this.dtp_Fecha_Consulta.Name = "dtp_Fecha_Consulta";
             this.dtp_Fecha_Consulta.Size = new System.Drawing.Size(200, 20);
@@ -365,6 +366,15 @@
             this.groupBox1.TabIndex = 52;
             this.groupBox1.TabStop = false;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(29, 22);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 13);
+            this.label11.TabIndex = 50;
+            this.label11.Text = "ID De La Cita";
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.MintCream;
@@ -375,15 +385,6 @@
             this.groupBox2.TabIndex = 53;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Descripcion De La Mascota";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(29, 22);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 13);
-            this.label11.TabIndex = 50;
-            this.label11.Text = "ID De La Cita";
             // 
             // Consultar_Cita
             // 
