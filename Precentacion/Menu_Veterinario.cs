@@ -39,7 +39,7 @@ namespace Precentacion
             }
             else
             {
-                MessageBox.Show("el usuario no a sido registrado, en el boton resgistrar lo puede hacer");
+                MessageBox.Show("El usuario no a sido registrado, en el boton resgistrar lo puede hacer");
             }
         }
         private void Llenar_Tabla_Citas_Veterinario()
@@ -124,11 +124,13 @@ namespace Precentacion
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
+
         {
             var confirmacion = MessageBox.Show("¿Seguro que quiere cerrar sesión?", "Confirmar cierre de sesión", MessageBoxButtons.OKCancel);
 
             if (confirmacion == DialogResult.OK)
             {
+
                 this.Close();
 
                 Login login = new Login();

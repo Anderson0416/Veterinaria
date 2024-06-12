@@ -98,7 +98,7 @@ namespace Precentacion
                 mascota.sexo = cbx_Sexo.Text;
                 mascota.edad = txt_Edad.Text;
                 mascota.edad2 = cbx_Edad2.Text;
-                mascota.cliente.documento = txt_Cliente_Documento.Text;
+           
 
             Mascota_Repositorio mascota_Repositorio = new Mascota_Repositorio();
             mascota_Repositorio.Actualizar_Mascota(mascota);

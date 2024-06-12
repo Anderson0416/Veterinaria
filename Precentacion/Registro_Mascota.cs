@@ -64,8 +64,7 @@ namespace Precentacion
                 else
                 {
                     MessageBox.Show("Mascota registrada");
-                    Menu_Recepcion recepcio = new Menu_Recepcion();
-                    recepcio.Visible = true;
+              
                     this.Visible = false;
                 }
             }

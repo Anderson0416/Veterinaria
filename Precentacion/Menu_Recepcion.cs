@@ -75,12 +75,11 @@ namespace Precentacion
         {
             var confirmacion = MessageBox.Show("¿Seguro que quiere cerrar sesión?", "Confirmar cierre de sesión", MessageBoxButtons.OKCancel);
 
-            // Verificar si el usuario seleccionó "OK"
             if (confirmacion == DialogResult.OK)
             {
                 this.Close();
 
-                // Abrir el nuevo formulario
+                
                 Login login = new Login();
                 login.Show();
             }

@@ -44,8 +44,7 @@ namespace Precentacion
                 else
                 {
                     MessageBox.Show("Veterinario registrado");
-                    Menu_Recepcion recepcio = new Menu_Recepcion();
-                    recepcio.Visible = true;
+                  
                     this.Visible = false;
                 }
             }

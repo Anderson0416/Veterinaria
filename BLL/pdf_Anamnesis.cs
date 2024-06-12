@@ -35,24 +35,24 @@ namespace BLL
 
             try
             {
-                // Verifica si la carpeta existe, si no, crea la carpeta
+               
                 if (!Directory.Exists(rutaDirectorio))
                 {
                     Directory.CreateDirectory(rutaDirectorio);
                 }
 
-                // Crear el nombre del archivo basado en el nombre de la mascota y la fecha de consulta
+                
                 string nombreArchivo = $"{historial.mascota.nombre}_{historial.fecha_consulta.Replace(":", "").Replace("/", "-")}.pdf";
                 string rutaArchivo = Path.Combine(rutaDirectorio, nombreArchivo);
 
-                // Crear el documento PDF
+                
                 Document document = new Document();
                 PdfWriter.GetInstance(document, new FileStream(rutaArchivo, FileMode.Create));
                 document.Open();
 
                
-                // Añadir una imagen
-                string rutaImagen = @"C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Imagenes\descarga.png"; // Cambia esta ruta por la ruta real de la imagen
+                
+                string rutaImagen = @"C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Imagenes\Imagen de WhatsApp 2024-04-19 a las 19.52.20_14fcb214.png"; 
                 Image imagen = null;
                 if (File.Exists(rutaImagen))
                 {
@@ -60,19 +60,16 @@ namespace BLL
                     imagen.ScaleToFit(100f, 100f);
                 }
 
-                // Agregar título
                 var titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16);
                 var subTitleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16);
                 var textFont = FontFactory.GetFont(FontFactory.HELVETICA, 12);
                 var boldTextFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12);
 
-                // Crear una tabla para la imagen y el título
                 PdfPTable table = new PdfPTable(2);
                 table.WidthPercentage = 100;
                 float[] headerWidths = new float[] { 1f, 3f };
                 table.SetWidths(headerWidths);
                 
-                // Línea superior
                 PdfPCell lineCellTop = new PdfPCell(new Phrase(""));
                 lineCellTop.Colspan = 2;
                 lineCellTop.BorderWidthBottom = 1;
@@ -95,7 +92,6 @@ namespace BLL
                 cellTitle.Border = PdfPCell.NO_BORDER;
                 table.AddCell(cellTitle);
 
-                // Línea inferior
                 PdfPCell lineCellBottom = new PdfPCell(new Phrase(""));
                 lineCellBottom.Colspan = 2;
                 lineCellBottom.BorderWidthTop = 1;
@@ -103,12 +99,10 @@ namespace BLL
 
                 document.Add(table);
 
-                //document.Add(new Paragraph("Reporte de Historial y Anamnesis", titleFont) { Alignment = Element.ALIGN_CENTER });
-
-                // Agregar espacio
+                
                 document.Add(new Paragraph("\n\n\n"));
 
-                // Crear una tabla para los datos del historial
+               
                 PdfPTable table2 = new PdfPTable(2);
                 table2.WidthPercentage = 100;
                 table2.SpacingBefore = 10f;
@@ -117,7 +111,8 @@ namespace BLL
                 Paragraph subTitle1 = new Paragraph("Datos Del Paciente", subTitleFont);
                 subTitle1.Alignment = Element.ALIGN_CENTER;
                 document.Add(subTitle1);
-                // Añadir filas a la tabla
+            
+
                 table2.AddCell(new PdfPCell(new Phrase("ID del Historial:", boldTextFont)));
                 table2.AddCell(new PdfPCell(new Phrase(historial.id.ToString(), textFont)));
 
@@ -143,10 +138,10 @@ namespace BLL
 
                 document.Add(table2);
                 
-                // Agregar espacio entre secciones
+               
                 document.Add(new Paragraph("\n"));
 
-                // Agregar sección de Anamnesis
+               
                 Paragraph subTitle2 = new Paragraph("Datos de Anamnesis", subTitleFont);
                 subTitle2.Alignment = Element.ALIGN_CENTER;
                 document.Add(subTitle2);
@@ -187,13 +182,12 @@ namespace BLL
 
                 document.Add(table4);
 
-                // Agregar título
                 Chunk motivoDeConsulta = new Chunk("Motivo de Consulta: ", boldTextFont);
                 Chunk sintomasDeMascota = new Chunk("Síntomas de la Mascota: ", boldTextFont);
                 Chunk observaciones = new Chunk("Observaciones: ", boldTextFont);
                 Chunk dietaAlimenticia = new Chunk("Dieta Alimenticia: ", boldTextFont);
 
-                // Agregar información
+               
                 Phrase frase = new Phrase();
                 frase.Add(motivoDeConsulta);
                 frase.Add(new Chunk(anamnesis.motivos_consulta, textFont));
@@ -214,7 +208,7 @@ namespace BLL
                 frase.Add(new Chunk(anamnesis.dieta, textFont));
                 document.Add(new Paragraph(frase));
 
-                // Cerrar el documento
+            
                 document.Close();
 
                 respuesta= $"PDF generado exitosamente";

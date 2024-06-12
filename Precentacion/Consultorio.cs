@@ -88,9 +88,8 @@ namespace Precentacion
                 }
                 else
                 {
-                    MessageBox.Show("Cliente registrado");
-                    Menu_Veterinario menu_veterinario = new Menu_Veterinario();
-                    menu_veterinario.Visible = true;
+                    MessageBox.Show("Anamnesis registrado");
+                 
                     this.Visible = false;
                 }
             }

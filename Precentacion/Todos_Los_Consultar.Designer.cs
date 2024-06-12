@@ -36,7 +36,6 @@
             this.btn_Salir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_Consultar_Venta = new System.Windows.Forms.Button();
             this.btn_Consultar_Producto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -73,9 +72,9 @@
             this.btn_Consultar_Mascota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Consultar_Mascota.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Consultar_Mascota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_Consultar_Mascota.Location = new System.Drawing.Point(30, 106);
+            this.btn_Consultar_Mascota.Location = new System.Drawing.Point(21, 103);
             this.btn_Consultar_Mascota.Name = "btn_Consultar_Mascota";
-            this.btn_Consultar_Mascota.Size = new System.Drawing.Size(117, 23);
+            this.btn_Consultar_Mascota.Size = new System.Drawing.Size(138, 23);
             this.btn_Consultar_Mascota.TabIndex = 2;
             this.btn_Consultar_Mascota.Text = "Consultar Mascota";
             this.btn_Consultar_Mascota.UseVisualStyleBackColor = false;
@@ -86,9 +85,9 @@
             this.btn_Consultar_Veterinario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Consultar_Veterinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Consultar_Veterinario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_Consultar_Veterinario.Location = new System.Drawing.Point(30, 151);
+            this.btn_Consultar_Veterinario.Location = new System.Drawing.Point(21, 151);
             this.btn_Consultar_Veterinario.Name = "btn_Consultar_Veterinario";
-            this.btn_Consultar_Veterinario.Size = new System.Drawing.Size(117, 23);
+            this.btn_Consultar_Veterinario.Size = new System.Drawing.Size(138, 23);
             this.btn_Consultar_Veterinario.TabIndex = 3;
             this.btn_Consultar_Veterinario.Text = "Consultar Veterinario";
             this.btn_Consultar_Veterinario.UseVisualStyleBackColor = false;
@@ -120,7 +119,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.MintCream;
-            this.groupBox1.Controls.Add(this.btn_Consultar_Venta);
             this.groupBox1.Controls.Add(this.btn_Consultar_Producto);
             this.groupBox1.Controls.Add(this.btn_Consultar_Cliente);
             this.groupBox1.Controls.Add(this.btn_Consultar_Veterinario);
@@ -128,30 +126,18 @@
             this.groupBox1.Controls.Add(this.btn_Consultar_Mascota);
             this.groupBox1.Location = new System.Drawing.Point(42, 51);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(174, 273);
+            this.groupBox1.Size = new System.Drawing.Size(174, 242);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
-            // 
-            // btn_Consultar_Venta
-            // 
-            this.btn_Consultar_Venta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Consultar_Venta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Consultar_Venta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_Consultar_Venta.Location = new System.Drawing.Point(30, 242);
-            this.btn_Consultar_Venta.Name = "btn_Consultar_Venta";
-            this.btn_Consultar_Venta.Size = new System.Drawing.Size(117, 23);
-            this.btn_Consultar_Venta.TabIndex = 5;
-            this.btn_Consultar_Venta.Text = "Consultar Venta";
-            this.btn_Consultar_Venta.UseVisualStyleBackColor = false;
             // 
             // btn_Consultar_Producto
             // 
             this.btn_Consultar_Producto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Consultar_Producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Consultar_Producto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_Consultar_Producto.Location = new System.Drawing.Point(30, 198);
+            this.btn_Consultar_Producto.Location = new System.Drawing.Point(21, 198);
             this.btn_Consultar_Producto.Name = "btn_Consultar_Producto";
-            this.btn_Consultar_Producto.Size = new System.Drawing.Size(117, 23);
+            this.btn_Consultar_Producto.Size = new System.Drawing.Size(138, 23);
             this.btn_Consultar_Producto.TabIndex = 4;
             this.btn_Consultar_Producto.Text = "Consultar Producto";
             this.btn_Consultar_Producto.UseVisualStyleBackColor = false;
@@ -184,6 +170,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_Consultar_Producto;
-        private System.Windows.Forms.Button btn_Consultar_Venta;
     }
 }

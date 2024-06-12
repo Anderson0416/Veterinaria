@@ -129,20 +129,19 @@ namespace Precentacion
 
         private void btn_Imprimir_Historial_Click(object sender, EventArgs e)
         {
-            // Ensure a row is selected
+          
             if (dgv_Historial.SelectedCells.Count > 0)
             {
                 int rowIndex = dgv_Historial.SelectedCells[0].RowIndex;
 
-                // Ensure the column index is valid
                 if (dgv_Historial.Rows[rowIndex].Cells.Count > 2)
                 {
-                    // Get the idMascota from the 3rd column (index 2)
+                  
                     object value = dgv_Historial.Rows[rowIndex].Cells[2].Value;
 
                     if (value != null && int.TryParse(value.ToString(), out int idMascota))
                     {
-                        // Call method to generate PDF
+                     
                         string rutaDirectorio = @"C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\pdf";
                         pdf_Historial pdf_Historial = new pdf_Historial();
                         string respuesta = (pdf_Historial.Generar_Pdf_Historiales_Mascota(idMascota, rutaDirectorio));

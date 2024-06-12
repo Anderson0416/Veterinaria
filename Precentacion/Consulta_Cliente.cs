@@ -47,7 +47,7 @@ namespace Precentacion
             cbx_Tipo_Documento.Text = dgv_Cliente.SelectedCells[4].Value.ToString();
             cbx_Sexo.Text = dgv_Cliente.SelectedCells[5].Value.ToString();
             txt_Telefono.Text = dgv_Cliente.SelectedCells[7].Value.ToString();
-            dateTimePicker1.Value= Convert.ToDateTime(dgv_Cliente.SelectedCells[6].Value.ToString());
+            dtp_Fecha_Nacimiento.Value= Convert.ToDateTime(dgv_Cliente.SelectedCells[6].Value.ToString());
            
         }
         private void btn_E_Cliente_Click(object sender, EventArgs e)
@@ -77,7 +77,7 @@ namespace Precentacion
             cliente.tipo_documento = cbx_Tipo_Documento.Text;
             cliente.documento = txt_Documento.Text;
             cliente.sexo = cbx_Sexo.Text;
-            //cliente.fecha_nacimiento = dtp_Fecha_Nacimiento.???;
+            cliente.fecha_nacimiento = dtp_Fecha_Nacimiento.Text;
             cliente.telefono = txt_Telefono.Text;
 
 

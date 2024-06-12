@@ -40,7 +40,6 @@
             this.btn_Agregar = new System.Windows.Forms.Button();
             this.cmb_Veterinario = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.dtp_Fecha_Cita_Mascota = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Registrar = new System.Windows.Forms.Button();
@@ -134,11 +133,11 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(7, 27);
+            this.label11.Location = new System.Drawing.Point(32, 33);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(115, 13);
+            this.label11.Size = new System.Drawing.Size(90, 13);
             this.label11.TabIndex = 15;
-            this.label11.Text = "Fecha y hora de la cita";
+            this.label11.Text = "Fecha De La Cita";
             // 
             // btn_Agregar
             // 
@@ -170,16 +169,6 @@
             this.label12.Size = new System.Drawing.Size(31, 13);
             this.label12.TabIndex = 22;
             this.label12.Text = "Sexo";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(114, 113);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 22);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "confirmar";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // dtp_Fecha_Cita_Mascota
             // 
@@ -324,12 +313,11 @@
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.dtp_Fecha_Cita_Mascota);
             this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.cmb_Veterinario);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(15, 390);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(357, 153);
+            this.groupBox3.Size = new System.Drawing.Size(357, 106);
             this.groupBox3.TabIndex = 35;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detalles de la cita";
@@ -391,7 +379,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Agendar_cita";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "|";
+            this.Text = "Agendar Cita";
             this.Load += new System.EventHandler(this.Agendar_cita_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -417,7 +405,6 @@
         private System.Windows.Forms.Button btn_Agregar;
         private System.Windows.Forms.ComboBox cmb_Veterinario;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dtp_Fecha_Cita_Mascota;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;

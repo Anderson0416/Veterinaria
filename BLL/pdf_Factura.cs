@@ -18,27 +18,26 @@ namespace BLL
 
             try
             {
-                // Verifica si la carpeta existe, si no, crea la carpeta
+               
                 if (!Directory.Exists(rutaDirectorio))
                 {
                     Directory.CreateDirectory(rutaDirectorio);
                 }
 
-                // Generar un código único de 5 dígitos
                 Random random = new Random();
                 int codigo = random.Next(10000, 99999);
 
-                // Crear el nombre del archivo basado en la fecha y hora actual y el código único
+            
                 string nombreArchivo = $"Productos_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}_{codigo}.pdf";
                 string rutaArchivo = Path.Combine(rutaDirectorio, nombreArchivo);
 
-                // Crear el documento PDF
+             
                 Document document = new Document();
                 PdfWriter.GetInstance(document, new FileStream(rutaArchivo, FileMode.Create));
                 document.Open();
 
-                // Añadir una imagen y título
-                string rutaImagen = @"C:\ruta\a\tu\imagen.png"; // Cambia esta ruta por la ruta real de la imagen
+                
+                string rutaImagen = @"C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Imagenes\Imagen de WhatsApp 2024-04-19 a las 19.52.20_14fcb214.png";
                 Image imagen = null;
                 if (File.Exists(rutaImagen))
                 {
@@ -46,18 +45,16 @@ namespace BLL
                     imagen.ScaleToFit(100f, 100f);
                 }
 
-                // Agregar título
+             
                 var titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16);
                 var boldTextFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12);
                 var normalTextFont = FontFactory.GetFont(FontFactory.HELVETICA, 10);
 
-                // Crear una tabla para la imagen y el título
                 PdfPTable headerTable = new PdfPTable(2);
                 headerTable.WidthPercentage = 100;
                 float[] headerWidths = new float[] { 1f, 3f };
                 headerTable.SetWidths(headerWidths);
 
-                // Línea superior
                 PdfPCell lineCellTop = new PdfPCell(new Phrase(""));
                 lineCellTop.Colspan = 2;
                 lineCellTop.BorderWidthBottom = 1;
@@ -80,7 +77,6 @@ namespace BLL
                 cellTitle.Border = PdfPCell.NO_BORDER;
                 headerTable.AddCell(cellTitle);
 
-                // Línea inferior
                 PdfPCell lineCellBottom = new PdfPCell(new Phrase(""));
                 lineCellBottom.Colspan = 2;
                 lineCellBottom.BorderWidthTop = 1;
@@ -88,10 +84,10 @@ namespace BLL
 
                 document.Add(headerTable);
 
-                // Añadir espacio
+   
                 document.Add(new Paragraph("\n"));
 
-                // Añadir mensaje de agradecimiento y fecha
+           
                 var gratitudeFont = FontFactory.GetFont(FontFactory.HELVETICA, 9);
                 Paragraph gratitudeParagraph = new Paragraph();
                 gratitudeParagraph.Add("¡Gracias por realizar la compra en la veterinaria que siempre está a un clic de distancia!\n\n");
@@ -99,26 +95,25 @@ namespace BLL
                 gratitudeParagraph.Alignment = Element.ALIGN_CENTER;
                 document.Add(gratitudeParagraph);
 
-                // Agregar el código único en negrita
                 var codeFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12);
                 Paragraph codeParagraph = new Paragraph();
                 codeParagraph.Add($"Código único: {codigo}\n\n");
                 codeParagraph.Alignment = Element.ALIGN_CENTER;
                 document.Add(codeParagraph);
 
-                // Crear una tabla para los datos de los productos
+               
                 PdfPTable productTable = new PdfPTable(dgv_Compra.Columns.Count);
                 productTable.WidthPercentage = 100;
                 productTable.SpacingBefore = 10f;
                 productTable.SpacingAfter = 10f;
 
-                // Añadir encabezados de columna
+               
                 foreach (DataGridViewColumn column in dgv_Compra.Columns)
                 {
                     productTable.AddCell(new PdfPCell(new Phrase(column.HeaderText, boldTextFont)));
                 }
 
-                // Añadir filas de datos
+    
                 foreach (DataGridViewRow row in dgv_Compra.Rows)
                 {
                     if (!row.IsNewRow)
@@ -130,20 +125,19 @@ namespace BLL
                     }
                 }
 
-                // Agregar la fila para el total a pagar
                 PdfPCell totalCellLabel = new PdfPCell(new Phrase("TOTAL A PAGAR", boldTextFont));
-                totalCellLabel.Colspan = dgv_Compra.Columns.Count - 1; // Utiliza todas las columnas menos la última
+                totalCellLabel.Colspan = dgv_Compra.Columns.Count - 1;
                 totalCellLabel.Border = PdfPCell.NO_BORDER;
                 totalCellLabel.HorizontalAlignment = Element.ALIGN_RIGHT;
                 productTable.AddCell(totalCellLabel);
 
-                // Calcular el total a pagar
+              
                 decimal totalAPagar = 0;
                 foreach (DataGridViewRow row in dgv_Compra.Rows)
                 {
                     if (!row.IsNewRow)
                     {
-                        // Suponiendo que la columna del precio se encuentra en la última posición
+                        
                         decimal precioProducto = Convert.ToDecimal(row.Cells[row.Cells.Count - 1].Value);
                         totalAPagar += precioProducto;
                     }
@@ -156,7 +150,7 @@ namespace BLL
 
                 document.Add(productTable);
 
-                // Cerrar el documento
+               
                 document.Close();
 
                 respuesta = "PDF generado exitosamente";

@@ -118,11 +118,11 @@
             this.btn_Historial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btn_Historial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Historial.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Historial.Location = new System.Drawing.Point(303, 184);
+            this.btn_Historial.Location = new System.Drawing.Point(268, 184);
             this.btn_Historial.Name = "btn_Historial";
-            this.btn_Historial.Size = new System.Drawing.Size(79, 34);
+            this.btn_Historial.Size = new System.Drawing.Size(144, 34);
             this.btn_Historial.TabIndex = 24;
-            this.btn_Historial.Text = "Historial";
+            this.btn_Historial.Text = "Historial anamnesis";
             this.btn_Historial.UseVisualStyleBackColor = false;
             this.btn_Historial.Click += new System.EventHandler(this.btn_Historial_Click);
             // 

@@ -17,11 +17,9 @@ namespace BLL
         {
             string respuesta = "";
 
-            // Retrieve histories for the specified pet ID
             Hitoriales_Repositorio hitoriales_Repositorio = new Hitoriales_Repositorio();
             List<Hitoriales> historiales = hitoriales_Repositorio.Consultar_Historial_Mascota(idMascota);
 
-            // Check if any histories were found
             if (historiales.Count == 0)
             {
                 respuesta = "No se encontraron historiales para la mascota";
@@ -30,13 +28,13 @@ namespace BLL
 
             try
             {
-                // Verifica si la carpeta existe, si no, crea la carpeta
+             
                 if (!Directory.Exists(rutaDirectorio))
                 {
                     Directory.CreateDirectory(rutaDirectorio);
                 }
 
-                // Retrieve pet data using Consulta_Mascota_Por_Id function
+
                 Mascota_Repositorio mascota_Repositorio = new Mascota_Repositorio();
                 Mascota mascota = mascota_Repositorio.Consulta_Mascota_Id(idMascota);
                 if (mascota == null)
@@ -45,18 +43,16 @@ namespace BLL
                     return respuesta;
                 }
 
-                // Create the PDF document
                 Document document = new Document();
                 string nombreMascota = mascota.nombre;
 
-                // Crear el nombre del archivo basado en el nombre de la mascota
                 string nombreArchivo = $"Historial {nombreMascota}.pdf";
                 string pdfPath = Path.Combine(rutaDirectorio, nombreArchivo);
                 PdfWriter.GetInstance(document, new FileStream(pdfPath, FileMode.Create));
                 document.Open();
 
-                // Añadir una imagen
-                string rutaImagen = @"C:\Users\RYZEN\Desktop\c#\Veterinaria_2\Veterinaria\Imagenes\descarga.png"; // Cambia esta ruta por la ruta real de la imagen
+               
+                string rutaImagen = @"C:\Users\HOME\OneDrive\Escritorio\SISTEMAS\Vet\Veterinaria\Imagenes\Imagen de WhatsApp 2024-04-19 a las 19.52.20_14fcb214.png"; 
                 Image imagen = null;
                 if (File.Exists(rutaImagen))
                 {
@@ -64,18 +60,17 @@ namespace BLL
                     imagen.ScaleToFit(100f, 100f);
                 }
 
-                // Agregar título
                 var titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16);
                 var textFont = FontFactory.GetFont(FontFactory.HELVETICA, 12);
                 var boldTextFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12);
 
-                // Crear una tabla para la imagen y el título
+         
                 PdfPTable table = new PdfPTable(2);
                 table.WidthPercentage = 100;
                 float[] headerWidths = new float[] { 1f, 3f };
                 table.SetWidths(headerWidths);
 
-                // Línea superior
+         
                 PdfPCell lineCellTop = new PdfPCell(new Phrase(""));
                 lineCellTop.Colspan = 2;
                 lineCellTop.BorderWidthBottom = 1;
@@ -98,7 +93,6 @@ namespace BLL
                 cellTitle.Border = PdfPCell.NO_BORDER;
                 table.AddCell(cellTitle);
 
-                // Línea inferior
                 PdfPCell lineCellBottom = new PdfPCell(new Phrase(""));
                 lineCellBottom.Colspan = 2;
                 lineCellBottom.BorderWidthTop = 1;
@@ -106,23 +100,22 @@ namespace BLL
 
                 document.Add(table);
 
-                // Agregar espacio
                 document.Add(new Paragraph("\n\n\n"));
 
-                // Añadir subtítulo para los datos de la mascota
+             
                 var subTitleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 14);
                 Paragraph subtitleDatosMascota = new Paragraph("Datos de la Mascota", subTitleFont);
-                subtitleDatosMascota.Alignment = Element.ALIGN_CENTER;  // Centrando el subtítulo
+                subtitleDatosMascota.Alignment = Element.ALIGN_CENTER;  
                 subtitleDatosMascota.SpacingAfter = 10f;
                 document.Add(subtitleDatosMascota);
 
-                // Crear tabla para mostrar los datos de la mascota
+       
                 PdfPTable tableDatosMascota = new PdfPTable(2);
                 tableDatosMascota.WidthPercentage = 100;
                 tableDatosMascota.SpacingBefore = 10f;
                 tableDatosMascota.SpacingAfter = 10f;
 
-                // Añadir filas a la tabla
+       
                 tableDatosMascota.AddCell(new PdfPCell(new Phrase("ID de la Mascota:", boldTextFont)));
                 tableDatosMascota.AddCell(new PdfPCell(new Phrase(mascota.id.ToString(), textFont)));
 
@@ -143,35 +136,34 @@ namespace BLL
 
                 document.Add(tableDatosMascota);
 
-                // Agregar espacio
+             
                 document.Add(new Paragraph("\n\n"));
 
-                // Añadir un texto personalizado sobre la clínica veterinaria "Agenda Peluda"
+              
                 string textoIntroduccion = "En la Clínica Veterinaria Agenda Peluda, nos enorgullecemos de ofrecer el mejor cuidado para tu mascota. Aquí encontrarás un historial detallado de todas las visitas y tratamientos que ha recibido tu peludo amigo, asegurando así su bienestar y salud a largo plazo.";
                 Paragraph paragraphIntroduccion = new Paragraph(textoIntroduccion, textFont);
                 paragraphIntroduccion.Alignment = Element.ALIGN_CENTER;
                 paragraphIntroduccion.SpacingAfter = 20f;
                 document.Add(paragraphIntroduccion);
 
-                // Añadir subtítulo para el historial clínico
+                
                 Paragraph subtitleHistorialClinico = new Paragraph("Historial Clínico Veterinaria", subTitleFont);
-                subtitleHistorialClinico.Alignment = Element.ALIGN_CENTER;  // Centrando el subtítulo
+                subtitleHistorialClinico.Alignment = Element.ALIGN_CENTER; 
                 subtitleHistorialClinico.SpacingAfter = 10f;
                 document.Add(subtitleHistorialClinico);
 
-                // Crear tabla para mostrar los datos de los historiales
                 PdfPTable table2 = new PdfPTable(5);
                 table2.WidthPercentage = 100;
                 table2.SetWidths(new float[] { 1f, 2f, 2f, 3f, 3f });
 
-                // Añadir encabezados de columna
+           
                 table2.AddCell(new PdfPCell(new Phrase("ID Historial", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12))));
                 table2.AddCell(new PdfPCell(new Phrase("Fecha de Consulta", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12))));
                 table2.AddCell(new PdfPCell(new Phrase("ID de Mascota", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12))));
                 table2.AddCell(new PdfPCell(new Phrase("Nombre de Mascota", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12))));
                 table2.AddCell(new PdfPCell(new Phrase("Observaciones", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12))));
 
-                // Iterar a través de los historiales y agregar a la tabla
+             
                 foreach (var historial in historiales)
                 {
                     table2.AddCell(new PdfPCell(new Phrase(historial.id.ToString(), textFont)));
@@ -181,10 +173,10 @@ namespace BLL
                     table2.AddCell(new PdfPCell(new Phrase(historial.anamnesis != null ? historial.anamnesis.observaciones : "N/A", textFont)));
                 }
 
-                // Añadir la tabla al documento
+                
                 document.Add(table2);
 
-                // Cerrar el documento
+            
                 document.Close();
 
                 respuesta = "PDF generado exitosamente en " + pdfPath;

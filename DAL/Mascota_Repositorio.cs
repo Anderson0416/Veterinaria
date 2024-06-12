@@ -169,7 +169,7 @@ namespace DAL
             conectar.Open();
 
             string sql = "UPDATE Mascotas SET Nombre = @Nombre, Especie = @Especie, Raza = @Raza, Sexo = @Sexo, Edad = @Edad, " +
-             "Edad2 = @Edad2, Cliente_Documento = @Cliente_Documento WHERE Id = @Id";
+             "Edad2 = @Edad2  WHERE Id = @Id";
 
             MySqlCommand comando = new MySqlCommand(sql, conectar);
 
@@ -180,8 +180,7 @@ namespace DAL
             comando.Parameters.AddWithValue("@Sexo", mascota.sexo);
             comando.Parameters.AddWithValue("@Edad", mascota.edad);
             comando.Parameters.AddWithValue("@Edad2", mascota.edad2);
-            comando.Parameters.AddWithValue("@Cliente_Documento", mascota.cliente.documento);
-           
+          
 
             int resultado = comando.ExecuteNonQuery();
 
